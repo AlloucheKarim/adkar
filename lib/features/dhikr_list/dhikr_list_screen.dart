@@ -31,15 +31,16 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
   double fontSizeMultiplier = 1.0;
   bool isShortMode = false;
 
-
   @override
   void initState() {
     super.initState();
     adhkars = DhikrRepository.getByCategory(widget.category);
     // Load existing progress
-    completedIds.addAll(ProgressService().completedIds.intersection(
-      adhkars.map((d) => d.id).toSet(),
-    ));
+    completedIds.addAll(
+      ProgressService().completedIds.intersection(
+        adhkars.map((d) => d.id).toSet(),
+      ),
+    );
   }
 
   void _handleCompleted(String id) async {
@@ -89,30 +90,38 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
     HapticFeedback.mediumImpact();
   }
 
-
   @override
   Widget build(BuildContext context) {
     // Filter adhkars based on mode
-    final currentAdhkars = isShortMode 
+    final currentAdhkars = isShortMode
         ? adhkars.where((d) => d.isEssential).toList()
         : adhkars;
 
-    double progress = currentAdhkars.isEmpty ? 0 : completedIds.where((id) => currentAdhkars.any((d) => d.id == id)).length / currentAdhkars.length;
-    final visibleAdhkars = currentAdhkars.where((d) => !completedIds.contains(d.id)).toList();
+    double progress = currentAdhkars.isEmpty
+        ? 0
+        : completedIds
+                  .where((id) => currentAdhkars.any((d) => d.id == id))
+                  .length /
+              currentAdhkars.length;
+    final visibleAdhkars = currentAdhkars
+        .where((d) => !completedIds.contains(d.id))
+        .toList();
 
     return ListenableBuilder(
       listenable: ThemeService(),
       builder: (context, _) {
         final isNightMode = ThemeService().isNightMode;
-        
+
         return ScaffoldWithBackground(
           appBar: AppBar(
             title: Column(
               children: [
                 Text(
-                  widget.title, 
+                  widget.title,
                   style: AppTypography.header(fontSize: 24).copyWith(
-                    color: isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037),
+                    color: isNightMode
+                        ? const Color(0xFFF5F5DC)
+                        : const Color(0xFF5D4037),
                   ),
                 ),
                 if (isShortMode)
@@ -129,7 +138,9 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
             elevation: 0,
             centerTitle: true,
             leading: BackButton(
-              color: isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037),
+              color: isNightMode
+                  ? const Color(0xFFF5F5DC)
+                  : const Color(0xFF5D4037),
             ),
             bottom: PreferredSize(
               preferredSize: const Size.fromHeight(40),
@@ -144,13 +155,18 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
                       tooltip: 'وضع القراءة',
                       color: const Color(0xFFC09D63),
                     ),
-                    if (widget.category == DhikrCategory.morning || widget.category == DhikrCategory.evening) ...[
+                    if (widget.category == DhikrCategory.morning ||
+                        widget.category == DhikrCategory.evening) ...[
                       const SizedBox(width: 8),
                       _buildActionButton(
-                        icon: isShortMode ? Icons.auto_awesome : Icons.auto_awesome_outlined,
+                        icon: isShortMode
+                            ? Icons.auto_awesome
+                            : Icons.auto_awesome_outlined,
                         onPressed: _toggleShortMode,
                         tooltip: 'أذكار مختصرة',
-                        color: isShortMode ? Colors.orangeAccent : const Color(0xFFC09D63),
+                        color: isShortMode
+                            ? Colors.orangeAccent
+                            : const Color(0xFFC09D63),
                       ),
                     ],
                     if (widget.category == DhikrCategory.sleep) ...[
@@ -175,7 +191,9 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
                           context: context,
                           builder: (context) => AlertDialog(
                             title: const Text('إعادة ضبط التقدم'),
-                            content: const Text('هل أنتِ متأكدة من رغبتكِ في إعادة ضبط التقدم لهذه الفئة؟'),
+                            content: const Text(
+                              'هل أنتِ متأكدة من رغبتكِ في إعادة ضبط التقدم لهذه الفئة؟',
+                            ),
                             actions: [
                               TextButton(
                                 onPressed: () => Navigator.pop(context),
@@ -228,14 +246,21 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
                           children: [
                             Text(
                               'نفعكِ الله بذكره',
-                              style: AppTypography.arabic(fontSize: 28).copyWith(
-                                color: isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF8D6E63),
-                                fontWeight: FontWeight.bold,
-                              ),
+                              style: AppTypography.arabic(fontSize: 28)
+                                  .copyWith(
+                                    color: isNightMode
+                                        ? const Color(0xFFF5F5DC)
+                                        : const Color(0xFF8D6E63),
+                                    fontWeight: FontWeight.bold,
+                                  ),
                             ),
                             const SizedBox(height: 30),
                             IconButton(
-                              icon: const Icon(Icons.replay_rounded, size: 50, color: Color(0xFFC09D63)),
+                              icon: const Icon(
+                                Icons.replay_rounded,
+                                size: 50,
+                                color: Color(0xFFC09D63),
+                              ),
                               onPressed: _resetProgress,
                               tooltip: 'إعادة القراءة',
                             ),
@@ -247,7 +272,14 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
                 )
               else
                 ListView.builder(
-                  padding: EdgeInsets.fromLTRB(16, 20 + (10 * math.max(0.0, fontSizeMultiplier - 1.0)).toDouble(), 16, 20),
+                  padding: EdgeInsets.fromLTRB(
+                    16,
+                    20 +
+                        (10 * math.max(0.0, fontSizeMultiplier - 1.0))
+                            .toDouble(),
+                    16,
+                    20,
+                  ),
                   itemCount: visibleAdhkars.length,
                   itemBuilder: (context, index) {
                     final dhikr = visibleAdhkars[index];
@@ -359,7 +391,6 @@ class _DhikrCardState extends State<_DhikrCard> {
     }
   }
 
-
   void _toggleLanguage() {
     setState(() {
       if (languageMode == LanguageMode.arabic) {
@@ -386,19 +417,21 @@ class _DhikrCardState extends State<_DhikrCard> {
 
   @override
   Widget build(BuildContext context) {
-    final textColor = widget.isNightMode 
+    final textColor = widget.isNightMode
         ? const Color(0xFFF5F5DC) // Blanc écru
         : const Color(0xFF5D4037);
-    
+
     final accentColor = const Color(0xFFE6C98A);
 
     return Container(
       margin: const EdgeInsets.only(bottom: 16),
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(widget.isNightMode 
-              ? 'assets/images/dhikr_frame_night.png' 
-              : 'assets/images/dhikr_frame_day.png'),
+          image: AssetImage(
+            widget.isNightMode
+                ? 'assets/images/dhikr_frame_night.png'
+                : 'assets/images/dhikr_frame_day.png',
+          ),
           fit: BoxFit.fill,
         ),
         boxShadow: widget.isNightMode ? null : AppColors.premiumShadow,
@@ -412,10 +445,10 @@ class _DhikrCardState extends State<_DhikrCard> {
         borderRadius: BorderRadius.circular(20),
         child: Padding(
           padding: EdgeInsets.fromLTRB(
-            15 * widget.fontSizeMultiplier, 
-            35 * widget.fontSizeMultiplier, 
-            15 * widget.fontSizeMultiplier, 
-            25 * widget.fontSizeMultiplier
+            15 * widget.fontSizeMultiplier,
+            35 * widget.fontSizeMultiplier,
+            15 * widget.fontSizeMultiplier,
+            25 * widget.fontSizeMultiplier,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -425,12 +458,24 @@ class _DhikrCardState extends State<_DhikrCard> {
               Text(
                 _getDisplayText(),
                 textAlign: TextAlign.center,
-                style: (languageMode == LanguageMode.arabic 
-                    ? AppTypography.arabic(fontSize: 22 * widget.fontSizeMultiplier)
-                    : AppTypography.uiBody(fontSize: 16 * widget.fontSizeMultiplier)).copyWith(
-                  color: isCompleted ? (widget.isNightMode ? Colors.white38 : Colors.grey) : textColor,
-                  height: languageMode == LanguageMode.arabic ? 1.5 : 1.3,
-                ),
+                style:
+                    (languageMode == LanguageMode.arabic
+                            ? AppTypography.arabic(
+                                fontSize: 22 * widget.fontSizeMultiplier,
+                              )
+                            : AppTypography.uiBody(
+                                fontSize: 16 * widget.fontSizeMultiplier,
+                              ))
+                        .copyWith(
+                          color: isCompleted
+                              ? (widget.isNightMode
+                                    ? Colors.white38
+                                    : Colors.grey)
+                              : textColor,
+                          height: languageMode == LanguageMode.arabic
+                              ? 1.5
+                              : 1.3,
+                        ),
               ),
               const SizedBox(height: 12),
 
@@ -448,7 +493,10 @@ class _DhikrCardState extends State<_DhikrCard> {
                         );
                       },
                       child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 6,
+                          vertical: 4,
+                        ),
                         decoration: BoxDecoration(
                           border: Border.all(color: accentColor, width: 1),
                           borderRadius: BorderRadius.circular(12),
@@ -458,9 +506,12 @@ class _DhikrCardState extends State<_DhikrCard> {
                           children: [
                             Text(
                               'فضل الذكر',
-                              style: AppTypography.arabic(fontSize: 11).copyWith(
-                                color: widget.isNightMode ? accentColor : const Color(0xFF8D6E63),
-                              ),
+                              style: AppTypography.arabic(fontSize: 11)
+                                  .copyWith(
+                                    color: widget.isNightMode
+                                        ? accentColor
+                                        : const Color(0xFF8D6E63),
+                                  ),
                             ),
                             const SizedBox(width: 4),
                             Image.asset(
@@ -476,11 +527,13 @@ class _DhikrCardState extends State<_DhikrCard> {
 
                   const SizedBox(width: 8),
 
-                  isCompleted 
+                  isCompleted
                       ? Text(
                           'تم بحمد الله',
                           style: AppTypography.header(fontSize: 12).copyWith(
-                            color: widget.isNightMode ? accentColor : const Color(0xFF8D6E63),
+                            color: widget.isNightMode
+                                ? accentColor
+                                : const Color(0xFF8D6E63),
                           ),
                         )
                       : SizedBox(
@@ -498,9 +551,12 @@ class _DhikrCardState extends State<_DhikrCard> {
                               ),
                               Text(
                                 '$currentCount',
-                                style: AppTypography.header(fontSize: 14).copyWith(
-                                  color: widget.isNightMode ? Colors.black87 : const Color(0xFF8D6E63),
-                                ),
+                                style: AppTypography.header(fontSize: 14)
+                                    .copyWith(
+                                      color: widget.isNightMode
+                                          ? Colors.black87
+                                          : const Color(0xFF8D6E63),
+                                    ),
                               ),
                             ],
                           ),
@@ -512,7 +568,10 @@ class _DhikrCardState extends State<_DhikrCard> {
                     child: InkWell(
                       onTap: _toggleLanguage,
                       child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 6,
+                          vertical: 4,
+                        ),
                         decoration: BoxDecoration(
                           border: Border.all(color: accentColor, width: 1),
                           borderRadius: BorderRadius.circular(12),
@@ -522,9 +581,12 @@ class _DhikrCardState extends State<_DhikrCard> {
                           children: [
                             Text(
                               'ترجمة',
-                              style: AppTypography.arabic(fontSize: 11).copyWith(
-                                color: widget.isNightMode ? accentColor : const Color(0xFF8D6E63),
-                              ),
+                              style: AppTypography.arabic(fontSize: 11)
+                                  .copyWith(
+                                    color: widget.isNightMode
+                                        ? accentColor
+                                        : const Color(0xFF8D6E63),
+                                  ),
                             ),
                             const SizedBox(width: 4),
                             Image.asset(

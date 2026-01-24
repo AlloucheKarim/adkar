@@ -14,6 +14,8 @@ class PrayerService extends ChangeNotifier {
   bool _isLoading = false;
   String? _errorMessage;
   Timer? _refreshTimer;
+  double? _lastLat;
+  double? _lastLng;
 
   // Getters
   PrayerTimes? get prayerTimes => _prayerTimes;
@@ -38,14 +40,29 @@ class PrayerService extends ChangeNotifier {
   }
 
   String get nextPrayerName {
-    final next = nextPrayer;
-    if (next == null || next == Prayer.none) return '';
+    final next = _prayerTimes?.nextPrayer();
+    if (next == null || next == Prayer.none) {
+      return prayerNames[Prayer.fajr] ?? '';
+    }
     return prayerNames[next] ?? '';
   }
 
   DateTime? get nextPrayerTime {
-    if (_prayerTimes == null || nextPrayer == null) return null;
-    return _prayerTimes!.timeForPrayer(nextPrayer!);
+    if (_prayerTimes == null) return null;
+    final next = _prayerTimes!.nextPrayer();
+    if (next == Prayer.none) {
+      return _getTomorrowFajr();
+    }
+    return _prayerTimes!.timeForPrayer(next);
+  }
+
+  DateTime? _getTomorrowFajr() {
+    if (_lastLat == null || _lastLng == null) return null;
+    final tomorrow = DateTime.now().add(const Duration(days: 1));
+    final coordinates = Coordinates(_lastLat!, _lastLng!);
+    final params = CalculationMethod.muslim_world_league.getParameters();
+    params.madhab = Madhab.shafi;
+    return PrayerTimes(coordinates, DateComponents.from(tomorrow), params).fajr;
   }
 
   Duration? get timeUntilNextPrayer {
@@ -139,6 +156,8 @@ class PrayerService extends ChangeNotifier {
   }
 
   void _calculatePrayerTimes(double latitude, double longitude) {
+    _lastLat = latitude;
+    _lastLng = longitude;
     final coordinates = Coordinates(latitude, longitude);
     final params = CalculationMethod.muslim_world_league.getParameters();
     params.madhab = Madhab.shafi; // Can be made configurable

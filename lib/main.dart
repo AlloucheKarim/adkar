@@ -8,9 +8,9 @@ import 'core/prayer_service.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize services
-  await NotificationService().initialize();
-  await PrayerService().initialize();
+  // Initialize services in background to avoid blocking the Splash Screen
+  NotificationService().initialize();
+  PrayerService().initialize();
 
   runApp(const AdhkarsApp());
 }
