@@ -59,10 +59,10 @@ class PrayerService extends ChangeNotifier {
   String get formattedTimeUntilNextPrayer {
     final duration = timeUntilNextPrayer;
     if (duration == null) return '';
-    
+
     final hours = duration.inHours;
     final minutes = duration.inMinutes.remainder(60);
-    
+
     if (hours > 0) {
       return '$hours س $minutes د';
     }
@@ -164,11 +164,11 @@ class PrayerService extends ChangeNotifier {
   // Setup timer to refresh at midnight or when prayer passes
   void _setupRefreshTimer() {
     _refreshTimer?.cancel();
-    
+
     // Refresh every minute to update countdown
     _refreshTimer = Timer.periodic(const Duration(minutes: 1), (_) {
       notifyListeners(); // Update countdown display
-      
+
       // Check if we need to recalculate (new day)
       final now = DateTime.now();
       if (now.hour == 0 && now.minute == 0) {

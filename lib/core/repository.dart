@@ -6,11 +6,16 @@ class DhikrRepository {
     Dhikr(
       id: 'morning_kursi',
       category: DhikrCategory.morning,
-      arabicText: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيمِ\nاللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهو الْعَلِيُّ الْعَظِيمُ',
-      englishText: 'Allah! There is no god but He, the Living, the Self-subsisting, Eternal...',
-      frenchText: 'Allah ! Point de divinité à part Lui, le Vivant, Celui qui subsiste par Lui-même...',
-      virtue: 'هي أعظم آية في كتاب الله، من قرأها حين يصبح أجير من الجن حتى يمسي.',
-      sourceText: 'عن أبي هريرة رضي الله عنه أن رسول الله ﷺ قال: "إذا أويت إلى فراشك فاقرأ آية الكرسي: {اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ...} حتى تختم الآية، فإنك لن يزال عليك من الله حافظ، ولا يقربك شيطان حتى تصبح".',
+      arabicText:
+          'أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيمِ\nاللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهو الْعَلِيُّ الْعَظِيمُ',
+      englishText:
+          'Allah! There is no god but He, the Living, the Self-subsisting, Eternal...',
+      frenchText:
+          'Allah ! Point de divinité à part Lui, le Vivant, Celui qui subsiste par Lui-même...',
+      virtue:
+          'هي أعظم آية في كتاب الله، من قرأها حين يصبح أجير من الجن حتى يمسي.',
+      sourceText:
+          'عن أبي هريرة رضي الله عنه أن رسول الله ﷺ قال: "إذا أويت إلى فراشك فاقرأ آية الكرسي: {اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ...} حتى تختم الآية، فإنك لن يزال عليك من الله حافظ، ولا يقربك شيطان حتى تصبح".',
       sourceRef: 'رواه البخاري',
       repetitions: 1,
       isEssential: true,
@@ -18,11 +23,14 @@ class DhikrRepository {
     Dhikr(
       id: 'morning_ikhlas',
       category: DhikrCategory.morning,
-      arabicText: 'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
+      arabicText:
+          'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
       englishText: 'Say: He is Allah, the One and Only...',
       frenchText: 'Dis : "Il est Allah, Unique...',
-      virtue: 'سورة الإخلاص تعدل ثلث القرآن، وقراءتها مع المعوذتين ثلاثاً تكفيك من كل شيء.',
-      sourceText: 'قال رسول الله ﷺ لعبد الله بن خبيب رضي الله عنه: "قل: {قُلْ هُوَ اللَّهُ أَحَدٌ} والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
+      virtue:
+          'سورة الإخلاص تعدل ثلث القرآن، وقراءتها مع المعوذتين ثلاثاً تكفيك من كل شيء.',
+      sourceText:
+          'قال رسول الله ﷺ لعبد الله بن خبيب رضي الله عنه: "قل: {قُلْ هُوَ اللَّهُ أَحَدٌ} والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
       sourceRef: 'رواه أبو داود والترمذي',
       repetitions: 3,
       isEssential: true,
@@ -30,11 +38,14 @@ class DhikrRepository {
     Dhikr(
       id: 'morning_falaq',
       category: DhikrCategory.morning,
-      arabicText: 'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
+      arabicText:
+          'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
       englishText: 'Say: I seek refuge with the Lord of the Dawn...',
-      frenchText: 'Dis : "Je cherche protection auprès du Seigneur de l’aube naissante...',
+      frenchText:
+          'Dis : "Je cherche protection auprès du Seigneur de l’aube naissante...',
       virtue: 'للاستعاذة بالله من شرور المخلوقات والسحر والحسد.',
-      sourceText: 'قال رسول الله ﷺ: "قل هو الله أحد والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
+      sourceText:
+          'قال رسول الله ﷺ: "قل هو الله أحد والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
       sourceRef: 'رواه أبو داود والترمذي',
       repetitions: 3,
       isEssential: true,
@@ -42,11 +53,14 @@ class DhikrRepository {
     Dhikr(
       id: 'morning_nas',
       category: DhikrCategory.morning,
-      arabicText: 'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوسْوَسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ',
+      arabicText:
+          'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوسْوَسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ',
       englishText: 'Say: I seek refuge with the Lord of Mankind...',
-      frenchText: 'Dis : "Je cherche protection auprès du Seigneur des hommes...',
+      frenchText:
+          'Dis : "Je cherche protection auprès du Seigneur des hommes...',
       virtue: 'تحصين للنفس من وسواس الشيطان والجن والإنس.',
-      sourceText: 'قال رسول الله ﷺ: "قل هو الله أحد والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
+      sourceText:
+          'قال رسول الله ﷺ: "قل هو الله أحد والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
       sourceRef: 'رواه أبو داود والترمذي',
       repetitions: 3,
       isEssential: true,
@@ -54,22 +68,29 @@ class DhikrRepository {
     Dhikr(
       id: 'morning_1',
       category: DhikrCategory.morning,
-      arabicText: 'أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذَا الْيَوْمِ وَشرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ، وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ',
-      englishText: 'We have reached the morning and at this very time unto Allah belongs all sovereignty...',
+      arabicText:
+          'أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذَا الْيَوْمِ وَشرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ، وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ',
+      englishText:
+          'We have reached the morning and at this very time unto Allah belongs all sovereignty...',
       frenchText: 'Nous sommes au matin et la royauté appartient à Allah...',
       virtue: 'اعتراف بملك الله المطلق، وطلب السكينة والحماية من عذاب القبر.',
-      sourceText: 'كان النبي ﷺ إذا أصبح قال: "أصبحنا وأصبح الملك لله، والحمد لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، رب أسألك خير ما في هذا اليوم وخير ما بعده، وأعوذ بك من شر ما في هذا اليوم وشر ما بعده، رب أعوذ بك من الكسل وسوء الكبر، رب أعوذ بك من عذاب في النار وعذاب في القبر".',
+      sourceText:
+          'كان النبي ﷺ إذا أصبح قال: "أصبحنا وأصبح الملك لله، والحمد لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، رب أسألك خير ما في هذا اليوم وخير ما بعده، وأعوذ بك من شر ما في هذا اليوم وشر ما بعده، رب أعوذ بك من الكسل وسوء الكبر، رب أعوذ بك من عذاب في النار وعذاب في القبر".',
       sourceRef: 'رواه مسلم',
       repetitions: 1,
     ),
     Dhikr(
       id: 'morning_sayyid',
       category: DhikrCategory.morning,
-      arabicText: 'اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلاَّ أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ',
-      englishText: 'O Allah, You are my Lord, none has the right to be worshipped except You...',
-      frenchText: 'Ô Allah ! Tu es mon Seigneur, il n’y a de divinité que Toi...',
+      arabicText:
+          'اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلاَّ أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ',
+      englishText:
+          'O Allah, You are my Lord, none has the right to be worshipped except You...',
+      frenchText:
+          'Ô Allah ! Tu es mon Seigneur, il n’y a de divinité que Toi...',
       virtue: 'سيد الاستغفار، من قاله موقناً به ومات من يومه دخل الجنة.',
-      sourceText: 'قال رسول الله ﷺ: "سيد الاستغفار أن تقول: اللهم أنت ربي لا إله إلا أنت، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتك علي، وأبوء لك بذنبي فاغفر لي فإنه لا يغفر الذنوب إلا أنت. قال: ومن قالها من النهار موقنا بها، فمات من يومه قبل أن يمسي، فهو من أهل الجنة، ومن قالها من الليل وهو موقن بها، فمات قبل أن يصبح، فهو من أهل الجنة".',
+      sourceText:
+          'قال رسول الله ﷺ: "سيد الاستغفار أن تقول: اللهم أنت ربي لا إله إلا أنت، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتك علي، وأبوء لك بذنبي فاغفر لي فإنه لا يغفر الذنوب إلا أنت. قال: ومن قالها من النهار موقنا بها، فمات من يومه قبل أن يمسي، فهو من أهل الجنة، ومن قالها من الليل وهو موقن بها، فمات قبل أن يصبح، فهو من أهل الجنة".',
       sourceRef: 'رواه البخاري',
       repetitions: 1,
       isEssential: true,
@@ -77,33 +98,44 @@ class DhikrRepository {
     Dhikr(
       id: 'morning_shukr',
       category: DhikrCategory.morning,
-      arabicText: 'اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ',
-      englishText: 'O Allah, whatever blessing has been received by me or by any of Your creatures in the morning is from You alone...',
-      frenchText: 'Ô Allah ! Tout bienfait qui m’arrive à moi ou à l’une de Tes créatures en ce matin provient de Toi seul...',
+      arabicText:
+          'اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ',
+      englishText:
+          'O Allah, whatever blessing has been received by me or by any of Your creatures in the morning is from You alone...',
+      frenchText:
+          'Ô Allah ! Tout bienfait qui m’arrive à moi ou à l’une de Tes créatures en ce matin provient de Toi seul...',
       virtue: 'من قالها حين يصبح فقد أدى شكر يومه.',
-      sourceText: 'قال رسول الله ﷺ: "من قال حين يصبح: اللهم ما أصبح بي من نعمة، أو بأحد من خلقك فمنك وحدك لا شريك لك، فلك الحمد ولك الشكر، فقد أدى شكر يومه، ومن قال مثل ذلك حين يمسي فقد أدى شكر ليلته".',
+      sourceText:
+          'قال رسول الله ﷺ: "من قال حين يصبح: اللهم ما أصبح بي من نعمة، أو بأحد من خلقك فمنك وحدك لا شريك لك، فلك الحمد ولك الشكر، فقد أدى شكر يومه، ومن قال مثل ذلك حين يمسي فقد أدى شكر ليلته".',
       sourceRef: 'رواه أبو داود',
       repetitions: 1,
     ),
     Dhikr(
       id: 'morning_afiyah',
       category: DhikrCategory.morning,
-      arabicText: 'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَهَ إِلَّا أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَهَ إِلَّا أَنْتَ',
-      frenchText: 'Ô Allah ! Préserve ma santé dans mon corps, mon ouïe et ma vue...',
-      englishText: 'O Allah, make me healthy in my body, my hearing and my sight...',
+      arabicText:
+          'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَهَ إِلَّا أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَهَ إِلَّا أَنْتَ',
+      frenchText:
+          'Ô Allah ! Préserve ma santé dans mon corps, mon ouïe et ma vue...',
+      englishText:
+          'O Allah, make me healthy in my body, my hearing and my sight...',
       virtue: 'طلب العافية والوقاية من الفقر وعذاب القبر.',
-      sourceText: 'عن عبد الرحمن بن أبي بكرة قال لأبيه: يا أبتِ إني أسمعك تدعو كل صباح: اللهم عافني في بدني... .',
+      sourceText:
+          'عن عبد الرحمن بن أبي بكرة قال لأبيه: يا أبتِ إني أسمعك تدعو كل صباح: اللهم عافني في بدني... .',
       sourceRef: 'رواه أبو داود',
       repetitions: 3,
     ),
     Dhikr(
       id: 'morning_hasbi',
       category: DhikrCategory.morning,
-      arabicText: 'حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ',
+      arabicText:
+          'حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ',
       frenchText: 'Allah me suffit. Il n’y a de divinité que Lui...',
-      englishText: 'Allah is sufficient for me. None has the right to be worshipped except Him...',
+      englishText:
+          'Allah is sufficient for me. None has the right to be worshipped except Him...',
       virtue: 'من قالها سبع مرات كفاه الله ما أهمه من أمر الدنيا والآخرة.',
-      sourceText: 'عن أبي الدرداء رضي الله عنه قال: "من قال إذا أصبح وإذا أمسى: حسبي الله لا إله إلا هو عليه توكلت وهو رب العرش العظيم، سبع مرات، كفاه الله ما أهمه صادقاً كان بها أو كاذباً".',
+      sourceText:
+          'عن أبي الدرداء رضي الله عنه قال: "من قال إذا أصبح وإذا أمسى: حسبي الله لا إله إلا هو عليه توكلت وهو رب العرش العظيم، سبع مرات، كفاه الله ما أهمه صادقاً كان بها أو كاذباً".',
       sourceRef: 'رواه ابن السني',
       repetitions: 7,
       isEssential: true,
@@ -111,9 +143,12 @@ class DhikrRepository {
     Dhikr(
       id: 'morning_aafiyah_2',
       category: DhikrCategory.morning,
-      arabicText: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ: فِي دِينِي وَدُنْيَايَ وَأَهْلِي، وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي، وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي',
-      frenchText: 'Ô Allah ! Je Te demande le pardon et le salut dans ma religion, ma vie ici-bas, ma famille et mes biens...',
-      englishText: 'O Allah, I ask You for pardon and well-being in this world and the next...',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ: فِي دِينِي وَدُنْيَايَ وَأَهْلِي، وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي، وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي',
+      frenchText:
+          'Ô Allah ! Je Te demande le pardon et le salut dans ma religion, ma vie ici-bas, ma famille et mes biens...',
+      englishText:
+          'O Allah, I ask You for pardon and well-being in this world and the next...',
       virtue: 'دعاء للحفظ الإلهي من الجهات الست ولستر العورات والأمن من الروع.',
       sourceText: 'لم يكن رسول الله ﷺ يدع هؤلاء الكلمات حين يمسي وحين يصبح.',
       sourceRef: 'رواه أبو داود وابن ماجه',
@@ -122,9 +157,12 @@ class DhikrRepository {
     Dhikr(
       id: 'morning_bismillah',
       category: DhikrCategory.morning,
-      arabicText: 'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ',
-      englishText: 'In the Name of Allah, Who with His Name nothing can cause harm...',
-      frenchText: 'Au nom d’Allah, tel qu’en compagnie de Son Nom rien ne peut nuire...',
+      arabicText:
+          'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ',
+      englishText:
+          'In the Name of Allah, Who with His Name nothing can cause harm...',
+      frenchText:
+          'Au nom d’Allah, tel qu’en compagnie de Son Nom rien ne peut nuire...',
       virtue: 'تحصين شامل، من قاله ثلاث مرات لم يضره شيء.',
       sourceText: 'قال رسول الله ﷺ: "من قال حين يصبح ثلاث مرات لم يضره شيء".',
       sourceRef: 'رواه الترمذي',
@@ -134,11 +172,14 @@ class DhikrRepository {
     Dhikr(
       id: 'morning_raditu',
       category: DhikrCategory.morning,
-      arabicText: 'رَضِيتُ بِاللَّهِ رَبَّاً، وَبِالْإِسْلَامِ دِيناً، وَبِمُحَمَّدٍ ﷺ نَبِيَّاً',
-      englishText: 'I am pleased with Allah as my Lord, with Islam as my religion...',
+      arabicText:
+          'رَضِيتُ بِاللَّهِ رَبَّاً، وَبِالْإِسْلَامِ دِيناً، وَبِمُحَمَّدٍ ﷺ نَبِيَّاً',
+      englishText:
+          'I am pleased with Allah as my Lord, with Islam as my religion...',
       frenchText: 'J’ai agréé Allah comme Seigneur, l’Islam comme religion...',
       virtue: 'كان حقاً على الله أن يرضي قائله يوم القيامة.',
-      sourceText: 'قال رسول الله ﷺ: "من قال حين يصبح: رضيت بالله رباً، وبالإسلام ديناً، وبمحمد ﷺ نبياً، ثلاث مرات، كان حقاً على الله أن يرضيه يوم القيامة".',
+      sourceText:
+          'قال رسول الله ﷺ: "من قال حين يصبح: رضيت بالله رباً، وبالإسلام ديناً، وبمحمد ﷺ نبياً، ثلاث مرات، كان حقاً على الله أن يرضيه يوم القيامة".',
       sourceRef: 'رواه الترمذي',
       repetitions: 3,
       isEssential: true,
@@ -146,22 +187,29 @@ class DhikrRepository {
     Dhikr(
       id: 'morning_subhan',
       category: DhikrCategory.morning,
-      arabicText: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ: عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ',
-      frenchText: 'Gloire et louange à Allah, autant de fois qu’Il a de créatures...',
-      englishText: 'Glory is to Allah and praise is to Him, by the multitude of His creation...',
+      arabicText:
+          'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ: عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ',
+      frenchText:
+          'Gloire et louange à Allah, autant de fois qu’Il a de créatures...',
+      englishText:
+          'Glory is to Allah and praise is to Him, by the multitude of His creation...',
       virtue: 'كلمات تعدل في أجرها الذكر الطويل المتواصل لفضلها عند الله.',
-      sourceText: 'عن جويرية بنت الحارث رضي الله عنها أن النبي ﷺ خرج من عندها بكرة حين صلى الصبح، وهي في مسجدها، ثم رجع بعد أن أضحى، وهي جالسة، فقال: "ما زلت على الحالة التي فارقتك عليها؟" قالت: نعم، قال النبي ﷺ: "لقد قلت بعدك أربع كلمات، ثلاث مرات، لو وزنت بما قلت منذ اليوم لوزنتهن: سبحان الله وبحمده، عدد خلقه ورضا نفسه وزنة عرشه ومداد كلماته".',
+      sourceText:
+          'عن جويرية بنت الحارث رضي الله عنها أن النبي ﷺ خرج من عندها بكرة حين صلى الصبح، وهي في مسجدها، ثم رجع بعد أن أضحى، وهي جالسة، فقال: "ما زلت على الحالة التي فارقتك عليها؟" قالت: نعم، قال النبي ﷺ: "لقد قلت بعدك أربع كلمات، ثلاث مرات، لو وزنت بما قلت منذ اليوم لوزنتهن: سبحان الله وبحمده، عدد خلقه ورضا نفسه وزنة عرشه ومداد كلماته".',
       sourceRef: 'رواه مسلم',
       repetitions: 3,
     ),
     Dhikr(
       id: 'morning_tahlil_100',
       category: DhikrCategory.morning,
-      arabicText: 'لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير',
+      arabicText:
+          'لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير',
       frenchText: 'Il n’y a de divinité qu’Allah, l’Unique sans associé...',
-      englishText: 'None has the right to be worshipped except Allah, alone, without partner...',
+      englishText:
+          'None has the right to be worshipped except Allah, alone, without partner...',
       virtue: 'كانت له عدل عشر رقاب، وكتبت له مائة حسنة، ومحيت عنه مائة سيئة.',
-      sourceText: 'قال رسول الله ﷺ: "من قال: لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير، في يوم مائة مرة، كانت له عدل عشر رقاب، وكتبت له مائة حسنة، ومحيت عنه مائة سيئة، وكانت له حرزاً من الشيطان يومه ذلك حتى يمسي، ولم يأت أحد بأفضل مما جاء به إلا رجل عمل أكثر منه".',
+      sourceText:
+          'قال رسول الله ﷺ: "من قال: لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير، في يوم مائة مرة، كانت له عدل عشر رقاب، وكتبت له مائة حسنة، ومحيت عنه مائة سيئة، وكانت له حرزاً من الشيطان يومه ذلك حتى يمسي، ولم يأت أحد بأفضل مما جاء به إلا رجل عمل أكثر منه".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 10,
     ),
@@ -169,54 +217,73 @@ class DhikrRepository {
       id: 'morning_astaghfir',
       category: DhikrCategory.morning,
       arabicText: 'أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ',
-      englishText: 'I seek Allah’s forgiveness and I turn in repentance to Him.',
+      englishText:
+          'I seek Allah’s forgiveness and I turn in repentance to Him.',
       frenchText: 'Je demande pardon à Allah et je me repens à Lui.',
       virtue: 'امتثال لسنة النبي ﷺ الذي كان يستغفر باليوم مائة مرة.',
-      sourceText: 'قال ﷺ: "يا أيها الناس توبوا إلى الله فإني أتوب في اليوم مائة مرة".',
+      sourceText:
+          'قال ﷺ: "يا أيها الناس توبوا إلى الله فإني أتوب في اليوم مائة مرة".',
       sourceRef: 'رواه مسلم',
       repetitions: 10,
     ),
     Dhikr(
       id: 'morning_ilman_nafian',
       category: DhikrCategory.morning,
-      arabicText: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا',
-      frenchText: 'Ô Allah ! Je Te demande un savoir utile, une subsistance bonne et une œuvre agréée.',
-      englishText: 'O Allah, I ask You for knowledge that is of benefit, a good provision, and deeds that will be accepted.',
-      virtue: 'يقال بعد صلاة الصبح، وهو طلب لأصول النجاح في اليوم: العلم والرزق والعمل.',
-      sourceText: 'كان النبي ﷺ يقول إذا صلى الصبح حين يسلم: "اللهم إني أسألك علماً نافعاً، ورزقاً طيباً، وعملاً متقبلاً".',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا',
+      frenchText:
+          'Ô Allah ! Je Te demande un savoir utile, une subsistance bonne et une œuvre agréée.',
+      englishText:
+          'O Allah, I ask You for knowledge that is of benefit, a good provision, and deeds that will be accepted.',
+      virtue:
+          'يقال بعد صلاة الصبح، وهو طلب لأصول النجاح في اليوم: العلم والرزق والعمل.',
+      sourceText:
+          'كان النبي ﷺ يقول إذا صلى الصبح حين يسلم: "اللهم إني أسألك علماً نافعاً، ورزقاً طيباً، وعملاً متقبلاً".',
       sourceRef: 'رواه ابن ماجه',
       repetitions: 3,
     ),
     Dhikr(
       id: 'morning_ya_hayyu',
       category: DhikrCategory.morning,
-      arabicText: 'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ',
-      frenchText: 'Ô Vivant ! Ô Celui qui subsiste par Lui-même ! C’est par Ta miséricorde que j’appelle au secours. Améliore ma situation entière et ne me laisse pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil.',
-      englishText: 'O Ever Living, O Self-Subsisting, by Your mercy I seek help. Amend for me all my affairs and do not leave me to myself even for the blinking of an eye.',
+      arabicText:
+          'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ',
+      frenchText:
+          'Ô Vivant ! Ô Celui qui subsiste par Lui-même ! C’est par Ta miséricorde que j’appelle au secours. Améliore ma situation entière et ne me laisse pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil.',
+      englishText:
+          'O Ever Living, O Self-Subsisting, by Your mercy I seek help. Amend for me all my affairs and do not leave me to myself even for the blinking of an eye.',
       virtue: 'وصية نبوية للاستغاثة بأسماء الله العظمى لكفاية الهم.',
-      sourceText: 'قال رسول الله ﷺ لفاطمة رضي الله عنها: "ما يمنعك أن تسمعي ما أوصيك به، أو تقولي إذا أصبحت وإذا أمسيت: يا حي يا قيوم برحمتك أستغيث، أصلح لي شأني كله، ولا تكلني إلى نفسي طرفة عين".',
+      sourceText:
+          'قال رسول الله ﷺ لفاطمة رضي الله عنها: "ما يمنعك أن تسمعي ما أوصيك به، أو تقولي إذا أصبحت وإذا أمسيت: يا حي يا قيوم برحمتك أستغيث، أصلح لي شأني كله، ولا تكلني إلى نفسي طرفة عين".',
       sourceRef: 'رواه النسائي',
       repetitions: 3,
     ),
     Dhikr(
       id: 'morning_hamm_hazan',
       category: DhikrCategory.morning,
-      arabicText: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ',
-      frenchText: 'Ô Allah ! Je me protège auprès de Toi contre l’anxiété et la tristesse, l’incapacité et la paresse, l’avarice et la lâcheté, le poids de la dette et la domination des hommes.',
-      englishText: 'O Allah, I seek refuge in You from anxiety and sorrow, weakness and laziness, miserliness and cowardice, the burden of debts and from being overpowered by men.',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ',
+      frenchText:
+          'Ô Allah ! Je me protège auprès de Toi contre l’anxiété et la tristesse, l’incapacité et la paresse, l’avarice et la lâcheté, le poids de la dette et la domination des hommes.',
+      englishText:
+          'O Allah, I seek refuge in You from anxiety and sorrow, weakness and laziness, miserliness and cowardice, the burden of debts and from being overpowered by men.',
       virtue: 'استعاذة شاملة من آفات القلوب والأبدان والديون.',
-      sourceText: 'عن أنس بن مالك رضي الله عنه قال: كان النبي ﷺ يكثر أن يقول: "اللهم إني أعوذ بك من الهم والحزن، والعجز والكسل، والبخل والجبن، وضلع الدين، وغلبة الرجال".',
+      sourceText:
+          'عن أنس بن مالك رضي الله عنه قال: كان النبي ﷺ يكثر أن يقول: "اللهم إني أعوذ بك من الهم والحزن، والعجز والكسل، والبخل والجبن، وضلع الدين، وغلبة الرجال".',
       sourceRef: 'رواه البخاري',
       repetitions: 3,
     ),
     Dhikr(
       id: 'morning_shirk_protection',
       category: DhikrCategory.morning,
-      arabicText: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ شَيْئًا أَعْلَمُهُ، وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُهُ',
-      frenchText: 'Ô Allah ! Je cherche protection auprès de Toi contre le fait de T’associer quoi que ce soit alors que je le sais, et je Te demande pardon pour ce que je ne sais pas.',
-      englishText: 'O Allah, I seek refuge in You lest I should associate anything with You while I know it, and I seek Your forgiveness for what I do not know.',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ شَيْئًا أَعْلَمُهُ، وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُهُ',
+      frenchText:
+          'Ô Allah ! Je cherche protection auprès de Toi contre le fait de T’associer quoi que ce soit alors que je le sais, et je Te demande pardon pour ce que je ne sais pas.',
+      englishText:
+          'O Allah, I seek refuge in You lest I should associate anything with You while I know it, and I seek Your forgiveness for what I do not know.',
       virtue: 'حماية من الشرك الأصغر والخفي، ويذهب عنك كبير الشرك وصغيره.',
-      sourceText: 'قال ﷺ: "ألا أدلك على شيء إذا قلته ذهب عنك قليل الشرك وكثيره؟ قل: اللهم إني أعوذ بك أن أشرك بك شيئاً أعلمه وأستغفرك لما لا أعلم".',
+      sourceText:
+          'قال ﷺ: "ألا أدلك على شيء إذا قلته ذهب عنك قليل الشرك وكثيره؟ قل: اللهم إني أعوذ بك أن أشرك بك شيئاً أعلمه وأستغفرك لما لا أعلم".',
       sourceRef: 'رواه أحمد',
       repetitions: 3,
     ),
@@ -226,8 +293,10 @@ class DhikrRepository {
       arabicText: 'اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ',
       englishText: 'O Allah, send prayers and peace upon our Prophet Muhammad.',
       frenchText: 'Ô Allah, prie sur notre Prophète Muhammad et salue-le.',
-      virtue: 'من صلى علي حين يصبح عشراً وحين يمسي عشراً أدركته شفاعتي يوم القيامة.',
-      sourceText: 'قال رسول الله ﷺ: "من صلى علي حين يصبح عشراً، وحين يمسي عشراً، أدركته شفاعتي يوم القيامة".',
+      virtue:
+          'من صلى علي حين يصبح عشراً وحين يمسي عشراً أدركته شفاعتي يوم القيامة.',
+      sourceText:
+          'قال رسول الله ﷺ: "من صلى علي حين يصبح عشراً، وحين يمسي عشراً، أدركته شفاعتي يوم القيامة".',
       sourceRef: 'رواه الطبراني',
       repetitions: 10,
     ),
@@ -247,11 +316,16 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_kursi',
       category: DhikrCategory.evening,
-      arabicText: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيمِ\nاللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهو الْعَلِيُّ الْعَظِيمُ',
-      englishText: 'Allah! There is no god but He, the Living, the Self-subsisting, Eternal...',
-      frenchText: 'Allah ! Point de divinité à part Lui, le Vivant, Celui qui subsiste par Lui-même...',
-      virtue: 'لحفظ المسلم من أذى الشياطين طوال الليل، من قرأها أجير من الجن حتى يصبح.',
-      sourceText: 'عن أبي بن كعب رضي الله عنه أن رسول الله ﷺ قال في فضل آية الكرسي في المساء: "من قالها حين يمسي أجير من الجن حتى يصبح، ومن قالها حين يصبح أجير منهم حتى يمسي".',
+      arabicText:
+          'أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيمِ\nاللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهو الْعَلِيُّ الْعَظِيمُ',
+      englishText:
+          'Allah! There is no god but He, the Living, the Self-subsisting, Eternal...',
+      frenchText:
+          'Allah ! Point de divinité à part Lui, le Vivant, Celui qui subsiste par Lui-même...',
+      virtue:
+          'لحفظ المسلم من أذى الشياطين طوال الليل، من قرأها أجير من الجن حتى يصبح.',
+      sourceText:
+          'عن أبي بن كعب رضي الله عنه أن رسول الله ﷺ قال في فضل آية الكرسي في المساء: "من قالها حين يمسي أجير من الجن حتى يصبح، ومن قالها حين يصبح أجير منهم حتى يمسي".',
       sourceRef: 'رواه النسائي',
       repetitions: 1,
       isEssential: true,
@@ -259,11 +333,13 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_ikhlas',
       category: DhikrCategory.evening,
-      arabicText: 'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
+      arabicText:
+          'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
       englishText: 'Say: He is Allah, the One and Only...',
       frenchText: 'Dis : "Il est Allah, Unique...',
       virtue: 'قراءتها مع المعوذتين ثلاثاً تكفيك من كل سوء.',
-      sourceText: 'قال رسول الله ﷺ: "قل هو الله أحد والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
+      sourceText:
+          'قال رسول الله ﷺ: "قل هو الله أحد والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
       sourceRef: 'رواه الترمذي',
       repetitions: 3,
       isEssential: true,
@@ -271,11 +347,14 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_falaq',
       category: DhikrCategory.evening,
-      arabicText: 'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
+      arabicText:
+          'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
       englishText: 'Say: I seek refuge with the Lord of the Dawn...',
-      frenchText: 'Dis : "Je cherche protection auprès du Seigneur de l’aube naissante...',
+      frenchText:
+          'Dis : "Je cherche protection auprès du Seigneur de l’aube naissante...',
       virtue: 'حماية من كل شر وسحر وحسد في الليل.',
-      sourceText: 'قال رسول الله ﷺ: "قل هو الله أحد والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
+      sourceText:
+          'قال رسول الله ﷺ: "قل هو الله أحد والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
       sourceRef: 'رواه الترمذي',
       repetitions: 3,
       isEssential: true,
@@ -283,11 +362,14 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_nas',
       category: DhikrCategory.evening,
-      arabicText: 'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوسْوَسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ',
+      arabicText:
+          'بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوسْوَسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ',
       englishText: 'Say: I seek refuge with the Lord of Mankind...',
-      frenchText: 'Dis : "Je cherche protection auprès du Seigneur des hommes...',
+      frenchText:
+          'Dis : "Je cherche protection auprès du Seigneur des hommes...',
       virtue: 'تحصين وحماية من الوساوس والأذى الروحي.',
-      sourceText: 'قال رسول الله ﷺ: "قل هو الله أحد والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
+      sourceText:
+          'قال رسول الله ﷺ: "قل هو الله أحد والمعوذتين حين تمسي وحين تصبح ثلاث مرات تكفيك من كل شيء".',
       sourceRef: 'رواه الترمذي',
       repetitions: 3,
       isEssential: true,
@@ -295,33 +377,42 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_1',
       category: DhikrCategory.evening,
-      arabicText: 'أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذِهِ اللَّيْلَةِ وَشرِّ مَا بَعْدَهَا، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ، وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ',
-      englishText: 'We have reached the evening and at this very time unto Allah belongs all sovereignty...',
+      arabicText:
+          'أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَذِهِ اللَّيْلَةِ وَشرِّ مَا بَعْدَهَا، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ، وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ',
+      englishText:
+          'We have reached the evening and at this very time unto Allah belongs all sovereignty...',
       frenchText: 'Nous sommes au soir et la royauté appartient à Allah...',
       virtue: 'تسليم النفس لله وطلب العافية، وهي حصن حصين خلال ساعات الليل.',
-      sourceText: 'كان النبي ﷺ إذا أمسى قال: "أمسينا وأمسى الملك لله، والحمد لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، رب أسألك خير ما في هذه الليلة وخير ما بعدها، وأعوذ بك من شر ما في هذه الليلة وشر ما بعدها، رب أعوذ بك من الكسل وسوء الكبر، رب أعوذ بك من عذاب في النار وعذاب في القبر".',
+      sourceText:
+          'كان النبي ﷺ إذا أمسى قال: "أمسينا وأمسى الملك لله، والحمد لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، رب أسألك خير ما في هذه الليلة وخير ما بعدها، وأعوذ بك من شر ما في هذه الليلة وشر ما بعدها، رب أعوذ بك من الكسل وسوء الكبر، رب أعوذ بك من عذاب في النار وعذاب في القبر".',
       sourceRef: 'رواه مسلم',
       repetitions: 1,
     ),
     Dhikr(
       id: 'evening_2',
       category: DhikrCategory.evening,
-      arabicText: 'اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيرُ',
-      englishText: 'O Allah, by Your leave we have reached the evening and by Your leave we have reached the morning...',
-      frenchText: 'Ô Allah ! C’est par Toi que nous sommes au soir et c’est par Toi que nous sommes au matin...',
+      arabicText:
+          'اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيرُ',
+      englishText:
+          'O Allah, by Your leave we have reached the evening and by Your leave we have reached the morning...',
+      frenchText:
+          'Ô Allah ! C’est par Toi que nous sommes au soir et c’est par Toi que nous sommes au matin...',
       virtue: 'اعتراف بفضل الله وتدبيره للأوقات والحياة والموت.',
-      sourceText: 'عن أبي هريرة رضي الله عنه قال: كان النبي ﷺ يعلم أصحابه يقول: "إذا أصبح أحدكم فليقل: اللهم بك أصبحنا، وبك أمسينا، وبك نحيا، وبك نموت وإليك النشور، وإذا أمسى فليقل: اللهم بك أمسينا، وبك أصبحنا، وبك نحيا، وبك نموت وإليك المصير".',
+      sourceText:
+          'عن أبي هريرة رضي الله عنه قال: كان النبي ﷺ يعلم أصحابه يقول: "إذا أصبح أحدكم فليقل: اللهم بك أصبحنا، وبك أمسينا، وبك نحيا، وبك نموت وإليك النشور، وإذا أمسى فليقل: اللهم بك أمسينا، وبك أصبحنا، وبك نحيا، وبك نموت وإليك المصير".',
       sourceRef: 'رواه الترمذي',
       repetitions: 1,
     ),
     Dhikr(
       id: 'evening_sayyid',
       category: DhikrCategory.evening,
-      arabicText: 'اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلاَّ أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ',
+      arabicText:
+          'اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلاَّ أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ',
       englishText: 'O Allah, You are my Lord...',
       frenchText: 'Ô Allah ! Tu es mon Seigneur...',
       virtue: 'سيد الاستغفار، من قاله موقناً به ومات من ليلته دخل الجنة.',
-      sourceText: 'قال رسول الله ﷺ: "سيد الاستغفار أن تقول: اللهم أنت ربي..." فذكر الحديث.',
+      sourceText:
+          'قال رسول الله ﷺ: "سيد الاستغفار أن تقول: اللهم أنت ربي..." فذكر الحديث.',
       sourceRef: 'رواه البخاري',
       repetitions: 1,
       isEssential: true,
@@ -329,33 +420,41 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_shukr',
       category: DhikrCategory.evening,
-      arabicText: 'اللَّهُمَّ مَا أَمْسَى بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ',
-      englishText: 'O Allah, whatever blessing has been received by me or by any of Your creatures in the evening is from You alone...',
-      frenchText: 'Ô Allah ! Tout bienfait qui m’arrive à moi ou à l’une de Tes créatures en ce soir provient de Toi seul...',
+      arabicText:
+          'اللَّهُمَّ مَا أَمْسَى بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ',
+      englishText:
+          'O Allah, whatever blessing has been received by me or by any of Your creatures in the evening is from You alone...',
+      frenchText:
+          'Ô Allah ! Tout bienfait qui m’arrive à moi ou à l’une de Tes créatures en ce soir provient de Toi seul...',
       virtue: 'من قالها حين يمسي فقد أدى شكر ليلته.',
-      sourceText: 'قال رسول الله ﷺ: "من قال حين يمسي: اللهم ما أمسى بي من نعمة، أو بأحد من خلقك فمنك وحدك لا شريك لك، فلك الحمد ولك الشكر، فقد أدى شكر ليلته، ومن قال مثل ذلك حين يصبح فقد أدى شكر يومه".',
+      sourceText:
+          'قال رسول الله ﷺ: "من قال حين يمسي: اللهم ما أمسى بي من نعمة، أو بأحد من خلقك فمنك وحدك لا شريك لك، فلك الحمد ولك الشكر، فقد أدى شكر ليلته، ومن قال مثل ذلك حين يصبح فقد أدى شكر يومه".',
       sourceRef: 'رواه أبو داود',
       repetitions: 1,
     ),
     Dhikr(
       id: 'evening_afiyah',
       category: DhikrCategory.evening,
-      arabicText: 'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَهَ إِلَّا أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَهَ إِلَّا أَنْتَ',
+      arabicText:
+          'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَهَ إِلَّا أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَهَ إِلَّا أَنْتَ',
       frenchText: 'Ô Allah ! Préserve ma santé dans mon corps...',
       englishText: 'O Allah, make me healthy in my body...',
       virtue: 'طلب العافية والوقاية من الفقر وعذاب القبر.',
-      sourceText: 'عن عبد الرحمن بن أبي بكرة قال لأبيه: يا أبتِ إني أسمعك تدعو كل مساء: اللهم عافني في بدني... .',
+      sourceText:
+          'عن عبد الرحمن بن أبي بكرة قال لأبيه: يا أبتِ إني أسمعك تدعو كل مساء: اللهم عافني في بدني... .',
       sourceRef: 'رواه أبو داود',
       repetitions: 3,
     ),
     Dhikr(
       id: 'evening_hasbi',
       category: DhikrCategory.evening,
-      arabicText: 'حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهو رَبُّ الْعَرْشِ الْعَظِيمِ',
+      arabicText:
+          'حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهو رَبُّ الْعَرْشِ الْعَظِيمِ',
       frenchText: 'Allah me suffit. Il n’y a de divinité que Lui...',
       englishText: 'Allah is sufficient for me...',
       virtue: 'من قالها سبع مرات كفاه الله ما أهمه من أمر الدنيا والآخرة.',
-      sourceText: 'عن أبي الدرداء رضي الله عنه قال: "من قال إذا أصبح وإذا أمسى: حسبي الله لا إله إلا هو عليه توكلت وهو رب العرش العظيم، سبع مرات، كفاه الله ما أهمه صادقاً كان بها أو كاذباً".',
+      sourceText:
+          'عن أبي الدرداء رضي الله عنه قال: "من قال إذا أصبح وإذا أمسى: حسبي الله لا إله إلا هو عليه توكلت وهو رب العرش العظيم، سبع مرات، كفاه الله ما أهمه صادقاً كان بها أو كاذباً".',
       sourceRef: 'رواه ابن السني',
       repetitions: 7,
       isEssential: true,
@@ -363,7 +462,8 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_aafiyah_2',
       category: DhikrCategory.evening,
-      arabicText: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ: فِي دِينِي وَدُنْيَايَ وَأَهْلِي، وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي، وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ: فِي دِينِي وَدُنْيَايَ وَأَهْلِي، وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي، وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي',
       frenchText: 'Ô Allah ! Je Te demande le pardon et le salut...',
       englishText: 'O Allah, I ask You for pardon and well-being...',
       virtue: 'دعاء للحفظ والأمن من كل جانب.',
@@ -374,11 +474,13 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_bismillah',
       category: DhikrCategory.evening,
-      arabicText: 'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاء وَهو السَّمِيعُ الْعَلِيمُ',
+      arabicText:
+          'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاء وَهو السَّمِيعُ الْعَلِيمُ',
       englishText: 'In the Name of Allah...',
       frenchText: 'Au nom d’Allah...',
       virtue: 'من قالها ثلاث مرات لم تصبه فجأة بلاء حتى يصبح.',
-      sourceText: 'عن أبان بن عثمان عن عثمان بن عفان رضي الله عنه قال: سمعت رسول الله ﷺ يقول: "من قال: بسم الله الذي لا يضر مع اسمه شيء في الأرض ولا في السماء وهو السميع العليم، ثلاث مرات، لم تصبه فجأة بلاء حتى يصبح، ومن قالها حين يصبح ثلاث مرات لم تصبه فجأة بلاء حتى يمسي".',
+      sourceText:
+          'عن أبان بن عثمان عن عثمان بن عفان رضي الله عنه قال: سمعت رسول الله ﷺ يقول: "من قال: بسم الله الذي لا يضر مع اسمه شيء في الأرض ولا في السماء وهو السميع العليم، ثلاث مرات، لم تصبه فجأة بلاء حتى يصبح، ومن قالها حين يصبح ثلاث مرات لم تصبه فجأة بلاء حتى يمسي".',
       sourceRef: 'رواه الترمذي',
       repetitions: 3,
       isEssential: true,
@@ -386,11 +488,13 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_raditu',
       category: DhikrCategory.evening,
-      arabicText: 'رَضِيتُ بِاللَّهِ رَبَّاً، وَبِالْإِسْلَامِ دِيناً، وَبِمُحَمَّدٍ ﷺ نَبِيَّاً',
+      arabicText:
+          'رَضِيتُ بِاللَّهِ رَبَّاً، وَبِالْإِسْلَامِ دِيناً، وَبِمُحَمَّدٍ ﷺ نَبِيَّاً',
       englishText: 'I am pleased with Allah...',
       frenchText: 'J’ai agréé Allah...',
       virtue: 'كان حقاً على الله أن يرضي قائله يوم القيامة.',
-      sourceText: 'قال رسول الله ﷺ: "من قال حين يمسي: رضيت بالله رباً، وبالإسلام ديناً، وبمحمد ﷺ نبياً، كان حقاً على الله أن يرضيه".',
+      sourceText:
+          'قال رسول الله ﷺ: "من قال حين يمسي: رضيت بالله رباً، وبالإسلام ديناً، وبمحمد ﷺ نبياً، كان حقاً على الله أن يرضيه".',
       sourceRef: 'رواه الترمذي',
       repetitions: 3,
       isEssential: true,
@@ -398,11 +502,14 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_auzu',
       category: DhikrCategory.evening,
-      arabicText: 'أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ',
+      arabicText:
+          'أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ',
       englishText: 'I take refuge in Allah’s perfect words...',
-      frenchText: 'Je cherche protection auprès des paroles parfaites d’Allah...',
+      frenchText:
+          'Je cherche protection auprès des paroles parfaites d’Allah...',
       virtue: 'من قالها حين يمسي لم تضره لدغة تلك الليلة.',
-      sourceText: 'قال رسول الله ﷺ: "من قال حين يمسي: أعوذ بكلمات الله التامات... لم تضره حمة تلك الليلة".',
+      sourceText:
+          'قال رسول الله ﷺ: "من قال حين يمسي: أعوذ بكلمات الله التامات... لم تضره حمة تلك الليلة".',
       sourceRef: 'رواه مسلم',
       repetitions: 3,
     ),
@@ -410,44 +517,58 @@ class DhikrRepository {
     Dhikr(
       id: 'evening_tahlil_100',
       category: DhikrCategory.evening,
-      arabicText: 'لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير',
+      arabicText:
+          'لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير',
       englishText: 'None has the right to be worshipped except Allah...',
       frenchText: 'Il n’y a de divinité qu’Allah...',
       virtue: 'فضل عظيم وحماية من الشيطان طوال الليل.',
-      sourceText: 'قال رسول الله ﷺ: "من قال: لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، في يوم مائة مرة كانت له عدل عشر رقاب وكتبت له مائة حسنة ومحيت عنه مائة سيئة".',
+      sourceText:
+          'قال رسول الله ﷺ: "من قال: لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، في يوم مائة مرة كانت له عدل عشر رقاب وكتبت له مائة حسنة ومحيت عنه مائة سيئة".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 10,
     ),
     Dhikr(
       id: 'evening_ya_hayyu',
       category: DhikrCategory.evening,
-      arabicText: 'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ',
-      frenchText: 'Ô Vivant ! Ô Celui qui subsiste par Lui-même ! C’est par Ta miséricorde que j’appelle au secours. Améliore ma situation entière et ne me laisse pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil.',
-      englishText: 'O Ever Living, O Self-Subsisting, by Your mercy I seek help. Amend for me all my affairs and do not leave me to myself even for the blinking of an eye.',
+      arabicText:
+          'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ',
+      frenchText:
+          'Ô Vivant ! Ô Celui qui subsiste par Lui-même ! C’est par Ta miséricorde que j’appelle au secours. Améliore ma situation entière et ne me laisse pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil.',
+      englishText:
+          'O Ever Living, O Self-Subsisting, by Your mercy I seek help. Amend for me all my affairs and do not leave me to myself even for the blinking of an eye.',
       virtue: 'وصية نبوية للاستغاثة بأسماء الله العظمى لكفاية الهم.',
-      sourceText: 'قال رسول الله ﷺ لفاطمة رضي الله عنها: "ما يمنعك أن تسمعي ما أوصيك به، أو تقولي إذا أصبحت وإذا أمسيت: يا حي يا قيوم برحمتك أستغيث، أصلح لي شأني كله، ولا تكلني إلى نفسي طرفة عين".',
+      sourceText:
+          'قال رسول الله ﷺ لفاطمة رضي الله عنها: "ما يمنعك أن تسمعي ما أوصيك به، أو تقولي إذا أصبحت وإذا أمسيت: يا حي يا قيوم برحمتك أستغيث، أصلح لي شأني كله، ولا تكلني إلى نفسي طرفة عين".',
       sourceRef: 'رواه النسائي',
       repetitions: 3,
     ),
     Dhikr(
       id: 'evening_hamm_hazan',
       category: DhikrCategory.evening,
-      arabicText: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ',
-      frenchText: 'Ô Allah ! Je me protège auprès de Toi contre l’anxiété et la tristesse, l’incapacité et la paresse, l’avarice et la lâcheté, le poids de la dette et la domination des hommes.',
-      englishText: 'O Allah, I seek refuge in You from anxiety and sorrow, weakness and laziness, miserliness and cowardice, the burden of debts and from being overpowered by men.',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ',
+      frenchText:
+          'Ô Allah ! Je me protège auprès de Toi contre l’anxiété et la tristesse, l’incapacité et la paresse, l’avarice et la lâcheté, le poids de la dette et la domination des hommes.',
+      englishText:
+          'O Allah, I seek refuge in You from anxiety and sorrow, weakness and laziness, miserliness and cowardice, the burden of debts and from being overpowered by men.',
       virtue: 'استعاذة شاملة من آفات القلوب والأبدان والديون.',
-      sourceText: 'عن أنس بن مالك رضي الله عنه قال: كان النبي ﷺ يكثر أن يقول: "اللهم إني أعوذ بك من الهم والحزن، والعجز والكسل، والبخل والجبن، وضلع الدين، وغلبة الرجال".',
+      sourceText:
+          'عن أنس بن مالك رضي الله عنه قال: كان النبي ﷺ يكثر أن يقول: "اللهم إني أعوذ بك من الهم والحزن، والعجز والكسل، والبخل والجبن، وضلع الدين، وغلبة الرجال".',
       sourceRef: 'رواه البخاري',
       repetitions: 3,
     ),
     Dhikr(
       id: 'evening_shirk_protection',
       category: DhikrCategory.evening,
-      arabicText: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ شَيْئًا أَعْلَمُهُ، وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُهُ',
-      frenchText: 'Ô Allah ! Je cherche protection auprès de Toi contre le fait de T’associer quoi que ce soit alors que je le sais, et je Te demande pardon pour ce que je ne sais pas.',
-      englishText: 'O Allah, I seek refuge in You lest I should associate anything with You while I know it, and I seek Your forgiveness for what I do not know.',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ شَيْئًا أَعْلَمُهُ، وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُهُ',
+      frenchText:
+          'Ô Allah ! Je cherche protection auprès de Toi contre le fait de T’associer quoi que ce soit alors que je le sais, et je Te demande pardon pour ce que je ne sais pas.',
+      englishText:
+          'O Allah, I seek refuge in You lest I should associate anything with You while I know it, and I seek Your forgiveness for what I do not know.',
       virtue: 'حماية من الشرك الأصغر والخفي، ويذهب عنك كبير الشرك وصغيره.',
-      sourceText: 'قال ﷺ: "ألا أدلك على شيء إذا قلته ذهب عنك قليل الشرك وكثيره؟ قل: اللهم إني أعوذ بك أن أشرك بك شيئاً أعلمه وأستغفرك لما لا أعلم".',
+      sourceText:
+          'قال ﷺ: "ألا أدلك على شيء إذا قلته ذهب عنك قليل الشرك وكثيره؟ قل: اللهم إني أعوذ بك أن أشرك بك شيئاً أعلمه وأستغفرك لما لا أعلم".',
       sourceRef: 'رواه أحمد',
       repetitions: 3,
     ),
@@ -458,7 +579,8 @@ class DhikrRepository {
       englishText: 'O Allah, send prayers and peace upon our Prophet Muhammad.',
       frenchText: 'Ô Allah, prie sur notre Prophète Muhammad...',
       virtue: 'شفاعة النبي ﷺ يوم القيامة لمن صلى عليه عشراً.',
-      sourceText: 'قال رسول الله ﷺ: "من صلى علي حين يصبح عشراً، وحين يمسي عشراً، أدركته شفاعتي يوم القيامة".',
+      sourceText:
+          'قال رسول الله ﷺ: "من صلى علي حين يصبح عشراً، وحين يمسي عشراً، أدركته شفاعتي يوم القيامة".',
       sourceRef: 'رواه الطبراني',
       repetitions: 10,
     ),
@@ -468,8 +590,10 @@ class DhikrRepository {
       arabicText: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',
       englishText: 'Glory is to Allah...',
       frenchText: 'Gloire et louange à Allah.',
-      virtue: 'من قالها مائة مرة لم يأتِ أحد يوم القيامة بأفضل مما جاء به إلا من قال مثل ذلك.',
-      sourceText: 'قال رسول الله ﷺ: "من قال: سبحان الله وبحمده، في يوم مائة مرة، حطت خطاياه وإن كانت مثل زبد البحر".',
+      virtue:
+          'من قالها مائة مرة لم يأتِ أحد يوم القيامة بأفضل مما جاء به إلا من قال مثل ذلك.',
+      sourceText:
+          'قال رسول الله ﷺ: "من قال: سبحان الله وبحمده، في يوم مائة مرة، حطت خطاياه وإن كانت مثل زبد البحر".',
       sourceRef: 'رواه مسلم',
       repetitions: 100,
     ),
@@ -478,22 +602,31 @@ class DhikrRepository {
     Dhikr(
       id: 'waking_1',
       category: DhikrCategory.wakingUp,
-      arabicText: 'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ',
-      englishText: 'Praise is to Allah who gives us life after He has caused us to die and to Him is the resurrection.',
-      frenchText: 'Louange à Allah qui nous a rendu la vie après nous avoir fait mourir, et c\'est vers Lui que se fera le retour.',
+      arabicText:
+          'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ',
+      englishText:
+          'Praise is to Allah who gives us life after He has caused us to die and to Him is the resurrection.',
+      frenchText:
+          'Louange à Allah qui nous a rendu la vie après nous avoir fait mourir, et c\'est vers Lui que se fera le retour.',
       virtue: 'شكر لله على حياة جديدة، واعتراف بفضله في استعادة الروح.',
-      sourceText: 'عن حذيفة بن اليمان رضي الله عنه قال: كان النبي ﷺ إذا أراد أن ينام قال: "باسمك اللهم أموت وأحيا"، وإذا استيقظ قال: "الحمد لله الذي أحيانا بعد ما أماتنا وإليه النشور".',
+      sourceText:
+          'عن حذيفة بن اليمان رضي الله عنه قال: كان النبي ﷺ إذا أراد أن ينام قال: "باسمك اللهم أموت وأحيا"، وإذا استيقظ قال: "الحمد لله الذي أحيانا بعد ما أماتنا وإليه النشور".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 1,
     ),
     Dhikr(
       id: 'waking_2',
       category: DhikrCategory.wakingUp,
-      arabicText: 'الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لِي بِذِكْرِهِ',
-      englishText: 'Praise is to Allah Who has given my body health, and restored my soul to me, and permitted me to remember Him.',
-      frenchText: 'Louange à Allah qui m\'a rendu la santé, m\'a restitué mon âme et m\'a permis de L\'évoquer.',
-      virtue: 'شكر الله على العافية البدنية والروحية، وحفظ للصحة النفسية والجسدية.',
-      sourceText: 'عن أبي هريرة رضي الله عنه عن النبي ﷺ قال: "إذا استيقظ أحدكم فليقل: الحمد لله الذي عافاني في جسدي، ورد علي روحي، وأذن لي بذكره".',
+      arabicText:
+          'الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لِي بِذِكْرِهِ',
+      englishText:
+          'Praise is to Allah Who has given my body health, and restored my soul to me, and permitted me to remember Him.',
+      frenchText:
+          'Louange à Allah qui m\'a rendu la santé, m\'a restitué mon âme et m\'a permis de L\'évoquer.',
+      virtue:
+          'شكر الله على العافية البدنية والروحية، وحفظ للصحة النفسية والجسدية.',
+      sourceText:
+          'عن أبي هريرة رضي الله عنه عن النبي ﷺ قال: "إذا استيقظ أحدكم فليقل: الحمد لله الذي عافاني في جسدي، ورد علي روحي، وأذن لي بذكره".',
       sourceRef: 'رواه الترمذي',
       repetitions: 1,
     ),
@@ -503,18 +636,22 @@ class DhikrRepository {
     Dhikr(
       id: 'sleep_ikhlas',
       category: DhikrCategory.sleep,
-      arabicText: 'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
+      arabicText:
+          'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
       frenchText: 'Sourate Al-Ikhlas (Le Monothéisme Pur)',
       englishText: 'Surah Al-Ikhlas (The Sincerity)',
-      virtue: 'سنة نبوية عند النوم للتحصين والبركة، يجمع كفيه وينفث فيهما ثم يمسح جسده.',
-      sourceText: 'كان النبي ﷺ إذا أوى إلى فراشه كل ليلة جمع كفيه ثم نفث فيهما فقرأ الإخلاص والمعوذتين.',
+      virtue:
+          'سنة نبوية عند النوم للتحصين والبركة، يجمع كفيه وينفث فيهما ثم يمسح جسده.',
+      sourceText:
+          'كان النبي ﷺ إذا أوى إلى فراشه كل ليلة جمع كفيه ثم نفث فيهما فقرأ الإخلاص والمعوذتين.',
       sourceRef: 'رواه البخاري',
       repetitions: 3,
     ),
     Dhikr(
       id: 'sleep_falaq',
       category: DhikrCategory.sleep,
-      arabicText: 'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
+      arabicText:
+          'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
       frenchText: 'Sourate Al-Falaq (L\'Aube Naissante)',
       englishText: 'Surah Al-Falaq (The Daybreak)',
       virtue: 'تحصين من شرور المخلوقات والسحر والحسد.',
@@ -526,7 +663,8 @@ class DhikrRepository {
     Dhikr(
       id: 'sleep_nas',
       category: DhikrCategory.sleep,
-      arabicText: 'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ',
+      arabicText:
+          'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ',
       frenchText: 'Sourate Al-Nas (Les Hommes)',
       englishText: 'Surah Al-Nas (The Mankind)',
       virtue: 'تحصين من وسواس الشيطان والجن.',
@@ -538,11 +676,14 @@ class DhikrRepository {
     Dhikr(
       id: 'sleep_kursi',
       category: DhikrCategory.sleep,
-      arabicText: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيمِ\nاللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهو الْعَلِيُّ الْعَظِيمُ',
+      arabicText:
+          'أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيمِ\nاللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهو الْعَلِيُّ الْعَظِيمُ',
       englishText: 'Allah! There is no god but He...',
       frenchText: 'Allah ! Point de divinité à part Lui...',
-      virtue: 'إذا قرأت آية الكرسي لن يزال عليك من الله حافظ ولا يقربك شيطان حتى تصبح.',
-      sourceText: 'عن أبي هريرة رضي الله عنه قال: "وكلني رسول الله ﷺ بحفظ زكاة رمضان.. الحديث، وفيه: إذا أويت إلى فراشك فاقرأ آية الكرسي، لن يزال عليك من الله حافظ، ولا يقربك شيطان حتى تصبح".',
+      virtue:
+          'إذا قرأت آية الكرسي لن يزال عليك من الله حافظ ولا يقربك شيطان حتى تصبح.',
+      sourceText:
+          'عن أبي هريرة رضي الله عنه قال: "وكلني رسول الله ﷺ بحفظ زكاة رمضان.. الحديث، وفيه: إذا أويت إلى فراشك فاقرأ آية الكرسي، لن يزال عليك من الله حافظ، ولا يقربك شيطان حتى تصبح".',
       sourceRef: 'رواه البخاري',
       repetitions: 1,
       isEssential: true,
@@ -550,11 +691,15 @@ class DhikrRepository {
     Dhikr(
       id: 'sleep_aslamtu',
       category: DhikrCategory.sleep,
-      arabicText: 'اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ',
-      englishText: 'O Allah, I submit myself to You, entrust my affairs to You...',
-      frenchText: 'Ô Allah ! Je Te soumets mon âme, je Te confie mes affaires...',
+      arabicText:
+          'اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لَا مَلْجَأَ وَلَا مَنْجَا مِنْكَ إِلَّا إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ',
+      englishText:
+          'O Allah, I submit myself to You, entrust my affairs to You...',
+      frenchText:
+          'Ô Allah ! Je Te soumets mon âme, je Te confie mes affaires...',
       virtue: 'إذا مت من ليلتك مت على الفطرة، واجعلهن آخر ما تقول.',
-      sourceText: 'قال رسول الله ﷺ للبراء بن عازب: "إذا أتيت مضجعك فتوضأ وضوءك للصلاة، ثم اضطجع على شقك الأيمن، ثم قل: اللهم أسلمت نفسي إليك، وفوضت أمري إليك، ووجهت وجهي إليك، وألجأت ظهري إليك، رغبة ورهبة إليك، لا ملجأ ولا منجا منك إلا إليك، آمنت بكتابك الذي أنزلت، وبنبيك الذي أرسلت، فإن مت من ليلتك مت على الفطرة، واجعلهن آخر ما تقول".',
+      sourceText:
+          'قال رسول الله ﷺ للبراء بن عازب: "إذا أتيت مضجعك فتوضأ وضوءك للصلاة، ثم اضطجع على شقك الأيمن، ثم قل: اللهم أسلمت نفسي إليك، وفوضت أمري إليك، ووجهت وجهي إليك، وألجأت ظهري إليك، رغبة ورهبة إليك، لا ملجأ ولا منجا منك إلا إليك، آمنت بكتابك الذي أنزلت، وبنبيك الذي أرسلت، فإن مت من ليلتك مت على الفطرة، واجعلهن آخر ما تقول".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 1,
       isEssential: true,
@@ -562,11 +707,13 @@ class DhikrRepository {
     Dhikr(
       id: 'sleep_1',
       category: DhikrCategory.sleep,
-      arabicText: 'بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ',
+      arabicText:
+          'بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ',
       englishText: 'In Your name my Lord, I lie down...',
       frenchText: 'C’est en Ton nom, Seigneur, que je pose mon côté...',
       virtue: 'استيداع النفس والجسد لله عند النوم.',
-      sourceText: 'قال النبي ﷺ: "إذا أوى أحدكم إلى فراشه فلينفض فراشه بداخلة إزاره فإنه لا يدري ما خلفه عليه، ثم يقول: باسمك ربي وضعت جنبي، وبك أرفعه، فإن أمسكت نفسي فارحمها، وإن أرسلتها فاحفظها بما تحفظ به عبادك الصالحين".',
+      sourceText:
+          'قال النبي ﷺ: "إذا أوى أحدكم إلى فراشه فلينفض فراشه بداخلة إزاره فإنه لا يدري ما خلفه عليه، ثم يقول: باسمك ربي وضعت جنبي، وبك أرفعه، فإن أمسكت نفسي فارحمها، وإن أرسلتها فاحفظها بما تحفظ به عبادك الصالحين".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 1,
     ),
@@ -575,10 +722,13 @@ class DhikrRepository {
       category: DhikrCategory.sleep,
       arabicText: '''أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيمِ
 آمَنَ الرَّسُولُ بِمَا أُنزِلَ إِلَيْهِ مِن رَّبِّهِ وَالْمُؤْمِنُونَ، كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِ، وَقَالُوا سَمِعْنَا وَأَطَعْنَا غُفْرَانَكَ رَبَّنَا وَإِليك مَصِيرُ، لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا، لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ، رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا، رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا، رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ، وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا، أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ''',
-      englishText: 'The Messenger has believed in what was revealed to him from his Lord... Allah does not charge a soul except with that which is within its capacity...',
-      frenchText: 'Le Messager a cru en ce qui lui a été descendu de son Seigneur... Allah n’impose à aucune âme une charge supérieure à sa capacité...',
+      englishText:
+          'The Messenger has believed in what was revealed to him from his Lord... Allah does not charge a soul except with that which is within its capacity...',
+      frenchText:
+          'Le Messager a cru en ce qui lui a été descendu de son Seigneur... Allah n’impose à aucune âme une charge supérieure à sa capacité...',
       virtue: 'من قرأهما في ليلة كفتاه من كل شر.',
-      sourceText: 'قال رسول الله ﷺ: "الآيتان من آخر سورة البقرة من قرأهما في ليلة كفتاه".',
+      sourceText:
+          'قال رسول الله ﷺ: "الآيتان من آخر سورة البقرة من قرأهما في ليلة كفتاه".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 1,
       isEssential: true,
@@ -587,10 +737,13 @@ class DhikrRepository {
       id: 'sleep_qini',
       category: DhikrCategory.sleep,
       arabicText: 'اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ',
-      englishText: 'O Allah, save me from Your punishment the Day You resurrect Your slaves.',
-      frenchText: 'Ô Allah ! Préserve-moi de Ton châtiment le jour où Tu ressusciteras Tes serviteurs.',
+      englishText:
+          'O Allah, save me from Your punishment the Day You resurrect Your slaves.',
+      frenchText:
+          'Ô Allah ! Préserve-moi de Ton châtiment le jour où Tu ressusciteras Tes serviteurs.',
       virtue: 'كان النبي ﷺ يضعه يده اليمنى تحت خده ويقولها ثلاثاً.',
-      sourceText: 'كان رسول الله ﷺ إذا أراد أن ينام وضع يده اليمنى تحت خده، ثم قال: "اللهم قني عذابك يوم تبعث عبادك".',
+      sourceText:
+          'كان رسول الله ﷺ إذا أراد أن ينام وضع يده اليمنى تحت خده، ثم قال: "اللهم قني عذابك يوم تبعث عبادك".',
       sourceRef: 'رواه أبو داود',
       repetitions: 3,
     ),
@@ -601,7 +754,8 @@ class DhikrRepository {
       englishText: 'Glory is to Allah.',
       frenchText: 'Gloire à Allah.',
       virtue: 'خير لكما من خادم، يعطي قوة للبدن في اليوم التالي.',
-      sourceText: 'أن فاطمة رضي الله عنها أتت النبي ﷺ تسأله خادماً، فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال علي: فجاءنا وقد أخذنا مضاجعنا، فقال: "ألا أدلكما على خير مما سألتما؟ إذا أويتما إلى فراشكما فسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، وكبرا أربعاً وثلاثين، فهو خير لكما من خادم".',
+      sourceText:
+          'أن فاطمة رضي الله عنها أتت النبي ﷺ تسأله خادماً، فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال علي: فجاءنا وقد أخذنا مضاجعنا، فقال: "ألا أدلكما على خير مما سألتما؟ إذا أويتما إلى فراشكما فسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، وكبرا أربعاً وثلاثين، فهو خير لكما من خادم".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 33,
     ),
@@ -612,7 +766,8 @@ class DhikrRepository {
       englishText: 'Praise is to Allah.',
       frenchText: 'Louange à Allah.',
       virtue: 'خير لكما من خادم، يعطي قوة للبدن في اليوم التالي.',
-      sourceText: 'أن فاطمة رضي الله عنها أتت النبي ﷺ تسأله خادماً، فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال علي: فجاءنا وقد أخذنا مضاجعنا، فقال: "ألا أدلكما على خير مما سألتما؟ إذا أويتما إلى فراشكما فسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، وكبرا أربعاً وثلاثين، فهو خير لكما من خادم".',
+      sourceText:
+          'أن فاطمة رضي الله عنها أتت النبي ﷺ تسأله خادماً، فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال علي: فجاءنا وقد أخذنا مضاجعنا، فقال: "ألا أدلكما على خير مما سألتما؟ إذا أويتما إلى فراشكما فسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، وكبرا أربعاً وثلاثين، فهو خير لكما من خادم".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 33,
     ),
@@ -623,18 +778,23 @@ class DhikrRepository {
       englishText: 'Allah is the Greatest.',
       frenchText: 'Allah est le plus Grand.',
       virtue: 'خير لكما من خادم، يعطي قوة للبدن في اليوم التالي.',
-      sourceText: 'أن فاطمة رضي الله عنها أتت النبي ﷺ تسأله خادماً، فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال علي: فجاءنا وقد أخذنا مضاجعنا، فقال: "ألا أدلكما على خير مما سألتما؟ إذا أويتما إلى فراشكما فسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، وكبرا أربعاً وثلاثين، فهو خير لكما من خادم".',
+      sourceText:
+          'أن فاطمة رضي الله عنها أتت النبي ﷺ تسأله خادماً، فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال علي: فجاءنا وقد أخذنا مضاجعنا، فقال: "ألا أدلكما على خير مما سألتما؟ إذا أويتما إلى فراشكما فسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، وكبرا أربعاً وثلاثين، فهو خير لكما من خادم".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 34,
     ),
     Dhikr(
       id: 'sleep_kafirun',
       category: DhikrCategory.sleep,
-      arabicText: '''بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ يَا أَيُّهَا الْكَافِرُونَ، لَا أَعْبُدُ مَا تَعْبُدُونَ، وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ، وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ، وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ، لَكُمْ دِينُكُمْ وَلِيَ دِينِ''',
-      englishText: 'Say, "O disbelievers, I do not worship what you worship..."',
-      frenchText: 'Dis : "Ô vous les infidèles ! Je n’adore pas ce que vous adorez..."',
+      arabicText:
+          '''بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ يَا أَيُّهَا الْكَافِرُونَ، لَا أَعْبُدُ مَا تَعْبُدُونَ، وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ، وَلَا أَنَا عَابِدٌ مَّا عَبَدتُّمْ، وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ، لَكُمْ دِينُكُمْ وَلِيَ دِينِ''',
+      englishText:
+          'Say, "O disbelievers, I do not worship what you worship..."',
+      frenchText:
+          'Dis : "Ô vous les infidèles ! Je n’adore pas ce que vous adorez..."',
       virtue: 'هي براءة من الشرك.',
-      sourceText: 'قال رسول الله ﷺ لنوفل رضي الله عنه: "اقرأ قل يا أيها الكافرون ثم نم على خاتمتها فإنها براءة من الشرك".',
+      sourceText:
+          'قال رسول الله ﷺ لنوفل رضي الله عنه: "اقرأ قل يا أيها الكافرون ثم نم على خاتمتها فإنها براءة من الشرك".',
       sourceRef: 'رواه أبو داود والترمذي',
       repetitions: 1,
     ),
@@ -647,29 +807,36 @@ class DhikrRepository {
       englishText: 'I ask Allah for forgiveness.',
       frenchText: 'Je demande pardon à Allah.',
       virtue: 'سنة النبي ﷺ دبر كل صلاة مكتوبة.',
-      sourceText: 'كان رسول الله ﷺ إذا انصرف من صلاته استغفر ثلاثاً.',
+      sourceText:
+          'عن ثوبان رضي الله عنه قال: كان رسول الله ﷺ إذا انصرف من صلاته استغفر ثلاثاً، وقال: اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ.',
       sourceRef: 'رواه مسلم',
       repetitions: 3,
     ),
     Dhikr(
       id: 'prayer_2',
       category: DhikrCategory.afterPrayer,
-      arabicText: 'اللَّهُمَّ أَنْتَ السَّلامُ وَمِنْكَ السَّلامُ، تَبَارَكْتَ يَا ذَا الْجَلالِ وَالإِكْرَامِ',
+      arabicText:
+          'اللَّهُمَّ أَنْتَ السَّلامُ وَمِنْكَ السَّلامُ، تَبَارَكْتَ يَا ذَا الْجَلالِ وَالإِكْرَامِ',
       englishText: 'O Allah, You are Peace and from You comes peace...',
       frenchText: 'Ô Allah ! Tu es la Paix et la paix vient de Toi...',
       virtue: 'ثناء على الله بصفة السلام.',
-      sourceText: 'كان النبي ﷺ يقولها بعد الاستغفار ثلاثاً.',
+      sourceText:
+          'عن ثوبان رضي الله عنه قال: كان رسول الله ﷺ إذا انصرف من صلاته استغفر ثلاثاً، وقال: "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ".',
       sourceRef: 'رواه مسلم',
       repetitions: 1,
     ),
     Dhikr(
       id: 'prayer_3',
       category: DhikrCategory.afterPrayer,
-      arabicText: 'لا إلهَ إلاَّ اللهُ وحدهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحمدُ، وهوَ على كلِّ شيءٍ قديرٌ، اللَّهُمَّ لا مانِعَ لِما أَعْطَيْتَ، ولا مُعْطِيَ لِما مَنَعْتَ، ولا يَنْفَعُ ذا الجَدِّ مِنْكَ الجَدُّ',
-      englishText: 'None has the right to be worshipped but Allah alone... O Allah, none can prevent what You have granted...',
-      frenchText: 'Il n’y a de divinité qu’Allah, l’Unique sans associé... Ô Allah, nul ne peut retenir ce que Tu as donné...',
+      arabicText:
+          'لا إلهَ إلاَّ اللهُ وحدهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحمدُ، وهوَ على كلِّ شيءٍ قديرٌ، اللَّهُمَّ لا مانِعَ لِما أَعْطَيْتَ، ولا مُعْطِيَ لِما مَنَعْتَ، ولا يَنْفَعُ ذا الجَدِّ مِنْكَ الجَدُّ',
+      englishText:
+          'None has the right to be worshipped but Allah alone... O Allah, none can prevent what You have granted...',
+      frenchText:
+          'Il n’y a de divinité qu’Allah, l’Unique sans associé... Ô Allah, nul ne peut retenir ce que Tu as donné...',
       virtue: 'اعتراف بتوحيد الله وقدرته المطلقة وسعة عطائه.',
-      sourceText: 'عن المغيرة بن شعبة رضي الله عنه أن النبي ﷺ كان يقول في دبر كل صلاة مكتوبة حين يسلم: "لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير، اللهم لا مانع لما أعطيت، ولا معطي لما منعت، ولا ينفع ذا الجد منك الجد".',
+      sourceText:
+          'عن المغيرة بن شعبة رضي الله عنه أن النبي ﷺ كان يقول في دبر كل صلاة مكتوبة حين يسلم: "لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، وهو على كل شيء قدير، اللهم لا مانع لما أعطيت، ولا معطي لما منعت، ولا ينفع ذا الجد منك الجد".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 1,
     ),
@@ -679,8 +846,10 @@ class DhikrRepository {
       arabicText: 'سُبْحَانَ اللهِ',
       englishText: 'Glory is to Allah.',
       frenchText: 'Gloire à Allah.',
-      virtue: 'من سبح الله في دبر كل صلاة ثلاثاً وثلاثين... غفرت خطاياه وإن كانت مثل زبد البحر.',
-      sourceText: 'قال رسول الله ﷺ: "من سبح الله في دبر كل صلاة ثلاثاً وثلاثين...".',
+      virtue:
+          'من سبح الله في دبر كل صلاة ثلاثاً وثلاثين... غفرت خطاياه وإن كانت مثل زبد البحر.',
+      sourceText:
+          'عن أبي هريرة رضي الله عنه عن رسول الله ﷺ قال: "من سبح الله في دبر كل صلاة ثلاثاً وثلاثين، وحمد الله ثلاثاً وثلاثين، وكبر الله ثلاثاً وثلاثين، فتلك تسعة وتسعون، وقال تمام المائة: لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، غفرت خطاياه وإن كانت مثل زبد البحر".',
       sourceRef: 'رواه مسلم',
       repetitions: 33,
     ),
@@ -691,7 +860,8 @@ class DhikrRepository {
       englishText: 'Praise is to Allah.',
       frenchText: 'Louange à Allah.',
       virtue: 'من حمد الله في دبر كل صلاة ثلاثاً وثلاثين... غفرت خطاياه.',
-      sourceText: 'قال رسول الله ﷺ: "من سبح الله في دبر كل صلاة ثلاثاً وثلاثين...".',
+      sourceText:
+          'عن أبي هريرة رضي الله عنه عن رسول الله ﷺ قال: "من سبح الله في دبر كل صلاة ثلاثاً وثلاثين، وحمد الله ثلاثاً وثلاثين، وكبر الله ثلاثاً وثلاثين، فتلك تسعة وتسعون، وقال تمام المائة: لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، غفرت خطاياه وإن كانت مثل زبد البحر".',
       sourceRef: 'رواه مسلم',
       repetitions: 33,
     ),
@@ -702,73 +872,92 @@ class DhikrRepository {
       englishText: 'Allah is the Greatest.',
       frenchText: 'Allah est le plus Grand.',
       virtue: 'من كبر الله في دبر كل صلاة ثلاثاً وثلاثين... غفرت خطاياه.',
-      sourceText: 'قال رسول الله ﷺ: "من سبح الله في دبر كل صلاة ثلاثاً وثلاثين...".',
+      sourceText:
+          'عن أبي هريرة رضي الله عنه عن رسول الله ﷺ قال: "من سبح الله في دبر كل صلاة ثلاثاً وثلاثين، وحمد الله ثلاثاً وثلاثين، وكبر الله ثلاثاً وثلاثين، فتلك تسعة وتسعون، وقال تمام المائة: لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، غفرت خطاياه وإن كانت مثل زبد البحر".',
       sourceRef: 'رواه مسلم',
       repetitions: 33,
     ),
     Dhikr(
       id: 'prayer_tamam',
       category: DhikrCategory.afterPrayer,
-      arabicText: 'لا إلهَ إلاَّ اللهُ وحدهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحمدُ، وهوَ على كلِّ شيءٍ قديرٌ',
+      arabicText:
+          'لا إلهَ إلاَّ اللهُ وحدهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحمدُ، وهوَ على كلِّ شيءٍ قديرٌ',
       englishText: 'None has the right to be worshipped but Allah alone...',
       frenchText: 'Il n’y a de divinité qu’Allah, l’Unique sans associé...',
       virtue: 'تمام المائة بعد التسبيح والتحميد والتكبير لمغفرة الذنوب.',
-      sourceText: 'قال ﷺ: "وقال تمام المائة: لا إله إلا الله...".',
+      sourceText:
+          'عن أبي هريرة رضي الله عنه عن رسول الله ﷺ قال: "من سبح الله في دبر كل صلاة ثلاثاً وثلاثين، وحمد الله ثلاثاً وثلاثين، وكبر الله ثلاثاً وثلاثين، فتلك تسعة وتسعون، وقال تمام المائة: لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير، غفرت خطاياه وإن كانت مثل زبد البحر".',
       sourceRef: 'رواه مسلم',
       repetitions: 1,
     ),
     Dhikr(
       id: 'prayer_tahlil_fajr_maghrib',
       category: DhikrCategory.afterPrayer,
-      arabicText: 'لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، يُحْيِي وَيُمِيتُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
-      englishText: 'None has the right to be worshipped but Allah alone... He gives life and causes death...',
-      frenchText: 'Il n’y a de divinité qu’Allah, l’Unique sans associé... Il donne la vie et donne la mort...',
-      virtue: 'يقال عشر مرات بعد صلاة الصبح وصلاة المغرب قبل أن يثني رجليه، كتب له بكل واحدة عشر حسنات، ومحي عنه عشر سيئات، ورفع له عشر درجات.',
-      sourceText: 'قال رسول الله ﷺ: "من قال في دبر صلاة الفجر وهو ثان رجليه قبل أن يتكلم: لا إله إلا الله... عشر مرات..".',
+      arabicText:
+          'لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، يُحْيِي وَيُمِيتُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
+      englishText:
+          'None has the right to be worshipped but Allah alone... He gives life and causes death...',
+      frenchText:
+          'Il n’y a de divinité qu’Allah, l’Unique sans associé... Il donne la vie et donne la mort...',
+      virtue:
+          'يقال عشر مرات بعد صلاة الصبح وصلاة المغرب قبل أن يثني رجليه، كتب له بكل واحدة عشر حسنات، ومحي عنه عشر سيئات، ورفع له عشر درجات.',
+      sourceText:
+          'عن أبي ذر رضي الله عنه أن رسول الله ﷺ قال: "من قال في دبر صلاة الفجر، وهو ثانٍ رجليه، قبل أن يتكلم: لا إله إلا الله وحده لا شريك له، له الملك وله الحمد، يحيي ويميت، وهو على كل شيء قدير، عشر مرات، كتب الله له عشر حسنات، ومحا عنه عشر سيئات، ورفع له عشر درجات، وكان يومه ذلك كله في حرز من كل مكروه، وحرس من الشيطان، ولم ينبغ لذنب أن يدركه في ذلك اليوم إلا الشرك بالله".',
       sourceRef: 'رواه الترمذي',
       repetitions: 10,
     ),
     Dhikr(
       id: 'prayer_kursi',
       category: DhikrCategory.afterPrayer,
-      arabicText: 'اللَّهُمَّ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهما وَهو الْعَلِيُّ الْعَظِيمُ',
+      arabicText:
+          'اللَّهُمَّ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهما وَهو الْعَلِيُّ الْعَظِيمُ',
       englishText: 'Allah! There is no god but He...',
       frenchText: 'Allah ! Point de divinité à part Lui...',
       virtue: 'من قرأها دبر كل صلاة لم يمنعه من دخول الجنة إلا أن يموت.',
-      sourceText: 'قال رسول الله ﷺ: "من قرأ آية الكرسي في دبر كل صلاة مكتوبة...".',
+      sourceText:
+          'عن أبي أمامة رضي الله عنه قال: قال رسول الله ﷺ: "من قرأ آية الكرسي في دبر كل صلاة مكتوبة لم يمنعه من دخول الجنة إلا أن يموت".',
       sourceRef: 'رواه النسائي',
       repetitions: 1,
     ),
     Dhikr(
       id: 'prayer_ikhlas',
       category: DhikrCategory.afterPrayer,
-      arabicText: 'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
+      arabicText:
+          'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ',
       englishText: 'Surah Al-Ikhlas',
       frenchText: 'Sourate Al-Ikhlas',
-      virtue: 'سنة دبر كل صلاة في الأوقات العادية، وتكرر ثلاثاً في الصبح والمغرب.',
-      sourceText: 'أمرني رسول الله ﷺ أن أقرأ بالمعوذات دبر كل صلاة.',
+      virtue:
+          'سنة دبر كل صلاة في الأوقات العادية، وتكرر ثلاثاً في الصبح والمغرب.',
+      sourceText:
+          'عن عقبة بن عامر رضي الله عنه قال: "أمرني رسول الله ﷺ أن أقرأ بالمعوذات دبر كل صلاة".',
       sourceRef: 'رواه أبو داود',
       repetitions: 1,
     ),
     Dhikr(
       id: 'prayer_falaq',
       category: DhikrCategory.afterPrayer,
-      arabicText: 'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
+      arabicText:
+          'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
       englishText: 'Surah Al-Falaq',
       frenchText: 'Sourate Al-Falaq',
-      virtue: 'سنة دبر كل صلاة في الأوقات العادية، وتكرر ثلاثاً في الصبح والمغرب.',
-      sourceText: 'أمرني رسول الله ﷺ أن أقرأ بالمعوذات دبر كل صلاة.',
+      virtue:
+          'سنة دبر كل صلاة في الأوقات العادية، وتكرر ثلاثاً في الصبح والمغرب.',
+      sourceText:
+          'عن عقبة بن عامر رضي الله عنه قال: "أمرني رسول الله ﷺ أن أقرأ بالمعوذات دبر كل صلاة".',
       sourceRef: 'رواه أبو داود',
       repetitions: 1,
     ),
     Dhikr(
       id: 'prayer_nas',
       category: DhikrCategory.afterPrayer,
-      arabicText: 'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ',
+      arabicText:
+          'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ\nقُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَالنَّاسِ',
       englishText: 'Surah Al-Nas',
       frenchText: 'Sourate Al-Nas',
-      virtue: 'سنة دبر كل صلاة في الأوقات العادية، وتكرر ثلاثاً في الصبح والمغرب.',
-      sourceText: 'أمرني رسول الله ﷺ أن أقرأ بالمعوذات دبر كل صلاة.',
+      virtue:
+          'سنة دبر كل صلاة في الأوقات العادية، وتكرر ثلاثاً في الصبح والمغرب.',
+      sourceText:
+          'عن عقبة بن عامر رضي الله عنه قال: "أمرني رسول الله ﷺ أن أقرأ بالمعوذات دبر كل صلاة".',
       sourceRef: 'رواه أبو داود',
       repetitions: 1,
     ),
@@ -777,13 +966,17 @@ class DhikrRepository {
     // Sadness (حزينة)
     Dhikr(
       id: 'feel_sad_1',
-      sourceText: 'سمعت رسول الله ﷺ يقول: "ما من مسلم تصيبه مصيبة فيقول ما أمره الله: {إِنَّا لِلَّهِ وَإِنَّـا إِلَيْهِ رَاجِعُونَ} اللهم أجرني في مصيبتي وأخلف لي خيراً منها، إلا أخلف الله له خيراً منها".',
+      sourceText:
+          'سمعت رسول الله ﷺ يقول: "ما من مسلم تصيبه مصيبة فيقول ما أمره الله: {إِنَّا لِلَّهِ وَإِنَّـا إِلَيْهِ رَاجِعُونَ} اللهم أجرني في مصيبتي وأخلف لي خيراً منها، إلا أخلف الله له خيراً منها".',
       sourceRef: 'رواه مسلم',
       category: DhikrCategory.feelings,
       emotionTag: 'sad',
-      arabicText: 'إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي، وَأَخْلِفْ لِي خَيْرًا مِنْهَا',
-      englishText: 'We belong to Allah and to Him we shall return. O Allah, reward me for my affliction and give me something better than it in exchange.',
-      frenchText: 'Nous sommes à Allah et nous reviendrons à Lui. Ô Allah, récompense-moi dans mon malheur et remplace-le moi par quelque chose de meilleur.',
+      arabicText:
+          'إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي، وَأَخْلِفْ لِي خَيْرًا مِنْهَا',
+      englishText:
+          'We belong to Allah and to Him we shall return. O Allah, reward me for my affliction and give me something better than it in exchange.',
+      frenchText:
+          'Nous sommes à Allah et nous reviendrons à Lui. Ô Allah, récompense-moi dans mon malheur et remplace-le moi par quelque chose de meilleur.',
       virtue: 'عوض الله الصابرين بأفضل مما فقدوا.',
       repetitions: 1,
     ),
@@ -791,11 +984,15 @@ class DhikrRepository {
       id: 'feel_sad_2',
       category: DhikrCategory.feelings,
       emotionTag: 'sad',
-      arabicText: 'لا إله إلا أنت سبحانك إني كنت من الظالمين',
-      englishText: 'There is no god but You, glory be to You, I have indeed been among the wrongdoers.',
-      frenchText: 'Il n’y a pas d’autre divinité que Toi, Gloire à Toi, j’ai été du nombre des injustes.',
+      arabicText:
+          'لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ',
+      englishText:
+          'There is no god but You, glory be to You, I have indeed been among the wrongdoers.',
+      frenchText:
+          'Il n’y a pas d’autre divinité que Toi, Gloire à Toi, j’ai été du nombre des injustes.',
       virtue: 'دعاء ذي النون، ما دعا به مسلم في كرب إلا استجاب الله له.',
-      sourceText: 'قال رسول الله ﷺ: "دعوة ذي النون إذ دعا وهو في بطن الحوت: {لَّا إِلَهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ}، فإنه لم يدع بها رجل مسلم في شيء قط إلا استجاب الله له".',
+      sourceText:
+          'قال رسول الله ﷺ: "دعوة ذي النون إذ دعا وهو في بطن الحوت: {لَّا إِلَهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ}، فإنه لم يدع بها رجل مسلم في شيء قط إلا استجاب الله له".',
       sourceRef: 'رواه الترمذي',
       repetitions: 3,
     ),
@@ -803,11 +1000,15 @@ class DhikrRepository {
       id: 'feel_sad_3',
       category: DhikrCategory.feelings,
       emotionTag: 'sad',
-      arabicText: 'اللَّهُمَّ رَحْمَتَكَ أَرْجُو فَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ لَا إِلَهَ إِلَّا أَنْتَ',
-      englishText: 'O Allah, I hope for Your mercy, so do not leave me to myself even for the blinking of an eye, and amend all my affairs for me, there is no god but You.',
-      frenchText: 'Ô Allah ! C’est Ta miséricorde que j’espère. Ne me laisse donc pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil. Améliore ma situation entière. Il n’y a de divinité que Toi.',
+      arabicText:
+          'اللَّهُمَّ رَحْمَتَكَ أَرْجُو فَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ لَا إِلَهَ إِلَّا أَنْتَ',
+      englishText:
+          'O Allah, I hope for Your mercy, so do not leave me to myself even for the blinking of an eye, and amend all my affairs for me, there is no god but You.',
+      frenchText:
+          'Ô Allah ! C’est Ta miséricorde que j’espère. Ne me laisse donc pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil. Améliore ma situation entière. Il n’y a de divinité que Toi.',
       virtue: 'دعاء المكروب، لتفويض الأمر كله لله وتوكيله.',
-      sourceText: 'قال رسول الله ﷺ: "دعوات المكروب: اللهم رحمتك أرجو فلا تكلني إلى نفسي طرفة عين، وأصلح لي شأني كله لا إله إلا أنت".',
+      sourceText:
+          'قال رسول الله ﷺ: "دعوات المكروب: اللهم رحمتك أرجو فلا تكلني إلى نفسي طرفة عين، وأصلح لي شأني كله لا إله إلا أنت".',
       sourceRef: 'رواه أبو داود',
       repetitions: 1,
     ),
@@ -815,11 +1016,15 @@ class DhikrRepository {
       id: 'feel_sad_4',
       category: DhikrCategory.feelings,
       emotionTag: 'sad',
-      arabicText: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ',
-      englishText: 'O Allah, I seek refuge in You from anxiety and sorrow, weakness and laziness, miserliness and cowardice, the burden of debts and from being overpowered by men.',
-      frenchText: 'Ô Allah ! Je me protège auprès de Toi contre l’anxiété et la tristesse, l’incapacité et la paresse, l’avarice et la lâcheté, le poids de la dette et la domination des hommes.',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ',
+      englishText:
+          'O Allah, I seek refuge in You from anxiety and sorrow, weakness and laziness, miserliness and cowardice, the burden of debts and from being overpowered by men.',
+      frenchText:
+          'Ô Allah ! Je me protège auprès de Toi contre l’anxiété et la tristesse, l’incapacité et la paresse, l’avarice et la lâcheté, le poids de la dette et la domination des hommes.',
       virtue: 'استعاذة شاملة من آفات القلوب والأبدان والديون.',
-      sourceText: 'عن أنس بن مالك رضي الله عنه قال: كان النبي ﷺ يقول: "اللهم إني أعوذ بك من الهم والحزن، والعجز والكسل، والبخل والجبن، وضلع الدين، وغلبة الرجال".',
+      sourceText:
+          'عن أنس بن مالك رضي الله عنه قال: كان النبي ﷺ يقول: "اللهم إني أعوذ بك من الهم والحزن، والعجز والكسل، والبخل والجبن، وضلع الدين، وغلبة الرجال".',
       sourceRef: 'رواه البخاري',
       repetitions: 3,
     ),
@@ -828,10 +1033,12 @@ class DhikrRepository {
       category: DhikrCategory.feelings,
       emotionTag: 'sad',
       arabicText: 'حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ',
-      englishText: 'Allah is sufficient for us, and He is the best Disposer of affairs.',
+      englishText:
+          'Allah is sufficient for us, and He is the best Disposer of affairs.',
       frenchText: 'Allah nous suffit, quel excellent Protecteur !',
       virtue: 'كلمة الاستنصار في الشدائد، لكفاية الله للعبد وحمايته.',
-      sourceText: 'قالها إبراهيم عليه السلام حين ألقي في النار، وقالها محمد ﷺ حين قالوا له: إن الناس قد جمعوا لكم.',
+      sourceText:
+          'قالها إبراهيم عليه السلام حين ألقي في النار، وقالها محمد ﷺ حين قالوا له: إن الناس قد جمعوا لكم.',
       sourceRef: 'رواه البخاري',
       repetitions: 7,
     ),
@@ -841,11 +1048,15 @@ class DhikrRepository {
       id: 'feel_anxious_1',
       category: DhikrCategory.feelings,
       emotionTag: 'anxious',
-      arabicText: 'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ',
-      englishText: 'O Ever Living, O Self-Subsisting, by Your mercy I seek help. Amend for me all my affairs and do not leave me to myself even for the blinking of an eye.',
-      frenchText: 'Ô Vivant ! Ô Celui qui subsiste par Lui-même ! C’est par Ta miséricorde que j’appelle au secours. Améliore ma situation entière et ne me laisse pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil.',
+      arabicText:
+          'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ',
+      englishText:
+          'O Ever Living, O Self-Subsisting, by Your mercy I seek help. Amend for me all my affairs and do not leave me to myself even for the blinking of an eye.',
+      frenchText:
+          'Ô Vivant ! Ô Celui qui subsiste par Lui-même ! C’est par Ta miséricorde que j’appelle au secours. Améliore ma situation entière et ne me laisse pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil.',
       virtue: 'وصية نبوية للاستغاثة بأسماء الله العظمى لكفاية الهم.',
-      sourceText: 'قال رسول الله ﷺ لفاطمة رضي الله عنها: "ما يمنعك أن تسمعي ما أوصيك به، أو تقولي إذا أصبحت وإذا أمسيت: يا حي يا قيوم برحمتك أستغيث، أصلح لي شأني كله، ولا تكلني إلى نفسي طرفة عين".',
+      sourceText:
+          'قال رسول الله ﷺ لفاطمة رضي الله عنها: "ما يمنعك أن تسمعي ما أوصيك به، أو تقولي إذا أصبحت وإذا أمسيت: يا حي يا قيوم برحمتك أستغيث، أصلح لي شأني كله، ولا تكلني إلى نفسي طرفة عين".',
       sourceRef: 'رواه النسائي',
       repetitions: 3,
     ),
@@ -853,11 +1064,15 @@ class DhikrRepository {
       id: 'feel_anxious_2',
       category: DhikrCategory.feelings,
       emotionTag: 'anxious',
-      arabicText: 'اللَّهُمَّ إِنِّي عَبْدُكَ، وَابْنُ عَبْدِكَ، وَابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجَلَاءَ حُزْنِي، وَذَهَابَ هَمِّي',
-      englishText: 'O Allah, I am Your slave, the son of Your slave... Make the Quran the spring of my heart and the light of my chest, the banisher of my sadness and the reliever of my distress.',
-      frenchText: 'Ô Allah ! Je suis Ton serviteur... Fais que le Coran soit le printemps de mon cœur, la lumière de ma poitrine, la dissipation de ma tristesse et la fin de mes soucis.',
+      arabicText:
+          'اللَّهُمَّ إِنِّي عَبْدُكَ، وَابْنُ عَبْدِكَ، وَابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجَلَاءَ حُزْنِي، وَذَهَابَ هَمِّي',
+      englishText:
+          'O Allah, I am Your slave, the son of Your slave... Make the Quran the spring of my heart and the light of my chest, the banisher of my sadness and the reliever of my distress.',
+      frenchText:
+          'Ô Allah ! Je suis Ton serviteur... Fais que le Coran soit le printemps de mon cœur, la lumière de ma poitrine, la dissipation de ma tristesse et la fin de mes soucis.',
       virtue: 'دعاء لإذهاب الهم والغم وإبداله فرحاً وسروراً.',
-      sourceText: 'قال رسول الله ﷺ: "ما أصاب أحداً قط هم ولا حزن، فقال: اللهم إني عبدك، وابن عبدك، وابن أمتك، ناصيتي بيدك، ماض في حكمك، عدل في قضاؤك، أسألك بكل اسم هو لك سميت به نفسك، أو أنزلته في كتابك، أو علمته أحداً من خلقك، أو استأثرت به في علم الغيب عندك، أن تجعل القرآن ربيع قلبي، ونور صدري، وجلاء حزني، وذهاب همي، إلا أذهب الله همه وحزنه، وأبدله مكانه فرجاً".',
+      sourceText:
+          'قال رسول الله ﷺ: "ما أصاب أحداً قط هم ولا حزن، فقال: اللهم إني عبدك، وابن عبدك، وابن أمتك، ناصيتي بيدك، ماض في حكمك، عدل في قضاؤك، أسألك بكل اسم هو لك سميت به نفسك، أو أنزلته في كتابك، أو علمته أحداً من خلقك، أو استأثرت به في علم الغيب عندك، أن تجعل القرآن ربيع قلبي، ونور صدري، وجلاء حزني، وذهاب همي، إلا أذهب الله همه وحزنه، وأبدله مكانه فرجاً".',
       sourceRef: 'رواه أحمد',
       repetitions: 1,
     ),
@@ -865,11 +1080,15 @@ class DhikrRepository {
       id: 'feel_anxious_3',
       category: DhikrCategory.feelings,
       emotionTag: 'anxious',
-      arabicText: 'لا إله إلا الله العظيم الحليم، لا إله إلا الله رب العرش العظيم، لا إله إلا الله رب السماوات ورب الأرض ورب العرش الكريم',
-      englishText: 'There is no god but Allah, the Great, the Forbearing; There is no god but Allah, the Lord of the Magnificent Throne...',
-      frenchText: 'Point de divinité à part Allah, le Magnifique, le Clément. Point de divinité à part Allah, le Seigneur du Trône Immense...',
+      arabicText:
+          'لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ',
+      englishText:
+          'There is no god but Allah, the Great, the Forbearing; There is no god but Allah, the Lord of the Magnificent Throne...',
+      frenchText:
+          'Point de divinité à part Allah, le Magnifique, le Clément. Point de divinité à part Allah, le Seigneur du Trône Immense...',
       virtue: 'دعاء الكرب، لتفريج الشدائد وتهوين الصعاب.',
-      sourceText: 'عن ابن عباس رضي الله عنهما أن رسول الله ﷺ كان يقول عند الكرب: "لا إله إلا الله العظيم الحليم، لا إله إلا الله رب العرش العظيم، لا إله إلا الله رب السماوات ورب الأرض ورب العرش الكريم".',
+      sourceText:
+          'عن ابن عباس رضي الله عنهما أن رسول الله ﷺ كان يقول عند الكرب: "لا إله إلا الله العظيم الحليم، لا إله إلا الله رب العرش العظيم، لا إله إلا الله رب السماوات ورب الأرض ورب العرش الكريم".',
       sourceRef: 'رواه البخاري',
       repetitions: 1,
     ),
@@ -877,11 +1096,15 @@ class DhikrRepository {
       id: 'feel_anxious_4',
       category: DhikrCategory.feelings,
       emotionTag: 'anxious',
-      arabicText: 'اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ',
-      englishText: 'O Allah, suffice me with what You have allowed instead of what You have forbidden, and make me independent of all others besides You.',
-      frenchText: 'Ô Allah ! Accorde-moi de Tes biens licites pour m’épargner Tes interdits, et accorde-moi de Ta grâce pour ne plus dépendre d’aucun autre que Toi.',
+      arabicText:
+          'اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ',
+      englishText:
+          'O Allah, suffice me with what You have allowed instead of what You have forbidden, and make me independent of all others besides You.',
+      frenchText:
+          'Ô Allah ! Accorde-moi de Tes biens licites pour m’épargner Tes interdits, et accorde-moi de Ta grâce pour ne plus dépendre d’aucun autre que Toi.',
       virtue: 'لقضاء الديون، لو كان عليك مثل جبلٍ ديناً أداه الله عنك.',
-      sourceText: 'عن علي بن أبي طالب رضي الله عنه أن مكاتباً جاءه فقال: إني عجزت عن كتابتي فأعني، قال: ألا أعلمك كلمات علمنيهن رسول الله ﷺ لو كان عليك مثل جبل صبير ديناً أداه الله عنك؟ قال: قل: "اللهم اكفني بحلالك عن حرامك، وأغنني بفضلك عمن سواك".',
+      sourceText:
+          'عن علي بن أبي طالب رضي الله عنه أن مكاتباً جاءه فقال: إني عجزت عن كتابتي فأعني، قال: ألا أعلمك كلمات علمنيهن رسول الله ﷺ لو كان عليك مثل جبل صبير ديناً أداه الله عنك؟ قال: قل: "اللهم اكفني بحلالك عن حرامك، وأغنني بفضلك عمن سواك".',
       sourceRef: 'رواه الترمذي',
       repetitions: 3,
     ),
@@ -893,7 +1116,8 @@ class DhikrRepository {
       englishText: 'There is no might and no power except with Allah.',
       frenchText: 'Il n’y a de force et de puissance que par Allah.',
       virtue: 'كنز من كنوز الجنة، ودواء لأيسر الداء وهو الهم.',
-      sourceText: 'قال رسول الله ﷺ: "أكثر من قول لا حول ولا قوة إلا بالله، فإنها كنز من كنوز الجنة".',
+      sourceText:
+          'قال رسول الله ﷺ: "أكثر من قول لا حول ولا قوة إلا بالله، فإنها كنز من كنوز الجنة".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 10,
     ),
@@ -903,11 +1127,15 @@ class DhikrRepository {
       id: 'feel_happy_1',
       category: DhikrCategory.feelings,
       emotionTag: 'happy',
-      arabicText: 'الْحَمْدُ لِلَّهِ الَّذِي بِنِعْمَتِهِ تَتِمُّ الصَّالِحَاتُ',
-      englishText: 'Praise be to Allah, by Whose grace good things are accomplished.',
-      frenchText: 'Louange à Allah par la grâce de qui s’accomplissent les bonnes œuvres.',
+      arabicText:
+          'الْحَمْدُ لِلَّهِ الَّذِي بِنِعْمَتِهِ تَتِمُّ الصَّالِحَاتُ',
+      englishText:
+          'Praise be to Allah, by Whose grace good things are accomplished.',
+      frenchText:
+          'Louange à Allah par la grâce de qui s’accomplissent les bonnes œuvres.',
       virtue: 'شكر لله عند السرور، واعتراف بفضله في تمام النعم.',
-      sourceText: 'كان رسول الله ﷺ إذا رأى ما يحب قال: "الحمد لله الذي بنعمته تتم الصالحات".',
+      sourceText:
+          'كان رسول الله ﷺ إذا رأى ما يحب قال: "الحمد لله الذي بنعمته تتم الصالحات".',
       sourceRef: 'رواه ابن ماجه',
       repetitions: 1,
     ),
@@ -915,9 +1143,12 @@ class DhikrRepository {
       id: 'feel_happy_2',
       category: DhikrCategory.feelings,
       emotionTag: 'happy',
-      arabicText: 'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ',
-      englishText: 'My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents and to do righteousness of which You approve.',
-      frenchText: 'Seigneur ! Permets-moi d’être reconnaissant pour le bienfait dont Tu m’as comblé, ainsi que mes parents, et de faire le bien qui Te dise.',
+      arabicText:
+          'رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ',
+      englishText:
+          'My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents and to do righteousness of which You approve.',
+      frenchText:
+          'Seigneur ! Permets-moi d’être reconnaissant pour le bienfait dont Tu m’as comblé, ainsi que mes parents, et de faire le bien qui Te dise.',
       virtue: 'دعاء الأنبياء لطلب التوفيق للشكر وزيادة النعم.',
       sourceText: 'كما ورد في سورة النمل عن سليمان عليه السلام.',
       sourceRef: 'القرآن الكريم',
@@ -927,11 +1158,15 @@ class DhikrRepository {
       id: 'feel_happy_3',
       category: DhikrCategory.feelings,
       emotionTag: 'happy',
-      arabicText: 'اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ، وَشُكْرِكَ، وَحُسْنِ عِبَادَتِكَ',
-      englishText: 'O Allah, help me to remember You, to give thanks to You and to worship You in the best way.',
-      frenchText: 'Ô Allah ! Aide-moi à T’évoquer, à Te remercier et à T’adorer de la meilleure manière.',
+      arabicText:
+          'اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ، وَشُكْرِكَ، وَحُسْنِ عِبَادَتِكَ',
+      englishText:
+          'O Allah, help me to remember You, to give thanks to You and to worship You in the best way.',
+      frenchText:
+          'Ô Allah ! Aide-moi à T’évoquer, à Te remercier et à T’adorer de la meilleure manière.',
       virtue: 'وصية نبوية لطلب العون على الذكر والشكر وحسن العبادة.',
-      sourceText: 'عن معاذ بن جبل رضي الله عنه أن رسول الله ﷺ أخذ بيده وقال: "يا معاذ، والله إني لأحبك، أوصيك يا معاذ لا تدعن في دبر كل صلاة تقول: اللهم أعني على ذكرك، وشكرك، وحسن عبادتك".',
+      sourceText:
+          'عن معاذ بن جبل رضي الله عنه أن رسول الله ﷺ أخذ بيده وقال: "يا معاذ، والله إني لأحبك، أوصيك يا معاذ لا تدعن في دبر كل صلاة تقول: اللهم أعني على ذكرك، وشكرك، وحسن عبادتك".',
       sourceRef: 'رواه أبو داود',
       repetitions: 3,
     ),
@@ -940,10 +1175,13 @@ class DhikrRepository {
       category: DhikrCategory.feelings,
       emotionTag: 'happy',
       arabicText: 'مَا شَاءَ اللَّهُ لَا قُوَّةَ إِلَّا بِاللَّهِ',
-      englishText: 'What Allah willed [has occurred]; there is no power except in Allah.',
-      frenchText: 'Telle est la volonté d’Allah ! Il n’y a de puissance que par Allah.',
+      englishText:
+          'What Allah willed [has occurred]; there is no power except in Allah.',
+      frenchText:
+          'Telle est la volonté d’Allah ! Il n’y a de puissance que par Allah.',
       virtue: 'لحفظ النعم من الزوال والعين، وحلول البركة.',
-      sourceText: 'كما ورد في سورة الكهف: "ولولا إذ دخلت جنتك قلت ما شاء الله...".',
+      sourceText:
+          'كما ورد في سورة الكهف: "ولولا إذ دخلت جنتك قلت ما شاء الله...".',
       sourceRef: 'القرآن الكريم',
       repetitions: 1,
     ),
@@ -951,11 +1189,13 @@ class DhikrRepository {
       id: 'feel_happy_5',
       category: DhikrCategory.feelings,
       emotionTag: 'happy',
-      arabicText: 'الْحَمْدُ لِلَّهِ حَمْداً كَثِيراً طَيِّباً مُبَارَكاً فِيهِ',
+      arabicText:
+          'الْحَمْدُ لِلَّهِ حَمْداً كَثِيراً طَيِّباً مُبَارَكاً فِيهِ',
       englishText: 'Praise be to Allah, much praise, good and blessed.',
       frenchText: 'Louange à Allah, une louange abondante, pure et bénie.',
       virtue: 'تمجيد عظيم لله، يبتدره الملائكة لكتابته من عظم أجره.',
-      sourceText: 'عن رفاعة بن رافع الزرقي قال: كنا يوماً نصلي وراء النبي ﷺ... فقال رجل: ربنا ولك الحمد حمداً كثيراً... .',
+      sourceText:
+          'عن رفاعة بن رافع الزرقي قال: كنا يوماً نصلي وراء النبي ﷺ... فقال رجل: ربنا ولك الحمد حمداً كثيراً... .',
       sourceRef: 'رواه البخاري',
       repetitions: 1,
     ),
@@ -969,7 +1209,8 @@ class DhikrRepository {
       englishText: 'Glory is to Allah.',
       frenchText: 'Gloire à Allah.',
       virtue: 'يقال عند التعب الجسدي، وهو خير من خادم ويقوي البدن.',
-      sourceText: 'عن علي رضي الله عنه أن فاطمة رضي الله عنها شكت ما تلقى من أثر الرحى، فأتى النبي ﷺ سبي، فانطلقت فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال: فجاءنا وقد أخذنا مضاجعنا، فذهبنا نقوم، فقال: "مكانكما" فجاء فقعد بيني وبينها jusqu\'à ce que je sente la fraîcheur de ses pieds sur ma poitrine, فقال: "ألا أدلكما على ما هو خير لكما من خادم؟ إذا أويتما إلى فراشكما، أو أخذتما مضاجعكما، فكبرا ثلاثاً وثلاثين، وسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، فهذا خير لكما من خادم".',
+      sourceText:
+          'عن علي رضي الله عنه أن فاطمة رضي الله عنها شكت ما تلقى من أثر الرحى، فأتى النبي ﷺ سبي، فانطلقت فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال: فجاءنا وقد أخذنا مضاجعنا، فذهبنا نقوم، فقال: "مكانكما" فجاء فقعد بيني وبينها jusqu\'à ce que je sente la fraîcheur de ses pieds sur ma poitrine, فقال: "ألا أدلكما على ما هو خير لكما من خادم؟ إذا أويتما إلى فراشكما، أو أخذتما مضاجعكما، فكبرا ثلاثاً وثلاثين، وسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، فهذا خير لكما من خادم".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 33,
     ),
@@ -981,7 +1222,8 @@ class DhikrRepository {
       englishText: 'Praise is to Allah.',
       frenchText: 'Louange à Allah.',
       virtue: 'يقال عند التعب الجسدي، وهو خير من خادم ويقوي البدن.',
-      sourceText: 'عن علي رضي الله عنه أن فاطمة رضي الله عنها شكت ما تلقى من أثر الرحى... فقال: "ألا أدلكما على ما هو خير لكما من خادم؟... واحمدا ثلاثاً وثلاثين، فهذا خير لكما من خادم".',
+      sourceText:
+          'عن علي رضي الله عنه أن فاطمة رضي الله عنها شكت ما تلقى من أثر الرحى... فقال: "ألا أدلكما على ما هو خير لكما من خادم؟... واحمدا ثلاثاً وثلاثين، فهذا خير لكما من خادم".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 33,
     ),
@@ -993,7 +1235,8 @@ class DhikrRepository {
       englishText: 'Allah is the Greatest.',
       frenchText: 'Allah est le plus Grand.',
       virtue: 'يقال عند التعب الجسدي، وهو خير من خادم ويقوي البدن.',
-      sourceText: 'عن علي رضي الله عنه أن فاطمة رضي الله عنها شكت ما تلقى من أثر الرحى... فقال: "ألا أدلكما على ما هو خير لكما من خادم؟... وكبرا أربعاً وثلاثين، فهذا خير لكما من خادم".',
+      sourceText:
+          'عن علي رضي الله عنه أن فاطمة رضي الله عنها شكت ما تلقى من أثر الرحى... فقال: "ألا أدلكما على ما هو خير لكما من خادم؟... وكبرا أربعاً وثلاثين، فهذا خير لكما من خادم".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 34,
     ),
@@ -1001,11 +1244,15 @@ class DhikrRepository {
       id: 'feel_tired_2',
       category: DhikrCategory.feelings,
       emotionTag: 'tired',
-      arabicText: 'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَهَ إِلَّا أَنْتَ',
-      englishText: 'O Allah, make me healthy in my body. O Allah, make me healthy in my hearing. O Allah, make me healthy in my sight. None has the right to be worshipped except You.',
-      frenchText: 'Ô Allah ! Préserve ma santé dans mon corps. Ô Allah ! Préserve mon ouïe. Ô Allah ! Préserve ma vue. Point de divinité à part Toi.',
+      arabicText:
+          'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَهَ إِلَّا أَنْتَ',
+      englishText:
+          'O Allah, make me healthy in my body. O Allah, make me healthy in my hearing. O Allah, make me healthy in my sight. None has the right to be worshipped except You.',
+      frenchText:
+          'Ô Allah ! Préserve ma santé dans mon corps. Ô Allah ! Préserve mon ouïe. Ô Allah ! Préserve ma vue. Point de divinité à part Toi.',
       virtue: 'طلب العافية التامة للبدن والحواس، وحفظ الصحة.',
-      sourceText: 'عن عبد الرحمن بن أبي بكرة قال لابنه: يا بني إني أسمعك تدعو كل غداة: اللهم عافني في بدني... .',
+      sourceText:
+          'عن عبد الرحمن بن أبي بكرة قال لابنه: يا بني إني أسمعك تدعو كل غداة: اللهم عافني في بدني... .',
       sourceRef: 'رواه أبو داود',
       repetitions: 3,
     ),
@@ -1013,11 +1260,15 @@ class DhikrRepository {
       id: 'feel_tired_3',
       category: DhikrCategory.feelings,
       emotionTag: 'tired',
-      arabicText: 'لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
-      englishText: 'None has the right to be worshipped except Allah, alone, without partner. To Him belongs all sovereignty and praise and He is over all things omnipotent.',
-      frenchText: 'Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose.',
+      arabicText:
+          'لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
+      englishText:
+          'None has the right to be worshipped except Allah, alone, without partner. To Him belongs all sovereignty and praise and He is over all things omnipotent.',
+      frenchText:
+          'Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose.',
       virtue: 'تجديد للتوحيد ونشاط للروح، وحصن من الشيطان.',
-      sourceText: 'قال رسول الله ﷺ: "من قال لا إله إلا الله وحده لا شريك له... مائة مرة".',
+      sourceText:
+          'قال رسول الله ﷺ: "من قال لا إله إلا الله وحده لا شريك له... مائة مرة".',
       sourceRef: 'رواه البخاري',
       repetitions: 10,
     ),
@@ -1037,11 +1288,15 @@ class DhikrRepository {
       id: 'feel_tired_5',
       category: DhikrCategory.feelings,
       emotionTag: 'tired',
-      arabicText: 'أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ',
-      englishText: 'I seek the forgiveness of Allah the Magnificent... and I repent to Him.',
-      frenchText: 'Je demande pardon à Allah l’Immense... et je me repens à Lui.',
+      arabicText:
+          'أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ',
+      englishText:
+          'I seek the forgiveness of Allah the Magnificent... and I repent to Him.',
+      frenchText:
+          'Je demande pardon à Allah l’Immense... et je me repens à Lui.',
       virtue: 'الاستغفار مجلبة للقوة والرزق، ويزيدكم قوة إلى قوتكم.',
-      sourceText: 'كما ورد في سورة هود: "ويا قوم استغفروا ربكم ثم توبوا إليه يرسل السماء عليكم مدراراً ويزدكم قوة إلى قوتكم".',
+      sourceText:
+          'كما ورد في سورة هود: "ويا قوم استغفروا ربكم ثم توبوا إليه يرسل السماء عليكم مدراراً ويزدكم قوة إلى قوتكم".',
       sourceRef: 'القرآن الكريم',
       repetitions: 7,
     ),
@@ -1053,9 +1308,11 @@ class DhikrRepository {
       emotionTag: 'lost',
       arabicText: 'يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ',
       englishText: 'O Turner of hearts, keep my heart firm on Your religion.',
-      frenchText: 'Ô Toi qui retournes les cœurs ! Raffermis mon cœur dans Ta religion.',
+      frenchText:
+          'Ô Toi qui retournes les cœurs ! Raffermis mon cœur dans Ta religion.',
       virtue: 'كان أكثر دعاء النبي ﷺ لطلب الثبات عند الفتن.',
-      sourceText: 'قالت أم سلمة رضي الله عنها: كان أكثر دعاء رسول الله ﷺ: "يا مقلب القلوب ثبت قلبي على دينك".',
+      sourceText:
+          'قالت أم سلمة رضي الله عنها: كان أكثر دعاء رسول الله ﷺ: "يا مقلب القلوب ثبت قلبي على دينك".',
       sourceRef: 'رواه الترمذي',
       repetitions: 1,
     ),
@@ -1067,7 +1324,8 @@ class DhikrRepository {
       englishText: 'O Allah, guide me and keep me on the right path.',
       frenchText: 'Ô Allah ! Guis-moi et affermis mes pas.',
       virtue: 'طلب الهداية والسداد، وتوفيق الله للحق عند الحيرة.',
-      sourceText: 'قال رسول الله ﷺ لعلي رضي الله عنه: "قل: اللهم اهدني وسددني".',
+      sourceText:
+          'قال رسول الله ﷺ لعلي رضي الله عنه: "قل: اللهم اهدني وسددني".',
       sourceRef: 'رواه مسلم',
       repetitions: 1,
     ),
@@ -1075,9 +1333,12 @@ class DhikrRepository {
       id: 'feel_lost_3',
       category: DhikrCategory.feelings,
       emotionTag: 'lost',
-      arabicText: 'رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ',
-      englishText: 'Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower.',
-      frenchText: 'Seigneur ! Ne laisse pas nos cœurs dévier après que Tu nous as guidés ; et accorde-nous Ta miséricorde. C’est Toi, certes, le Grand Dispensateur.',
+      arabicText:
+          'رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ',
+      englishText:
+          'Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower.',
+      frenchText:
+          'Seigneur ! Ne laisse pas nos cœurs dévier après que Tu nous as guidés ; et accorde-nous Ta miséricorde. C’est Toi, certes, le Grand Dispensateur.',
       virtue: 'دعاء الراسخين في العلم للحماية من الضلال بعد الهداية.',
       sourceText: 'كما ورد في سورة آل عمران.',
       sourceRef: 'القرآن الكريم (آل عمران)',
@@ -1087,11 +1348,15 @@ class DhikrRepository {
       id: 'feel_lost_4',
       category: DhikrCategory.feelings,
       emotionTag: 'lost',
-      arabicText: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى',
-      englishText: 'O Allah, I ask You for guidance, piety, chastity and self-sufficiency.',
-      frenchText: 'Ô Allah ! Je Te demande la guidée, la piété, la chasteté et la suffisance.',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى',
+      englishText:
+          'O Allah, I ask You for guidance, piety, chastity and self-sufficiency.',
+      frenchText:
+          'Ô Allah ! Je Te demande la guidée, la piété, la chasteté et la suffisance.',
       virtue: 'طلب أصول الخير كلها: الهدى والتقى والعفاف والغنى.',
-      sourceText: 'عن عبد الله بن مسعود رضي الله عنه عن النبي ﷺ أنه كان يقول: "اللهم إني أسألك الهدى والتقى...".',
+      sourceText:
+          'عن عبد الله بن مسعود رضي الله عنه عن النبي ﷺ أنه كان يقول: "اللهم إني أسألك الهدى والتقى...".',
       sourceRef: 'رواه مسلم',
       repetitions: 1,
     ),
@@ -1099,9 +1364,12 @@ class DhikrRepository {
       id: 'feel_lost_5',
       category: DhikrCategory.feelings,
       emotionTag: 'lost',
-      arabicText: 'اللَّهُمَّ رَبَّ جِبْرَائِيلَ وَمِيكَائِيلَ وَإِسْرَافِيلَ، فَاطِرَ السَّمَاوَاتِ وَالأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ، اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ، إِنَّكَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقِيمٍ',
-      englishText: 'O Allah, Lord of Jibrail, Mikhail and Israfil... guide me to the truth concerning that wherein they differed...',
-      frenchText: 'Ô Allah ! Seigneur de Jibrîl, Mîkâ’îl et Isrâfîl... Guide-moi, avec Ta permission, vers la vérité là où il y a eu divergence...',
+      arabicText:
+          'اللَّهُمَّ رَبَّ جِبْرَائِيلَ وَمِيكَائِيلَ وَإِسْرَافِيلَ، فَاطِرَ السَّمَاوَاتِ وَالأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ، اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ، إِنَّكَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقِيمٍ',
+      englishText:
+          'O Allah, Lord of Jibrail, Mikhail and Israfil... guide me to the truth concerning that wherein they differed...',
+      frenchText:
+          'Ô Allah ! Seigneur de Jibrîl, Mîkâ’îl et Isrâfîl... Guide-moi, avec Ta permission, vers la vérité là où il y a eu divergence...',
       virtue: 'دعاء لكشف الحقيقة والالتباس عند تضارب الآراء.',
       sourceText: 'كان النبي ﷺ يفتتح صلاته بالليل إذا قام بهذا الدعاء.',
       sourceRef: 'رواه مسلم',
@@ -1115,9 +1383,11 @@ class DhikrRepository {
       emotionTag: 'angry',
       arabicText: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ',
       englishText: 'I seek refuge in Allah from Satan the outcast.',
-      frenchText: 'Je cherche protection auprès d’Allah contre Satan le maudit.',
+      frenchText:
+          'Je cherche protection auprès d’Allah contre Satan le maudit.',
       virtue: 'يذهب جمرة الشيطان من القلب ويطفئ الغضب.',
-      sourceText: 'استبَّ رجلان عند النبي ﷺ فجعل أحدهما يغضب ويحمرُّ وجهه فقال النبي ﷺ: "إني لأعلم كلمة لو قالها لذهب عنه ما يجد: أعوذ بالله من الشيطان الرجيم".',
+      sourceText:
+          'استبَّ رجلان عند النبي ﷺ فجعل أحدهما يغضب ويحمرُّ وجهه فقال النبي ﷺ: "إني لأعلم كلمة لو قالها لذهب عنه ما يجد: أعوذ بالله من الشيطان الرجيم".',
       sourceRef: 'رواه البخاري ومسلم',
       repetitions: 3,
     ),
@@ -1125,9 +1395,12 @@ class DhikrRepository {
       id: 'feel_angry_2',
       category: DhikrCategory.feelings,
       emotionTag: 'angry',
-      arabicText: 'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي، وَأَذْهِبْ غَيْظَ قَلْبِي، وَأَجِرْنِي مِنَ الشَّيْطَانِ',
-      englishText: 'O Allah, forgive my sin, remove the anger of my heart, and protect me from Satan.',
-      frenchText: 'Ô Allah ! Pardonne mes péchés, dissipe la colère de mon cœur et protège-moi de Satan.',
+      arabicText:
+          'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي، وَأَذْهِبْ غَيْظَ قَلْبِي، وَأَجِرْنِي مِنَ الشَّيْطَانِ',
+      englishText:
+          'O Allah, forgive my sin, remove the anger of my heart, and protect me from Satan.',
+      frenchText:
+          'Ô Allah ! Pardonne mes péchés, dissipe la colère de mon cœur et protège-moi de Satan.',
       virtue: 'دعاء لسكينة القلب والتحكم في النفس وطلب المغفرة.',
       sourceText: 'من أدعية النبي ﷺ لأم سلمة عند الغضب.',
       sourceRef: 'رواه ابن السني',
@@ -1137,9 +1410,12 @@ class DhikrRepository {
       id: 'feel_angry_3',
       category: DhikrCategory.feelings,
       emotionTag: 'angry',
-      arabicText: 'اللَّهُمَّ رَبَّ النَّبِيِّ مُحَمَّدٍ اغْفِرْ لِي ذَنْبِي وَأَذْهِبْ غَيْظَ قَلْبِي وَأَعِذْنِي مِنْ مُضِلَّاتِ الْفِتَنِ',
-      englishText: 'O Allah, Lord of the Prophet Muhammad, forgive my sin... and protect me from the misleading trials.',
-      frenchText: 'Ô Allah ! Seigneur du Prophète Muhammad, pardonne mon péché... et protège-moi des épreuves qui égarent.',
+      arabicText:
+          'اللَّهُمَّ رَبَّ النَّبِيِّ مُحَمَّدٍ اغْفِرْ لِي ذَنْبِي وَأَذْهِبْ غَيْظَ قَلْبِي وَأَعِذْنِي مِنْ مُضِلَّاتِ الْفِتَنِ',
+      englishText:
+          'O Allah, Lord of the Prophet Muhammad, forgive my sin... and protect me from the misleading trials.',
+      frenchText:
+          'Ô Allah ! Seigneur du Prophète Muhammad, pardonne mon péché... et protège-moi des épreuves qui égarent.',
       virtue: 'للتغلب على الغضب الشديد والفتن، والثبات على الحق.',
       sourceText: 'دعاء مأثور عن النبي ﷺ.',
       sourceRef: 'رواه أحمد',
@@ -1149,9 +1425,12 @@ class DhikrRepository {
       id: 'feel_angry_4',
       category: DhikrCategory.feelings,
       emotionTag: 'angry',
-      arabicText: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الْغَضَبِ وَالرِّضَا',
-      englishText: 'O Allah, I ask You for the word of truth in anger and in pleasure.',
-      frenchText: 'Ô Allah ! Je Te demande la parole de vérité dans la colère comme dans la satisfaction.',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الْغَضَبِ وَالرِّضَا',
+      englishText:
+          'O Allah, I ask You for the word of truth in anger and in pleasure.',
+      frenchText:
+          'Ô Allah ! Je Te demande la parole de vérité dans la colère comme dans la satisfaction.',
       virtue: 'لضمان العدل والصدق والحكمة حتى عند الغضب.',
       sourceText: 'من دعاء النبي ﷺ الطويل المشهور.',
       sourceRef: 'رواه النسائي',
@@ -1161,9 +1440,12 @@ class DhikrRepository {
       id: 'feel_angry_5',
       category: DhikrCategory.feelings,
       emotionTag: 'angry',
-      arabicText: 'اللَّهُمَّ قِنِي شَرَّ نَفْسِي، وَاعْزِمْ لِي عَلَى أَرْشَدِ أَمْرِي',
-      englishText: 'O Allah, protect me from the evil of myself and confirm for me the most guided course of my affairs.',
-      frenchText: 'Ô Allah ! Protège-moi contre mon propre mal, et affermis-moi pour suivre la voie la plus droite.',
+      arabicText:
+          'اللَّهُمَّ قِنِي شَرَّ نَفْسِي، وَاعْزِمْ لِي عَلَى أَرْشَدِ أَمْرِي',
+      englishText:
+          'O Allah, protect me from the evil of myself and confirm for me the most guided course of my affairs.',
+      frenchText:
+          'Ô Allah ! Protège-moi contre mon propre mal, et affermis-moi pour suivre la voie la plus droite.',
       virtue: 'للسيطرة على هوى النفس وردعها عن الخطأ.',
       sourceText: 'وصية النبي ﷺ لحصين بن عبيد.',
       sourceRef: 'رواه أحمد',
@@ -1174,20 +1456,27 @@ class DhikrRepository {
     Dhikr(
       id: 'leaving_home_1',
       category: DhikrCategory.leavingHome,
-      arabicText: 'بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',
-      englishText: 'In the name of Allah, I place my trust in Allah, there is no might nor power except with Allah.',
-      frenchText: 'Au nom d\'Allah, je place ma confiance en Allah, il n\'y a de force et de puissance que par Allah.',
+      arabicText:
+          'بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',
+      englishText:
+          'In the name of Allah, I place my trust in Allah, there is no might nor power except with Allah.',
+      frenchText:
+          'Au nom d\'Allah, je place ma confiance en Allah, il n\'y a de force et de puissance que par Allah.',
       virtue: 'يقال له: هُديت، وكُفيت، ووُقيت، وتتنحى عنه الشياطين.',
-      sourceText: 'قال رسول الله ﷺ: "إذا خرج الرجل من بيته فقال: بسم الله... قيل له: هُديت وكُفيت ووُقيت".',
+      sourceText:
+          'قال رسول الله ﷺ: "إذا خرج الرجل من بيته فقال: بسم الله... قيل له: هُديت وكُفيت ووُقيت".',
       sourceRef: 'رواه أبو داود والترمذي',
       repetitions: 1,
     ),
     Dhikr(
       id: 'leaving_home_2',
       category: DhikrCategory.leavingHome,
-      arabicText: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ، أَوْ أُضَلَّ، أَوْ أَزِلَّ، أَوْ أُزَلَّ، أَوْ أَظْلِمَ، أَوْ أُظْلَمَ، أَوْ أَجْهَلَ، أَوْ يُجْهَلَ عَلَيَّ',
-      englishText: 'O Allah, I seek refuge in You lest I stray or be led astray, or slip or be made to slip, or cause injustice or suffer injustice, or be ignorant or be treated with ignorance.',
-      frenchText: 'Ô Allah ! Je me réfugie en Toi de ce que je m\'égare ou que je sois égaré, que je glisse ou que l\'on me fasse glisser, que je commette une injustice ou que j\'en subisse une, que je sois ignorant ou qu\'on le soit envers moi.',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ، أَوْ أُضَلَّ، أَوْ أَزِلَّ، أَوْ أُزَلَّ، أَوْ أَظْلِمَ، أَوْ أُظْلَمَ، أَوْ أَجْهَلَ، أَوْ يُجْهَلَ عَلَيَّ',
+      englishText:
+          'O Allah, I seek refuge in You lest I stray or be led astray, or slip or be made to slip, or cause injustice or suffer injustice, or be ignorant or be treated with ignorance.',
+      frenchText:
+          'Ô Allah ! Je me réfugie en Toi de ce que je m\'égare ou que je sois égaré, que je glisse ou que l\'on me fasse glisser, que je commette une injustice ou que j\'en subisse une, que je sois ignorant ou qu\'on le soit envers moi.',
       virtue: 'حماية شاملة من الزلل والظلم والجهل.',
       sourceText: 'كان النبي ﷺ إذا خرج من بيته قال هذا الدعاء.',
       sourceRef: 'رواه أبو داود والترمذي',
@@ -1198,11 +1487,16 @@ class DhikrRepository {
     Dhikr(
       id: 'entering_home',
       category: DhikrCategory.enteringHome,
-      arabicText: 'بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا',
-      englishText: 'In the name of Allah we enter, in the name of Allah we leave, and upon Allah our Lord we depend.',
-      frenchText: 'Au nom d\'Allah nous entrons, au nom d\'Allah nous sortons, et en Allah notre Seigneur nous plaçons notre confiance.',
-      virtue: 'السنة عند الدخول ذكر الله ثم السلام على الأهل، فإنه يمنع الشيطان من المبيت في البيت.',
-      sourceText: 'قال رسول الله ﷺ: "إذا دخل الرجل بيته، فذكر الله تعالى عند دخوله وعند طعامه، قال الشيطان: لا مبيت لكم ولا عشاء". وعن أبي مالك الأشعري رضي الله عنه أن رسول الله ﷺ قال: "إذا ولج الرجل بيته، فليقل: اللهم إني أسألك خير المولج، وخير المخرج، بسم الله ولجنا، وبسم الله خرجنا، وعلى الله ربنا توكلنا، ثم ليسلم على أهله".',
+      arabicText:
+          'اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ الْمَوْلِجِ، وَخَيْرَ الْمَخْرَجِ، بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا',
+      englishText:
+          'In the name of Allah we enter, in the name of Allah we leave, and upon Allah our Lord we depend.',
+      frenchText:
+          'Au nom d\'Allah nous entrons, au nom d\'Allah nous sortons, et en Allah notre Seigneur nous plaçons notre confiance.',
+      virtue:
+          'السنة عند الدخول ذكر الله ثم السلام على الأهل، فإنه يمنع الشيطان من المبيت في البيت.',
+      sourceText:
+          'قال رسول الله ﷺ: "إذا دخل الرجل بيته، فذكر الله تعالى عند دخوله وعند طعامه، قال الشيطان: لا مبيت لكم ولا عشاء". وعن أبي مالك الأشعري رضي الله عنه أن رسول الله ﷺ قال: "إذا ولج الرجل بيته، فليقل: اللهم إني أسألك خير المولج، وخير المخرج، بسم الله ولجنا، وبسم الله خرجنا، وعلى الله ربنا توكلنا، ثم ليسلم على أهله".',
       sourceRef: 'رواه مسلم وأبو داود',
       repetitions: 1,
     ),

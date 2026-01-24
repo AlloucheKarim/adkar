@@ -15,20 +15,28 @@ class DhikrDetailScreen extends StatelessWidget {
       listenable: ThemeService(),
       builder: (context, _) {
         final isNightMode = ThemeService().isNightMode;
-        final primaryColor = isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037);
-        final cardColor = isNightMode ? const Color(0xFF4E342E).withValues(alpha: 0.6) : const Color(0xFFFFF8E1).withValues(alpha: 0.8);
+        final primaryColor = isNightMode
+            ? const Color(0xFFF5F5DC)
+            : const Color(0xFF5D4037);
+        final cardColor = isNightMode
+            ? const Color(0xFF4E342E).withValues(alpha: 0.6)
+            : const Color(0xFFFFF8E1).withValues(alpha: 0.8);
 
         return ScaffoldWithBackground(
           appBar: AppBar(
             title: Text(
               'فضل الذكر',
-              style: AppTypography.header(fontSize: 24).copyWith(
-                color: primaryColor,
-              ),
+              style: AppTypography.header(
+                fontSize: 24,
+              ).copyWith(color: primaryColor),
             ),
             backgroundColor: Colors.transparent,
             centerTitle: true,
-            leading: BackButton(color: isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037)),
+            leading: BackButton(
+              color: isNightMode
+                  ? const Color(0xFFF5F5DC)
+                  : const Color(0xFF5D4037),
+            ),
           ),
           body: SingleChildScrollView(
             padding: const EdgeInsets.fromLTRB(24, 20, 24, 40),
@@ -36,7 +44,11 @@ class DhikrDetailScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // 1. Preuve / Dalil (هديٌ نستنير به)
-                _SectionHeader(title: 'هديٌ نستنير به', icon: Icons.auto_awesome, isNightMode: isNightMode),
+                _SectionHeader(
+                  title: 'هديٌ نستنير به',
+                  icon: Icons.auto_awesome,
+                  isNightMode: isNightMode,
+                ),
                 const SizedBox(height: 16),
                 Container(
                   width: double.infinity,
@@ -44,7 +56,9 @@ class DhikrDetailScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: cardColor,
                     borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: AppColors.accent.withValues(alpha: 0.3)),
+                    border: Border.all(
+                      color: AppColors.accent.withValues(alpha: 0.3),
+                    ),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -73,18 +87,24 @@ class DhikrDetailScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                
+
                 const SizedBox(height: 32),
 
-                // 2. Pourquoi + Bénéfice (ما يهبه لكِ هذا الذكر)
-                _SectionHeader(title: 'ما يهبه لكِ هذا الذكر', icon: Icons.volunteer_activism, isNightMode: isNightMode),
+                // 2. Pourquoi + Bénéfice (ثماره في حياتك)
+                _SectionHeader(
+                  title: 'ثماره في حياتك',
+                  icon: Icons.volunteer_activism,
+                  isNightMode: isNightMode,
+                ),
                 const SizedBox(height: 16),
                 _InfoBox(
-                  text: dhikr.virtue, 
-                  color: isNightMode ? AppColors.accent.withValues(alpha: 0.1) : AppColors.primary.withValues(alpha: 0.15),
+                  text: dhikr.virtue,
+                  color: isNightMode
+                      ? AppColors.accent.withValues(alpha: 0.1)
+                      : AppColors.primary.withValues(alpha: 0.15),
                   textColor: primaryColor,
                 ),
-                
+
                 const SizedBox(height: 40),
               ],
             ),
@@ -100,7 +120,11 @@ class _SectionHeader extends StatelessWidget {
   final IconData icon;
   final bool isNightMode;
 
-  const _SectionHeader({required this.title, required this.icon, required this.isNightMode});
+  const _SectionHeader({
+    required this.title,
+    required this.icon,
+    required this.isNightMode,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +136,9 @@ class _SectionHeader extends StatelessWidget {
           title,
           style: AppTypography.arabic(fontSize: 20).copyWith(
             fontWeight: FontWeight.w800,
-            color: isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037),
+            color: isNightMode
+                ? const Color(0xFFF5F5DC)
+                : const Color(0xFF5D4037),
           ),
         ),
       ],
@@ -125,7 +151,11 @@ class _InfoBox extends StatelessWidget {
   final Color color;
   final Color textColor;
 
-  const _InfoBox({required this.text, required this.color, required this.textColor});
+  const _InfoBox({
+    required this.text,
+    required this.color,
+    required this.textColor,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -138,10 +168,9 @@ class _InfoBox extends StatelessWidget {
       ),
       child: Text(
         text,
-        style: AppTypography.arabic(fontSize: 18).copyWith(
-          fontWeight: FontWeight.w500,
-          color: textColor,
-        ),
+        style: AppTypography.arabic(
+          fontSize: 18,
+        ).copyWith(fontWeight: FontWeight.w500, color: textColor),
       ),
     );
   }
