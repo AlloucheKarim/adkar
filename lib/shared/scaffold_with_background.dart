@@ -26,9 +26,12 @@ class ScaffoldWithBackground extends StatelessWidget {
       builder: (context, _) {
         final isNightMode = ThemeService().isNightMode;
         // If a specific background is provided, use it. Otherwise use the theme default.
-        final effectiveBackgroundImage = backgroundImage ?? 
-            (isNightMode ? 'assets/images/background_night.jpg' : 'assets/images/background_v3.png');
-        
+        final effectiveBackgroundImage =
+            backgroundImage ??
+            (isNightMode
+                ? 'assets/images/background_night.jpg'
+                : 'assets/images/background_v3.png');
+
         return Container(
           decoration: BoxDecoration(
             image: DecorationImage(
@@ -41,12 +44,14 @@ class ScaffoldWithBackground extends StatelessWidget {
             child: Stack(
               children: [
                 // Bokeh Overlay
-                if (backgroundColor != null && backgroundColor != Colors.transparent)
+                if (backgroundColor != null &&
+                    backgroundColor != Colors.transparent)
                   Positioned.fill(
                     child: _BokehOverlay(color: backgroundColor!),
                   ),
                 Scaffold(
-                  backgroundColor: Colors.transparent, // Important pour voir le fond
+                  backgroundColor:
+                      Colors.transparent, // Important pour voir le fond
                   appBar: appBar,
                   extendBodyBehindAppBar: extendBodyBehindAppBar,
                   body: body,
@@ -67,9 +72,7 @@ class _BokehOverlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomPaint(
-      painter: _BokehPainter(color: color),
-    );
+    return CustomPaint(painter: _BokehPainter(color: color));
   }
 }
 
@@ -85,10 +88,10 @@ class _BokehPainter extends CustomPainter {
 
     final random = BokehRandom(42); // Seeded for consistency
     for (var i = 0; i < 15; i++) {
-        final centerX = random.nextDouble() * size.width;
-        final centerY = random.nextDouble() * size.height;
-        final radius = 20.0 + random.nextDouble() * 40.0;
-        canvas.drawCircle(Offset(centerX, centerY), radius, paint);
+      final centerX = random.nextDouble() * size.width;
+      final centerY = random.nextDouble() * size.height;
+      final radius = 20.0 + random.nextDouble() * 40.0;
+      canvas.drawCircle(Offset(centerX, centerY), radius, paint);
     }
   }
 
@@ -98,10 +101,10 @@ class _BokehPainter extends CustomPainter {
 
 // Pseudo-random helper if dart:math Random feels overkill or for specific behavior
 class BokehRandom {
-    int _seed;
-    BokehRandom(this._seed);
-    double nextDouble() {
-        _seed = (_seed * 1103515245 + 12345) & 0x7fffffff;
-        return _seed / 2147483647.0;
-    }
+  int _seed;
+  BokehRandom(this._seed);
+  double nextDouble() {
+    _seed = (_seed * 1103515245 + 12345) & 0x7fffffff;
+    return _seed / 2147483647.0;
+  }
 }

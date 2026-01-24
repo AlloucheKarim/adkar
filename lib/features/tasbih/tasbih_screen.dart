@@ -13,11 +13,12 @@ class TasbihScreen extends StatefulWidget {
   State<TasbihScreen> createState() => _TasbihScreenState();
 }
 
-class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderStateMixin {
+class _TasbihScreenState extends State<TasbihScreen>
+    with SingleTickerProviderStateMixin {
   int _counter = 0;
   int _totalCounter = 0;
   String _currentTasbih = 'سبحان الله';
-  
+
   final List<String> _suggestions = [
     'سبحان الله',
     'الحمد لله',
@@ -71,7 +72,10 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt('tasbih_counter', _counter);
     await prefs.setInt('tasbih_total_counter', _totalCounter);
-    await prefs.setString('tasbih_last_updated', DateTime.now().toIso8601String());
+    await prefs.setString(
+      'tasbih_last_updated',
+      DateTime.now().toIso8601String(),
+    );
   }
 
   @override
@@ -86,9 +90,9 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
       _totalCounter++;
     });
     _saveCounter();
-    
+
     // Haptics - added simple vibration for every tap as requested
-    HapticFeedback.lightImpact(); 
+    HapticFeedback.lightImpact();
 
     _beadController.reset();
     _beadController.forward();
@@ -108,15 +112,24 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
       listenable: ThemeService(),
       builder: (context, _) {
         final isNightMode = ThemeService().isNightMode;
-        final primaryColor = isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037);
-        final secondaryColor = isNightMode ? const Color(0xFFE6C98A) : const Color(0xFF8D6E63);
+        final primaryColor = isNightMode
+            ? const Color(0xFFF5F5DC)
+            : const Color(0xFF5D4037);
+        final secondaryColor = isNightMode
+            ? const Color(0xFFE6C98A)
+            : const Color(0xFF8D6E63);
 
         return ScaffoldWithBackground(
           appBar: AppBar(
             title: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text('سبحتي', style: AppTypography.header(fontSize: 24).copyWith(color: primaryColor)),
+                Text(
+                  'سبحتي',
+                  style: AppTypography.header(
+                    fontSize: 24,
+                  ).copyWith(color: primaryColor),
+                ),
                 const SizedBox(height: 12),
                 Text(
                   'تسبيحات تردد بهدوء… ومع حضور القلب',
@@ -131,7 +144,9 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
             elevation: 0,
             centerTitle: true,
             leading: BackButton(
-              color: isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037),
+              color: isNightMode
+                  ? const Color(0xFFF5F5DC)
+                  : const Color(0xFF5D4037),
             ),
             toolbarHeight: 110,
           ),
@@ -142,7 +157,7 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
               child: Column(
                 children: [
                   const Spacer(flex: 1),
-                  
+
                   // Current word display in a beautiful floral frame A
                   Container(
                     height: 120,
@@ -150,7 +165,11 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
                     margin: const EdgeInsets.symmetric(horizontal: 20),
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage(isNightMode ? 'assets/images/frame_night.png' : 'assets/images/header_frame_a.png'),
+                        image: AssetImage(
+                          isNightMode
+                              ? 'assets/images/doua_frame-nigth.png'
+                              : 'assets/images/header_frame_a.png',
+                        ),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -161,16 +180,18 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
                           _currentTasbih,
                           textAlign: TextAlign.center,
                           style: AppTypography.arabic(fontSize: 22).copyWith(
-                            color: isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037),
+                            color: isNightMode
+                                ? const Color(0xFFF5F5DC)
+                                : const Color(0xFF5D4037),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                       ),
                     ),
                   ),
-                  
+
                   const Spacer(flex: 1),
-                  
+
                   // Interactive Sebha (Circular beads)
                   Stack(
                     alignment: Alignment.center,
@@ -180,7 +201,9 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
                         animation: _beadController,
                         builder: (context, child) {
                           return Transform.rotate(
-                            angle: (_counter + _beadController.value) * (2 * math.pi / 33),
+                            angle:
+                                (_counter + _beadController.value) *
+                                (2 * math.pi / 33),
                             child: child,
                           );
                         },
@@ -200,20 +223,29 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
                                     shape: BoxShape.circle,
                                     gradient: RadialGradient(
                                       colors: [
-                                        isNightMode ? const Color(0xFFD7CCC8) : const Color(0xFFFDF5F7),
-                                        index == 0 
-                                            ? const Color(0xFFE6C98A) 
-                                            : (isNightMode ? const Color(0xFF4E342E) : const Color(0xFFF4C6D7)),
+                                        isNightMode
+                                            ? const Color(0xFFD7CCC8)
+                                            : const Color(0xFFFDF5F7),
+                                        index == 0
+                                            ? const Color(0xFFE6C98A)
+                                            : (isNightMode
+                                                  ? const Color(0xFF4E342E)
+                                                  : const Color(0xFFF4C6D7)),
                                       ],
                                       center: const Alignment(-0.3, -0.3),
                                     ),
-                                    border: Border.all(color: const Color(0xFFE6C98A), width: 1),
+                                    border: Border.all(
+                                      color: const Color(0xFFE6C98A),
+                                      width: 1,
+                                    ),
                                     boxShadow: [
                                       BoxShadow(
-                                        color: Colors.black.withValues(alpha: 0.1),
+                                        color: Colors.black.withValues(
+                                          alpha: 0.1,
+                                        ),
                                         blurRadius: 4,
                                         offset: const Offset(2, 2),
-                                      )
+                                      ),
                                     ],
                                   ),
                                 ),
@@ -222,7 +254,7 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
                           ),
                         ),
                       ),
-                      
+
                       // Central Counter
                       TweenAnimationBuilder<double>(
                         key: ValueKey(_counter),
@@ -237,23 +269,26 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
                               children: [
                                 Text(
                                   '$_counter',
-                                  style: AppTypography.arabic(fontSize: 50).copyWith(
-                                    color: primaryColor,
-                                    fontWeight: FontWeight.bold,
-                                    shadows: [
-                                      if (scale > 1.0)
-                                        Shadow(
-                                          color: const Color(0xFFE6C98A).withValues(alpha: 0.5),
-                                          blurRadius: 10,
-                                        ),
-                                    ],
-                                  ),
+                                  style: AppTypography.arabic(fontSize: 50)
+                                      .copyWith(
+                                        color: primaryColor,
+                                        fontWeight: FontWeight.bold,
+                                        shadows: [
+                                          if (scale > 1.0)
+                                            Shadow(
+                                              color: const Color(
+                                                0xFFE6C98A,
+                                              ).withValues(alpha: 0.5),
+                                              blurRadius: 10,
+                                            ),
+                                        ],
+                                      ),
                                 ),
                                 Text(
                                   'تسبيحة',
-                                  style: AppTypography.arabic(fontSize: 14).copyWith(
-                                    color: secondaryColor,
-                                  ),
+                                  style: AppTypography.arabic(
+                                    fontSize: 14,
+                                  ).copyWith(color: secondaryColor),
                                 ),
                               ],
                             ),
@@ -262,19 +297,23 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
                       ),
                     ],
                   ),
-                  
+
                   const SizedBox(height: 10),
-                  
+
                   // Reset Button
                   IconButton(
                     onPressed: _reset,
-                    icon: const Icon(Icons.refresh_rounded, color: Color(0xFFC09D63), size: 32),
+                    icon: const Icon(
+                      Icons.refresh_rounded,
+                      color: Color(0xFFC09D63),
+                      size: 32,
+                    ),
                     padding: EdgeInsets.zero,
                     constraints: const BoxConstraints(),
                   ),
-                  
+
                   const Spacer(flex: 1),
-                  
+
                   // Suggestion Carousel
                   Text(
                     'اختاري ذكركِ',
@@ -296,17 +335,29 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
                           label: Text(suggestion),
                           selected: isSelected,
                           onSelected: (selected) {
-                            if (selected) setState(() => _currentTasbih = suggestion);
+                            if (selected)
+                              setState(() => _currentTasbih = suggestion);
                           },
-                          labelStyle: AppTypography.arabic(fontSize: 12).copyWith(
-                            color: isSelected ? (isNightMode ? Colors.black87 : Colors.white) : primaryColor,
-                          ),
-                          selectedColor: isNightMode ? const Color(0xFFE6C98A) : const Color(0xFFF4C6D7),
-                          backgroundColor: isNightMode ? const Color(0xFF4E342E).withValues(alpha: 0.6) : Colors.white.withValues(alpha: 0.8),
+                          labelStyle: AppTypography.arabic(fontSize: 12)
+                              .copyWith(
+                                color: isSelected
+                                    ? (isNightMode
+                                          ? Colors.black87
+                                          : Colors.white)
+                                    : primaryColor,
+                              ),
+                          selectedColor: isNightMode
+                              ? const Color(0xFFE6C98A)
+                              : const Color(0xFFF4C6D7),
+                          backgroundColor: isNightMode
+                              ? const Color(0xFF4E342E).withValues(alpha: 0.6)
+                              : Colors.white.withValues(alpha: 0.8),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20),
                             side: BorderSide(
-                              color: isSelected ? const Color(0xFFE6C98A) : Colors.transparent,
+                              color: isSelected
+                                  ? const Color(0xFFE6C98A)
+                                  : Colors.transparent,
                             ),
                           ),
                           showCheckmark: false,
@@ -315,15 +366,20 @@ class _TasbihScreenState extends State<TasbihScreen> with SingleTickerProviderSt
                     ),
                   ),
                   const Spacer(flex: 1),
-                  
+
                   // Lifetime Total Balance at the bottom
                   Container(
                     margin: const EdgeInsets.only(bottom: 20),
-                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 8,
+                    ),
                     decoration: BoxDecoration(
                       color: const Color(0xFFE6C98A).withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(25),
-                      border: Border.all(color: const Color(0xFFE6C98A).withValues(alpha: 0.3)),
+                      border: Border.all(
+                        color: const Color(0xFFE6C98A).withValues(alpha: 0.3),
+                      ),
                     ),
                     child: Text(
                       'رصيدكِ من التسبيح: $_totalCounter',
