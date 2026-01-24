@@ -1,0 +1,115 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import '../../core/design_system.dart';
+import '../../shared/scaffold_with_background.dart';
+import '../../core/theme_service.dart';
+
+class SuratAlMulkScreen extends StatefulWidget {
+  const SuratAlMulkScreen({super.key});
+
+  @override
+  State<SuratAlMulkScreen> createState() => _SuratAlMulkScreenState();
+}
+
+class _SuratAlMulkScreenState extends State<SuratAlMulkScreen> {
+  double fontSizeMultiplier = 1.0;
+
+  void _zoomIn() {
+    setState(() {
+      if (fontSizeMultiplier < 1.6) fontSizeMultiplier += 0.2;
+    });
+    HapticFeedback.selectionClick();
+  }
+
+  void _zoomOut() {
+    setState(() {
+      if (fontSizeMultiplier > 0.8) fontSizeMultiplier -= 0.2;
+    });
+    HapticFeedback.selectionClick();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: ThemeService(),
+      builder: (context, _) {
+        final isNightMode = ThemeService().isNightMode;
+        final primaryColor = isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037);
+
+        return ScaffoldWithBackground(
+          appBar: AppBar(
+            title: Text(
+              'سورة الملك', 
+              style: AppTypography.header(fontSize: 24).copyWith(color: primaryColor),
+            ),
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+            centerTitle: true,
+            leading: BackButton(
+              color: isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037),
+            ),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.zoom_out, size: 22, color: Color(0xFFC09D63)),
+                onPressed: _zoomOut,
+                tooltip: 'تصغير الخط',
+              ),
+              IconButton(
+                icon: const Icon(Icons.zoom_in, size: 22, color: Color(0xFFC09D63)),
+                onPressed: _zoomIn,
+                tooltip: 'تكبير الخط',
+              ),
+              const SizedBox(width: 8),
+            ],
+          ),
+          body: SingleChildScrollView(
+            padding: const EdgeInsets.fromLTRB(12, 12, 12, 40),
+            child: Column(
+              children: [
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
+                  decoration: BoxDecoration(
+                    color: isNightMode 
+                        ? const Color(0xFF4E342E).withValues(alpha: 0.6) 
+                        : Colors.white.withValues(alpha: 0.7),
+                    borderRadius: BorderRadius.circular(24),
+                    boxShadow: isNightMode ? null : AppColors.premiumShadow,
+                    border: Border.all(
+                      color: const Color(0xFFE6C98A).withValues(alpha: 0.3),
+                      width: 1,
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Text(
+                        'المانعة من عذاب القبر',
+                        style: AppTypography.header(fontSize: 18).copyWith(
+                          color: const Color(0xFFC09D63),
+                          letterSpacing: 1.5,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      Text(
+                        '''بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+                    
+تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ (1) الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلا وَهُوَ الْعَزِيزُ الْغَفُورُ (2) الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ طِبَاقًا مَّا تَرَى فِي خَلْقِ الرَّحْمَنِ مِن تَفَاوُتٍ فَارْجِعِ الْبَصَرَ هَلْ تَرَى مِن فُطُورٍ (3) ثُمَّ ارْجِعِ الْبَصَرَ كَرَّتَيْنِ يَنقَلِبْ إِلَيْكَ الْبَصَرُ خَاسِئًا وَهُوَ حَسِيرٌ (4) وَلَقَدْ زَيَّنَّا السَّمَاء الدُّنْيَا بِمَصَابِيحَ وَجَعَلْنَاهَا رُجُومًا لِّلشَّيَاطِينِ وَأَعْتَدْنَا لَهُمْ عَذَابَ السَّعِيرِ (5) وَلِلَّذِينَ كَفَرُوا بِرَبِّهِمْ عَذَابُ جَهَنَّمَ وَبِئْسَ الْمَصِيرُ (6) إِذَا أُلْقُوا فِيهَا سَمِعُوا لَهَا شَهِيقًا وَهِيَ تَفُورُ (7) تَكَادُ تَمَيَّزُ مِنَ الْغَيْظِ كُلَّمَا أُلْقِيَ فِيهَا فَوْجٌ سَأَلَهُمْ خَزَنَتُهَا أَلَمْ يَأْتِكُمْ نَذِيرٌ (8) قَالُوا بَلَى قَدْ جَاءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ اللَّهُ مِن شَيْءٍ إِنْ أَنتُمْ إِلاَّ فِي ضَلالٍ كَبِيرٍ (9) وَقَالُوا لَوْ كُنَّا نَسْمَعُ أَوْ نَعْقِلُ مَا كُنَّا فِي أَصْحَابِ السَّعِيرِ (10) فَاعْتَرَفُوا بِذَنبِهِمْ فَسُحْقًا لِّأَصْحَابِ السَّعِيرِ (11) إِنَّ الَّذِينَ يَخْشَوْنَ رَبَّهُم بِالْغَيْبِ لَهُم مَّغْفِرَةٌ وَأَجْرٌ كَبِيرٌ (12) وَأَسِرُّوا قَوْلَكُمْ أَوِ اجْهرُوا بِهِ إِنَّهُ عَلِيمٌ بِذَاتِ الصُّدُورِ (13) أَلا يَعْلَمُ مَنْ خَلَقَ وَهُوَ اللَّطِيفُ الْخَبِيرُ (14) هُوَ الَّذِي جَعَلَ لَكُمُ الأَرْضَ ذَلُولا فَامْشُوا فِي مَنَاكِبِهَا وَكُلُوا مِن رِّزْقِهِ وَإِلَيْهِ النُّشُورُ (15) أَأَمِنتُم مَّن فِي السَّمَاء أَن يَخْسِفَ بِكُمُ الأَرْضَ فَإِذَا هِيَ تَمُورُ (16) أَمْ أَمِنتُم مَّن فِي السَّمَاء أَن يُرْسِلَ عَلَيْكُمْ حَاصِبًا فَسَتَعْلَمُونَ كَيْفَ نَذِيرِ (17) وَلَقَدْ كَذَّبَ الَّذِينَ مِن قَبْلِهِمْ فَكَيْفَ كَانَ نَكِيرِ (18) أَوَلَمْ يَرَوْا إِلَى الطَّيْرِ فَوْقَهُمْ صَافَّاتٍ وَيَقْبِضْنَ مَا يُمْسِكُهُنَّ إِلاَّ الرَّحْمَنُ إِنَّهُ بِكُلِّ شَيْءٍ بَصِيرٌ (19) أَمَّنْ هَذَا الَّذِي هُوَ جُندٌ لَّكُمْ يَنصُرُكُم مِّن دُونِ الرَّحْمَنِ إِنِ الْكَافِرُونَ إِلاَّ فِي غُرُورٍ (20) أَمَّنْ هَذَا الَّذِي يَرْزُقُكُمْ إِنْ أَمْسَكَ رِزْقَهُ بَل لَّجُّوا فِي عُتُوٍّ وَنُفُورٍ (21) أَفَمَن يَمْشِي مُكِبًّا عَلَى وَجْهِهِ أَهْدَى أَمَّن يَمْشِي سَوِيًّا عَلَى صِرَاطٍ مُّسْتَقِيمٍ (22) قُلْ هُوَ الَّذِي أَنشَأَكُمْ وَجَعَلَ لَكُمُ السَّمْعَ وَالأَبْصَارَ وَالأَفْئِدَةَ قَلِيلا مَّا تَشْكُرُونَ (23) قُلْ هُوَ الَّذِي ذَرَأَكُمْ فِي الأَرْضِ وَإِلَيْهِ تُحْشَرُونَ (24) وَيَقُولُونَ مَتَى هَذَا الْوَعْدُ إِن كُنتُمْ صَادِقِينَ (25) قُلْ إِنَّمَا الْعِلْمُ عِندَ اللَّهِ وَإِنَّمَا أَنَا نَذِيرٌ مُّبِينٌ (26) فَلَمَّا رَأَوْهُ زُلْفَةً سِيئَتْ وُجُوهُ الَّذِينَ كَفَرُوا وَقِيلَ هَذَا الَّذِي كُنتُم بِهِ تَدَّعُونَ (27) قُلْ أَرَأَيْتُمْ إِنْ أَهْلَكَنِيَ اللَّهُ وَمَن مَّعِيَ أَوْ رَحِمَنَا فَمَن يُجِيرُ الْكَافِرِينَ مِنْ عَذَابٍ أَلِيمٍ (28) قُلْ هُوَ الرَّحْمَنُ آمَنَّا بِهِ وَعَلَيْهِ تَوَكَّلْنَا فَسَتَعْلَمُونَ مَنْ هُوَ فِي ضَلالٍ مُّبِينٍ (29) قُلْ أَرَأَيْتُمْ إِنْ أَصْبَحَ مَاؤُكُمْ غَوْرًا فَمَن يَأْتِيكُم بِمَاء مَّعِينٍ (30)''',
+                        textAlign: TextAlign.center,
+                        style: AppTypography.arabic(fontSize: 22 * fontSizeMultiplier).copyWith(
+                          color: primaryColor,
+                          height: 1.8,
+                        ),
+                      ),
+                    ],
+                  ),
+
+                ),
+                const SizedBox(height: 40),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+}

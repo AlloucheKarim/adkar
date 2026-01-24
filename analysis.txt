@@ -1,0 +1,7 @@
+Analyzing adkars...                                             
+
+  error - The named parameter 'sourceText' is required, but there's no corresponding argument - lib\core\repository.dart:693:5 - missing_required_argument
+warning - This default clause is covered by the previous cases - lib\features\dhikr_list\dhikr_list_screen.dart:196:7 - unreachable_switch_default
+warning - Unused import: 'package:intl/intl.dart' - lib\features\home\home_screen.dart:3:8 - unused_import
+
+3 issues found. (ran in 29.6s)
