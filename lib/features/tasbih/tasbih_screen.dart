@@ -335,8 +335,9 @@ class _TasbihScreenState extends State<TasbihScreen>
                           label: Text(suggestion),
                           selected: isSelected,
                           onSelected: (selected) {
-                            if (selected)
+                            if (selected) {
                               setState(() => _currentTasbih = suggestion);
+                            }
                           },
                           labelStyle: AppTypography.arabic(fontSize: 12)
                               .copyWith(
