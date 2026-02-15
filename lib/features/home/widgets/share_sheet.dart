@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/utils.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../../core/design_system.dart';
@@ -10,7 +11,7 @@ class ShareSheet extends StatelessWidget {
   const ShareSheet({super.key});
 
   final String shareText =
-      'وجدت تطبيقًا للذكر بروح أنثوية هادئة… فأحببت أن أشاركه معكِ ';
+      'وَجَدْتُ تَطْبِيقًا لِلذِّكْرِ بِرُوحٍ أُنْثَوِيَّةٍ هَادِئَةٍ… فَأَحْبَبْتُ أَنْ أُشَارِكَهُ مَعَكِ';
 
   void _copyToClipboard(BuildContext context, String text, String label) {
     Clipboard.setData(ClipboardData(text: text));
@@ -74,7 +75,7 @@ class ShareSheet extends StatelessWidget {
             ),
           ),
           Text(
-            'شاركي الخير ليعمّ الأجر',
+            'شارك الخير ليعم الأجر'.preventOrphan(),
             textAlign: TextAlign.center,
             style: AppTypography.arabic(fontSize: 18).copyWith(
               color: const Color(0xFFC09D63),
@@ -83,25 +84,27 @@ class ShareSheet extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           LinkRow(
-            label: 'رابط المتجر',
+            label: 'رَابِطُ الْمَتْجَرِ',
             link: PlatformUtils.currentStoreUrl,
             icon: Icons.link_rounded,
             onCopy: () => _copyToClipboard(
               context,
               '$shareText\n\n${PlatformUtils.currentStoreUrl}',
-              'الرسالة',
+              'الرِّسَالَةُ',
             ),
             isNightMode: isNightMode,
           ),
           const SizedBox(height: 32),
           ElevatedButton.icon(
-            onPressed: () {
-              Share.share('$shareText\n\n${PlatformUtils.currentStoreUrl}');
+            onPressed: () async {
               Navigator.pop(context);
+              await Share.share(
+                '$shareText\n\n${PlatformUtils.currentStoreUrl}',
+              );
             },
             icon: const Icon(Icons.share_rounded, size: 20),
             label: Text(
-              'مشاركة الآن',
+              'مُشَارَكَةٌ الْآنَ'.preventOrphan(),
               style: AppTypography.arabic(
                 fontSize: 16,
               ).copyWith(fontWeight: FontWeight.bold),

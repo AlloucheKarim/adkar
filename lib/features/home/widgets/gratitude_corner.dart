@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../core/design_system.dart';
 import '../../../core/gratitude_service.dart';
 import '../../../core/transitions.dart';
+import '../../../core/utils.dart';
 import '../gratitude_screen.dart';
 
 class GratitudeCorner extends StatelessWidget {
@@ -13,51 +14,52 @@ class GratitudeCorner extends StatelessWidget {
     return ListenableBuilder(
       listenable: GratitudeService(),
       builder: (context, child) {
-        final latest = GratitudeService().latestEntry;
+        final todaysEntry = GratitudeService().getTodaysEntry();
 
         return Container(
           width: double.infinity,
           margin: const EdgeInsets.symmetric(horizontal: 20),
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(24),
           decoration: BoxDecoration(
             color: isNightMode
-                ? Colors.transparent
-                : Colors.white.withValues(alpha: 0.6),
-            borderRadius: BorderRadius.circular(20),
+                ? const Color(0xFF4E342E).withValues(alpha: 0.4)
+                : Colors.white.withValues(alpha: 0.4),
+            borderRadius: BorderRadius.circular(24),
             border: Border.all(
-              color: const Color(0xFFE6C98A).withValues(alpha: 0.3),
+              color: const Color(0xFFE6C98A).withValues(alpha: 0.2),
             ),
-            boxShadow: isNightMode ? null : AppColors.premiumShadow,
           ),
           child: Column(
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Icon(
-                    Icons.favorite,
-                    color: Color(0xFFF4C6D7),
-                    size: 20,
+                    Icons.auto_awesome,
+                    color: Color(0xFFE6C98A),
+                    size: 18,
                   ),
+                  const SizedBox(width: 12),
                   Text(
-                    'ركن الامتنان',
-                    style: AppTypography.header(fontSize: 22).copyWith(
+                    'رُكْن الِامْتِنَان'.stripKasraFromShadda(),
+                    style: AppTypography.thuluth(fontSize: 22).copyWith(
                       color: isNightMode
                           ? const Color(0xFFF5F5DC)
                           : const Color(0xFF5D4037),
                     ),
                   ),
+                  const SizedBox(width: 12),
                   const Icon(
-                    Icons.favorite,
-                    color: Color(0xFFF4C6D7),
-                    size: 20,
+                    Icons.auto_awesome,
+                    color: Color(0xFFE6C98A),
+                    size: 18,
                   ),
                 ],
               ),
-              const SizedBox(height: 16),
-              if (latest != null)
+              const SizedBox(height: 20),
+              if (todaysEntry != null)
                 Text(
-                  '"${latest.content}"',
+                  '"${todaysEntry.content.preventOrphan()}"',
                   textAlign: TextAlign.center,
                   style: AppTypography.arabic(fontSize: 18).copyWith(
                     color: isNightMode
@@ -68,7 +70,8 @@ class GratitudeCorner extends StatelessWidget {
                 )
               else
                 Text(
-                  'ما هي النعمة التي تودين شكر الله عليها اليوم؟',
+                  'مَا هِيَ النِّعْمَةُ الَّتِي تَوَدِّينَ شُكْرَ اللَّهِ عَلَيْهَا الْيَوْمَ؟'
+                      .preventOrphan(),
                   textAlign: TextAlign.center,
                   style: AppTypography.arabic(fontSize: 16).copyWith(
                     color: isNightMode
@@ -84,7 +87,9 @@ class GratitudeCorner extends StatelessWidget {
                 ),
                 icon: const Icon(Icons.edit_note, color: Color(0xFFC09D63)),
                 label: Text(
-                  latest != null ? 'تحديث خاطرتكِ' : 'اكتبي خاطرتكِ',
+                  todaysEntry != null
+                      ? 'تَحْدِيث خَاطِرَتِك'
+                      : 'اكْتُبِي خَاطِرَتِك',
                   style: AppTypography.header(
                     fontSize: 14,
                     color: const Color(0xFFC09D63),

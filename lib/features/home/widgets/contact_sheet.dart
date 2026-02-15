@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/utils.dart';
 import 'package:flutter/services.dart';
 import '../../../core/design_system.dart';
 import '../../../core/theme_service.dart';
@@ -34,7 +35,7 @@ class ContactSheet extends StatelessWidget {
             ),
           ),
           Text(
-            'يسعدنا تواصلكِ عبر البريد الإلكتروني:',
+            'يسعدنا تواصلك عبر البريد الإلكتروني:'.preventOrphan(),
             textAlign: TextAlign.center,
             style: AppTypography.arabic(fontSize: 18).copyWith(
               color: const Color(0xFFC09D63),

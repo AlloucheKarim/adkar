@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/utils.dart';
 import '../../../core/design_system.dart';
 import '../../../core/prayer_service.dart';
 import '../prayer_times_sheet.dart';
@@ -61,14 +62,14 @@ class PrayerIndicator extends StatelessWidget {
                 const SizedBox(width: 8),
                 if (prayerService.isLoading)
                   Text(
-                    'جاري التحميل...',
+                    'جَارِي التَّحْمِيل...'.preventOrphan(),
                     style: AppTypography.arabic(
                       fontSize: 14,
                     ).copyWith(color: primaryColor.withValues(alpha: 0.7)),
                   )
                 else if (prayerService.errorMessage != null)
                   Text(
-                    'اضغطي لتحديد الموقع',
+                    'اضْغَطِي لِتَحْدِيد الْمَوْقِع'.preventOrphan(),
                     style: AppTypography.arabic(
                       fontSize: 14,
                     ).copyWith(color: primaryColor.withValues(alpha: 0.7)),
@@ -85,7 +86,7 @@ class PrayerIndicator extends StatelessWidget {
                           ),
                         ),
                         TextSpan(
-                          text: ' بعد ',
+                          text: ' بَعْد '.preventOrphan(),
                           style: AppTypography.arabic(
                             fontSize: 14,
                           ).copyWith(color: primaryColor),

@@ -3,6 +3,7 @@ import '../../core/design_system.dart';
 import '../../core/models.dart';
 import '../../core/theme_service.dart';
 import '../../shared/scaffold_with_background.dart';
+import '../../core/utils.dart';
 
 class DhikrDetailScreen extends StatelessWidget {
   final Dhikr dhikr;
@@ -22,10 +23,16 @@ class DhikrDetailScreen extends StatelessWidget {
             ? const Color(0xFF4E342E).withValues(alpha: 0.6)
             : const Color(0xFFFFF8E1).withValues(alpha: 0.8);
 
+        final isDua =
+            dhikr.category == DhikrCategory.feelings ||
+            dhikr.category == DhikrCategory.leavingHome ||
+            dhikr.category == DhikrCategory.enteringHome;
+        final title = isDua ? 'فَضْلُ الدُّعَاءِ' : 'فَضْلُ الذِّكْرِ';
+
         return ScaffoldWithBackground(
           appBar: AppBar(
             title: Text(
-              'فضل الذكر',
+              title.preventOrphan(),
               style: AppTypography.header(
                 fontSize: 24,
               ).copyWith(color: primaryColor),
@@ -43,9 +50,9 @@ class DhikrDetailScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // 1. Preuve / Dalil (هديٌ نستنير به)
+                // 1. Preuve / Dalil (هَدْيٌ نَسْتَنِيرُ بِهِ)
                 _SectionHeader(
-                  title: 'هديٌ نستنير به',
+                  title: 'هَدْيٌ نَسْتَنِيرُ بِهِ',
                   icon: Icons.auto_awesome,
                   isNightMode: isNightMode,
                 ),
@@ -64,7 +71,7 @@ class DhikrDetailScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        dhikr.sourceText,
+                        dhikr.sourceText.preventOrphan(),
                         style: AppTypography.arabic(fontSize: 16).copyWith(
                           fontStyle: FontStyle.italic,
                           color: primaryColor,
@@ -90,15 +97,15 @@ class DhikrDetailScreen extends StatelessWidget {
 
                 const SizedBox(height: 32),
 
-                // 2. Pourquoi + Bénéfice (ثماره في حياتك)
+                // 2. Pourquoi + Bénéfice (ثِمَارُهُ فِي حَيَاتِكِ)
                 _SectionHeader(
-                  title: 'ثماره في حياتك',
+                  title: 'ثِمَارُهُ فِي حَيَاتِكِ',
                   icon: Icons.volunteer_activism,
                   isNightMode: isNightMode,
                 ),
                 const SizedBox(height: 16),
                 _InfoBox(
-                  text: dhikr.virtue,
+                  text: dhikr.virtue.preventOrphan(),
                   color: isNightMode
                       ? AppColors.accent.withValues(alpha: 0.1)
                       : AppColors.primary.withValues(alpha: 0.15),
@@ -133,7 +140,7 @@ class _SectionHeader extends StatelessWidget {
         Icon(icon, size: 22, color: AppColors.accent),
         const SizedBox(width: 10),
         Text(
-          title,
+          title.preventOrphan(),
           style: AppTypography.arabic(fontSize: 20).copyWith(
             fontWeight: FontWeight.w800,
             color: isNightMode

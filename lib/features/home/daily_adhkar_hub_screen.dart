@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/utils.dart';
 import '../../core/design_system.dart';
 import '../../core/models.dart';
 import '../../core/repository.dart';
@@ -17,17 +18,28 @@ class DailyAdhkarHubScreen extends StatelessWidget {
       listenable: ThemeService(),
       builder: (context, _) {
         final isNightMode = ThemeService().isNightMode;
-        final primaryColor = isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037);
-        final secondaryColor = isNightMode ? const Color(0xFFE6C98A) : const Color(0xFF8D6E63);
+        final primaryColor = isNightMode
+            ? const Color(0xFFF5F5DC)
+            : const Color(0xFF5D4037);
+        final secondaryColor = isNightMode
+            ? const Color(0xFFE6C98A)
+            : const Color(0xFF8D6E63);
 
         return ScaffoldWithBackground(
           appBar: AppBar(
-            title: Text('أذكاري اليومية', style: AppTypography.header(fontSize: 24).copyWith(color: primaryColor)),
+            title: Text(
+              'أَذْكَارِي الْيَوْمِيَّةُ',
+              style: AppTypography.header(
+                fontSize: 24,
+              ).copyWith(color: primaryColor),
+            ),
             backgroundColor: Colors.transparent,
             elevation: 0,
             centerTitle: true,
             leading: BackButton(
-              color: isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037),
+              color: isNightMode
+                  ? const Color(0xFFF5F5DC)
+                  : const Color(0xFF5D4037),
             ),
           ),
           body: ListenableBuilder(
@@ -35,11 +47,14 @@ class DailyAdhkarHubScreen extends StatelessWidget {
             builder: (context, _) {
               return SingleChildScrollView(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 20,
+                  ),
                   child: Column(
                     children: [
                       Text(
-                        'حِصْنٌ يرافقكِ طوال يومكِ',
+                        'حِصْنٌ يُرَافِقُكِ طَوَالَ يَوْمِكِ'.preventOrphan(),
                         style: AppTypography.arabic(fontSize: 16).copyWith(
                           color: secondaryColor.withValues(alpha: 0.8),
                         ),
@@ -48,7 +63,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                       const SizedBox(height: 30),
                       // 1. أذكار الاستيقاظ
                       _CategoryCard(
-                        title: 'أذكار الاستيقاظ',
+                        title: 'أَذْكَار الِاسْتِيَقَاظ',
                         category: DhikrCategory.wakingUp,
                         imagePath: 'assets/images/sun_new.png',
                         isNightMode: isNightMode,
@@ -57,7 +72,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                           BookPageRoute(
                             page: const DhikrListScreen(
                               category: DhikrCategory.wakingUp,
-                              title: 'أذكار الاستيقاظ',
+                              title: 'أَذْكَار الِاسْتِيَقَاظ',
                             ),
                           ),
                         ),
@@ -65,7 +80,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                       const SizedBox(height: 16),
                       // 2. أذكار الصباح
                       _CategoryCard(
-                        title: 'أذكار الصباح',
+                        title: 'أَذْكَار الصَّبَاح',
                         category: DhikrCategory.morning,
                         imagePath: 'assets/images/category_b.png',
                         isNightMode: isNightMode,
@@ -74,7 +89,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                           BookPageRoute(
                             page: const DhikrListScreen(
                               category: DhikrCategory.morning,
-                              title: 'أذكار الصباح',
+                              title: 'أَذْكَار الصَّبَاح',
                             ),
                           ),
                         ),
@@ -82,7 +97,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                       const SizedBox(height: 16),
                       // 3. أذكار بعد الصلاة
                       _CategoryCard(
-                        title: 'أذكار بعد الصلاة',
+                        title: 'أَذْكَار بَعْدَ الصَّلَاة',
                         category: DhikrCategory.afterPrayer,
                         imagePath: 'assets/images/category_b.png',
                         isNightMode: isNightMode,
@@ -91,7 +106,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                           BookPageRoute(
                             page: const DhikrListScreen(
                               category: DhikrCategory.afterPrayer,
-                              title: 'أذكار بعد الصلاة',
+                              title: 'أَذْكَار بَعْدَ الصَّلَاة',
                             ),
                           ),
                         ),
@@ -99,7 +114,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                       const SizedBox(height: 16),
                       // 4. أذكار الخروج من المنزل
                       _CategoryCard(
-                        title: 'أذكار الخروج من المنزل',
+                        title: 'أَذْكَار الْخُرُوج مِنَ الْمَنْزِل',
                         category: DhikrCategory.leavingHome,
                         imagePath: 'assets/images/category_b.png',
                         isNightMode: isNightMode,
@@ -108,7 +123,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                           BookPageRoute(
                             page: const DhikrListScreen(
                               category: DhikrCategory.leavingHome,
-                              title: 'أذكار الخروج من المنزل',
+                              title: 'أَذْكَار الْخُرُوج مِنَ الْمَنْزِل',
                             ),
                           ),
                         ),
@@ -116,7 +131,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                       const SizedBox(height: 16),
                       // 5. أذكار الدخول إلى المنزل
                       _CategoryCard(
-                        title: 'أذكار الدخول إلى المنزل',
+                        title: 'أَذْكَار الدُّخُول إِلَى الْمَنْزِل',
                         category: DhikrCategory.enteringHome,
                         imagePath: 'assets/images/category_b.png',
                         isNightMode: isNightMode,
@@ -125,7 +140,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                           BookPageRoute(
                             page: const DhikrListScreen(
                               category: DhikrCategory.enteringHome,
-                              title: 'أذكار الدخول إلى المنزل',
+                              title: 'أَذْكَار الدُّخُول إِلَى الْمَنْزِل',
                             ),
                           ),
                         ),
@@ -133,7 +148,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                       const SizedBox(height: 16),
                       // 6. أذكار المساء
                       _CategoryCard(
-                        title: 'أذكار المساء',
+                        title: 'أَذْكَار الْمَسَاء',
                         category: DhikrCategory.evening,
                         imagePath: 'assets/images/category_c.png',
                         isNightMode: isNightMode,
@@ -142,7 +157,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                           BookPageRoute(
                             page: const DhikrListScreen(
                               category: DhikrCategory.evening,
-                              title: 'أذكار المساء',
+                              title: 'أَذْكَار الْمَسَاء',
                             ),
                           ),
                         ),
@@ -150,7 +165,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                       const SizedBox(height: 16),
                       // 7. أذكار قبل النوم
                       _CategoryCard(
-                        title: 'أذكار قبل النوم',
+                        title: 'أَذْكَار قَبْلَ النَّوْم',
                         category: DhikrCategory.sleep,
                         imagePath: 'assets/images/category_e.png',
                         isNightMode: isNightMode,
@@ -159,7 +174,7 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                           BookPageRoute(
                             page: const DhikrListScreen(
                               category: DhikrCategory.sleep,
-                              title: 'أذكار قبل النوم',
+                              title: 'أَذْكَار قَبْلَ النَّوْم',
                             ),
                           ),
                         ),
@@ -232,9 +247,11 @@ class _CategoryCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15),
                   child: Center(
                     child: Text(
-                      title,
+                      title.preventOrphan(),
                       style: AppTypography.header(fontSize: 20).copyWith(
-                        color: isNightMode ? const Color(0xFFF5F5DC) : const Color(0xFF5D4037),
+                        color: isNightMode
+                            ? const Color(0xFFF5F5DC)
+                            : const Color(0xFF5D4037),
                       ),
                     ),
                   ),

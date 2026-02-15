@@ -110,7 +110,7 @@ class LinkRow extends StatelessWidget {
               color: Color(0xFFC09D63),
             ),
             onPressed: onCopy,
-            tooltip: 'نسخ',
+            tooltip: 'نَسْخ',
           ),
         ],
       ),

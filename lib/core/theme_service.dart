@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 
 class ThemeService extends ChangeNotifier {
@@ -5,10 +6,12 @@ class ThemeService extends ChangeNotifier {
   factory ThemeService() => _instance;
   ThemeService._internal() {
     _checkTime();
+    _startTimer();
   }
 
   bool _isNightMode = false;
   bool get isNightMode => _isNightMode;
+  Timer? _timer;
 
   void toggle() {
     _isNightMode = !_isNightMode;
@@ -17,13 +20,24 @@ class ThemeService extends ChangeNotifier {
 
   void _checkTime() {
     final hour = DateTime.now().hour;
-    // Activate night mode between 6 PM (18:00) and 6 AM (06:00)
-    if (hour >= 18 || hour < 6) {
-      _isNightMode = true;
+    final bool shouldBeNight = hour >= 18 || hour < 6;
+    if (_isNightMode != shouldBeNight) {
+      _isNightMode = shouldBeNight;
       notifyListeners();
     }
   }
 
+  void _startTimer() {
+    _timer?.cancel();
+    _timer = Timer.periodic(const Duration(minutes: 15), (_) => _checkTime());
+  }
+
   // Helper to force check (e.g., on app resume)
   void checkSystemTime() => _checkTime();
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
 }

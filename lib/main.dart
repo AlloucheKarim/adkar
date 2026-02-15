@@ -4,6 +4,8 @@ import 'core/theme.dart';
 import 'features/onboarding/splash_screen.dart';
 import 'core/notification_service.dart';
 import 'core/prayer_service.dart';
+import 'core/gratitude_service.dart';
+import 'core/haptic_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,6 +13,8 @@ void main() async {
   // Initialize services in background to avoid blocking the Splash Screen
   NotificationService().initialize();
   PrayerService().initialize();
+  GratitudeService().initialize();
+  await HapticService().init();
 
   runApp(const AdhkarsApp());
 }
@@ -21,7 +25,7 @@ class AdhkarsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'أذكار المسلمة',
+      title: 'أَذْكَارُ الْمُسْلِمَةِ',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       localizationsDelegates: const [

@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import '../../core/utils.dart';
 import '../home/home_screen.dart';
 import '../../core/design_system.dart';
 
@@ -87,7 +88,7 @@ class _SplashScreenState extends State<SplashScreen>
             FadeTransition(
               opacity: _fadeAnimation,
               child: Text(
-                'رفقة هادئة للقلب',
+                'رُفْقَةٌ هَادِئَةٌ لِلْقَلْبِ'.preventOrphan(),
                 style: AppTypography.arabic(
                   fontSize: 24,
                   color: const Color(0xFFC09D63),

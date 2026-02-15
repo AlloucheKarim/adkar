@@ -20,16 +20,20 @@ class CounterWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final progress = targetCount > 0 ? (currentCount / targetCount).clamp(0.0, 1.0) : 0.0;
+    final progress = targetCount > 0
+        ? (currentCount / targetCount).clamp(0.0, 1.0)
+        : 0.0;
 
     return Column(
       children: [
         // Counter Button
         GestureDetector(
-          onTap: isComplete ? null : () {
-            HapticFeedback.lightImpact();
-            onTap();
-          },
+          onTap: isComplete
+              ? null
+              : () {
+                  HapticFeedback.lightImpact();
+                  onTap();
+                },
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 200),
             width: 160,
@@ -40,10 +44,7 @@ class CounterWidget extends StatelessWidget {
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: isComplete
-                    ? [
-                        const Color(0xFF4CAF50),
-                        const Color(0xFF2E7D32),
-                      ]
+                    ? [const Color(0xFF4CAF50), const Color(0xFF2E7D32)]
                     : [
                         AppColors.primary,
                         AppColors.primary.withValues(alpha: 0.7),
@@ -51,8 +52,9 @@ class CounterWidget extends StatelessWidget {
               ),
               boxShadow: [
                 BoxShadow(
-                  color: (isComplete ? const Color(0xFF4CAF50) : AppColors.primary)
-                      .withValues(alpha: 0.4),
+                  color:
+                      (isComplete ? const Color(0xFF4CAF50) : AppColors.primary)
+                          .withValues(alpha: 0.4),
                   blurRadius: 20,
                   offset: const Offset(0, 8),
                 ),
@@ -69,7 +71,9 @@ class CounterWidget extends StatelessWidget {
                     value: progress,
                     strokeWidth: 6,
                     backgroundColor: Colors.white.withValues(alpha: 0.2),
-                    valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
+                    valueColor: const AlwaysStoppedAnimation<Color>(
+                      Colors.white,
+                    ),
                   ),
                 ),
                 // Counter Text
@@ -105,12 +109,16 @@ class CounterWidget extends StatelessWidget {
           icon: Icon(
             Icons.refresh,
             size: 18,
-            color: currentCount > 0 ? AppColors.accent : AppColors.textSecondary,
+            color: currentCount > 0
+                ? AppColors.accent
+                : AppColors.textSecondary,
           ),
           label: Text(
-            'إعادة العداد',
+            'إِعَادَةُ الْعَدَّادِ',
             style: TextStyle(
-              color: currentCount > 0 ? AppColors.accent : AppColors.textSecondary,
+              color: currentCount > 0
+                  ? AppColors.accent
+                  : AppColors.textSecondary,
             ),
           ),
         ),

@@ -25,12 +25,12 @@ class PrayerService extends ChangeNotifier {
 
   // Prayer names in Arabic
   static const Map<Prayer, String> prayerNames = {
-    Prayer.fajr: 'الفجر',
-    Prayer.sunrise: 'الشروق',
-    Prayer.dhuhr: 'الظهر',
-    Prayer.asr: 'العصر',
-    Prayer.maghrib: 'المغرب',
-    Prayer.isha: 'العشاء',
+    Prayer.fajr: 'الْفَجْر',
+    Prayer.sunrise: 'الشُّرُوق',
+    Prayer.dhuhr: 'الظُّهْر',
+    Prayer.asr: 'الْعَصْر',
+    Prayer.maghrib: 'الْمَغْرِب',
+    Prayer.isha: 'الْعِشَاء',
   };
 
   // Get next prayer and time remaining
@@ -81,9 +81,9 @@ class PrayerService extends ChangeNotifier {
     final minutes = duration.inMinutes.remainder(60);
 
     if (hours > 0) {
-      return '$hours س $minutes د';
+      return '$hours سَاعَة $minutes دَقِيقَة';
     }
-    return '$minutes دقيقة';
+    return '$minutes دَقِيقَة';
   }
 
   // Initialize service
@@ -117,7 +117,8 @@ class PrayerService extends ChangeNotifier {
       if (permission == LocationPermission.denied) {
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
-          _errorMessage = 'الرجاء السماح بالوصول إلى الموقع';
+          _errorMessage =
+              'الرَّجَاءُ السَّمَاحُ بِالْوُصُولِ إِلَى الْمَوْقِعِ';
           _isLoading = false;
           notifyListeners();
           return;
@@ -125,7 +126,8 @@ class PrayerService extends ChangeNotifier {
       }
 
       if (permission == LocationPermission.deniedForever) {
-        _errorMessage = 'الموقع محظور. يرجى تفعيله من الإعدادات';
+        _errorMessage =
+            'الْمَوْقِعُ مَحْظُورٌ. يُرْجَى تَفْعِيلُهُ مِنَ الْإِعْدَادَاتِ';
         _isLoading = false;
         notifyListeners();
         return;
@@ -147,7 +149,7 @@ class PrayerService extends ChangeNotifier {
       // Calculate prayer times
       _calculatePrayerTimes(_position!.latitude, _position!.longitude);
     } catch (e) {
-      _errorMessage = 'تعذر الحصول على الموقع';
+      _errorMessage = 'تَعَذَّرَ الْحُصُولُ عَلَى الْمَوْقِعِ';
       debugPrint('Prayer times error: $e');
     }
 

@@ -9,6 +9,8 @@ import '../dhikr_detail/dhikr_detail_screen.dart';
 import '../../core/progress_service.dart';
 import '../../core/transitions.dart';
 import '../../core/theme_service.dart';
+import '../../core/utils.dart';
+import '../../core/haptic_service.dart';
 import 'surat_al_mulk_screen.dart';
 
 class DhikrListScreen extends StatefulWidget {
@@ -61,33 +63,33 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
         ProgressService().unmarkCompleted(dhikr.id);
       }
     });
-    HapticFeedback.mediumImpact();
+    HapticService().mediumImpact();
   }
 
   void _zoomIn() {
     setState(() {
       if (fontSizeMultiplier < 1.3) fontSizeMultiplier += 0.3;
     });
-    HapticFeedback.selectionClick();
+    HapticService().selectionClick();
   }
 
   void _zoomOut() {
     setState(() {
       if (fontSizeMultiplier > 0.71) fontSizeMultiplier -= 0.3;
     });
-    HapticFeedback.selectionClick();
+    HapticService().selectionClick();
   }
 
   void _toggleNightMode() {
     ThemeService().toggle();
-    HapticFeedback.mediumImpact();
+    HapticService().mediumImpact();
   }
 
   void _toggleShortMode() {
     setState(() {
       isShortMode = !isShortMode;
     });
-    HapticFeedback.mediumImpact();
+    HapticService().mediumImpact();
   }
 
   @override
@@ -114,24 +116,27 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
 
         return ScaffoldWithBackground(
           appBar: AppBar(
+            toolbarHeight: 80, // Increased to accommodate two-line title
             title: Column(
               children: [
                 Text(
-                  widget.title,
+                  widget.title.preventOrphan(),
                   style: AppTypography.header(fontSize: 24).copyWith(
                     color: isNightMode
                         ? const Color(0xFFF5F5DC)
                         : const Color(0xFF5D4037),
                   ),
                 ),
-                if (isShortMode)
+                if (isShortMode) ...[
+                  const SizedBox(height: 4),
                   Text(
-                    'أَدْوَمُهَا وَإِنْ قَلَّ',
+                    'أَدْوَمُهَا وَإِنْ قَلَّ'.preventOrphan(),
                     style: AppTypography.arabic(fontSize: 14).copyWith(
                       color: const Color(0xFFC09D63),
                       fontWeight: FontWeight.w600,
                     ),
                   ),
+                ],
               ],
             ),
             backgroundColor: Colors.transparent,
@@ -190,27 +195,39 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
                         showDialog(
                           context: context,
                           builder: (context) => AlertDialog(
-                            title: const Text('إعادة ضبط التقدم'),
+                            title: const Text('إِعَادَةُ ضَبْطِ التَّقَدُّمِ'),
                             content: const Text(
-                              'هل أنتِ متأكدة من رغبتكِ في إعادة ضبط التقدم لهذه الفئة؟',
+                              'هَلْ أَنْتِ مُتَأَكِّدَةٌ مِنْ رَغْبَتِكِ فِي إِعَادَةِ ضَبْطِ التَّقَدُّمِ لِهَذِهِ الْفِئَةِ؟',
                             ),
                             actions: [
                               TextButton(
                                 onPressed: () => Navigator.pop(context),
-                                child: const Text('إلغاء'),
+                                child: const Text(
+                                  'إِلْغَاءٌ',
+                                  style: TextStyle(
+                                    color: Color(0xFF8D6E63),
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ),
                               TextButton(
                                 onPressed: () {
                                   _resetProgress();
                                   Navigator.pop(context);
                                 },
-                                child: const Text('إعادة الضبط'),
+                                child: const Text(
+                                  'إِعَادَةُ الضَّبْطِ',
+                                  style: TextStyle(
+                                    color: Color(0xFFC09D63),
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ),
                             ],
                           ),
                         );
                       },
-                      tooltip: 'إعادة ضبط التقدم',
+                      tooltip: 'إِعَادَةُ ضَبْطِ التَّقَدُّمِ',
                       color: const Color(0xFFC09D63),
                     ),
                     const SizedBox(width: 8),
@@ -225,6 +242,22 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
                       onPressed: _zoomIn,
                       tooltip: 'تكبير الخط',
                       color: const Color(0xFFC09D63),
+                    ),
+                    const SizedBox(width: 8),
+                    ValueListenableBuilder<bool>(
+                      valueListenable: HapticService().vibrationNotifier,
+                      builder: (context, isEnabled, _) {
+                        return _buildActionButton(
+                          icon: isEnabled
+                              ? Icons.vibration
+                              : Icons.stay_current_portrait,
+                          onPressed: () => HapticService().toggleVibration(),
+                          tooltip: isEnabled
+                              ? 'تعطيل الاهتزاز'
+                              : 'تفعيل الاهتزاز',
+                          color: const Color(0xFFC09D63),
+                        );
+                      },
                     ),
                   ],
                 ),
@@ -245,7 +278,7 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'نفعكِ الله بذكره',
+                              'نَفَعَكِ اللَّهُ بِذِكْرِهِ'.preventOrphan(),
                               style: AppTypography.arabic(fontSize: 28)
                                   .copyWith(
                                     color: isNightMode
@@ -379,13 +412,13 @@ class _DhikrCardState extends State<_DhikrCard> {
       setState(() {
         currentCount--;
       });
-      HapticFeedback.lightImpact();
+      HapticService().lightImpact();
 
       if (currentCount == 0) {
         setState(() {
           isCompleted = true;
         });
-        HapticFeedback.mediumImpact();
+        HapticService().mediumImpact();
         widget.onCompleted(); // Notifier le parent
       }
     }
@@ -401,7 +434,7 @@ class _DhikrCardState extends State<_DhikrCard> {
         languageMode = LanguageMode.arabic;
       }
     });
-    HapticFeedback.selectionClick();
+    HapticService().selectionClick();
   }
 
   String _getDisplayText() {
@@ -411,7 +444,7 @@ class _DhikrCardState extends State<_DhikrCard> {
       case LanguageMode.french:
         return widget.dhikr.frenchText;
       case LanguageMode.arabic:
-        return widget.dhikr.arabicText;
+        return widget.dhikr.arabicText.preventOrphan();
     }
   }
 
@@ -434,7 +467,6 @@ class _DhikrCardState extends State<_DhikrCard> {
           ),
           fit: BoxFit.fill,
         ),
-        boxShadow: widget.isNightMode ? null : AppColors.premiumShadow,
         borderRadius: BorderRadius.circular(20),
       ),
       child: InkWell(
@@ -480,53 +512,48 @@ class _DhikrCardState extends State<_DhikrCard> {
               const SizedBox(height: 12),
 
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Flexible(
-                    child: InkWell(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          BookPageRoute(
-                            page: DhikrDetailScreen(dhikr: widget.dhikr),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        BookPageRoute(
+                          page: DhikrDetailScreen(dhikr: widget.dhikr),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 6,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: accentColor, width: 1),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'فضل الذكر',
+                            style: AppTypography.arabic(fontSize: 11).copyWith(
+                              color: widget.isNightMode
+                                  ? accentColor
+                                  : const Color(0xFF8D6E63),
+                            ),
                           ),
-                        );
-                      },
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 6,
-                          vertical: 4,
-                        ),
-                        decoration: BoxDecoration(
-                          border: Border.all(color: accentColor, width: 1),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              'فضل الذكر',
-                              style: AppTypography.arabic(fontSize: 11)
-                                  .copyWith(
-                                    color: widget.isNightMode
-                                        ? accentColor
-                                        : const Color(0xFF8D6E63),
-                                  ),
-                            ),
-                            const SizedBox(width: 4),
-                            Image.asset(
-                              'assets/images/book_details.png',
-                              width: 24,
-                              height: 24,
-                            ),
-                          ],
-                        ),
+                          const SizedBox(width: 4),
+                          Image.asset(
+                            'assets/images/book_details.png',
+                            width: 24,
+                            height: 24,
+                          ),
+                        ],
                       ),
                     ),
                   ),
-
-                  const SizedBox(width: 8),
-
+                  const SizedBox(width: 12),
                   isCompleted
                       ? Text(
                           'تم بحمد الله',
@@ -561,41 +588,36 @@ class _DhikrCardState extends State<_DhikrCard> {
                             ],
                           ),
                         ),
-
-                  const SizedBox(width: 8),
-
-                  Flexible(
-                    child: InkWell(
-                      onTap: _toggleLanguage,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 6,
-                          vertical: 4,
-                        ),
-                        decoration: BoxDecoration(
-                          border: Border.all(color: accentColor, width: 1),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              'ترجمة',
-                              style: AppTypography.arabic(fontSize: 11)
-                                  .copyWith(
-                                    color: widget.isNightMode
-                                        ? accentColor
-                                        : const Color(0xFF8D6E63),
-                                  ),
+                  const SizedBox(width: 12),
+                  InkWell(
+                    onTap: _toggleLanguage,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 6,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: accentColor, width: 1),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'ترجمة',
+                            style: AppTypography.arabic(fontSize: 11).copyWith(
+                              color: widget.isNightMode
+                                  ? accentColor
+                                  : const Color(0xFF8D6E63),
                             ),
-                            const SizedBox(width: 4),
-                            Image.asset(
-                              'assets/images/translate_v2.png',
-                              width: 24,
-                              height: 24,
-                            ),
-                          ],
-                        ),
+                          ),
+                          const SizedBox(width: 4),
+                          Image.asset(
+                            'assets/images/translate_v2.png',
+                            width: 24,
+                            height: 24,
+                          ),
+                        ],
                       ),
                     ),
                   ),

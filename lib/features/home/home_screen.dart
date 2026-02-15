@@ -1,4 +1,8 @@
+import 'dart:ui';
+import 'package:adhkars_app/features/home/widgets/notification_settings_sheet.dart';
 import 'package:flutter/material.dart';
+import '../../core/notification_service.dart';
+import '../../core/utils.dart';
 import 'package:hijri/hijri_calendar.dart';
 import '../../core/design_system.dart';
 import '../../core/progress_service.dart';
@@ -7,7 +11,6 @@ import '../tasbih/tasbih_screen.dart';
 import '../feelings/feelings_screen.dart';
 import '../../core/transitions.dart';
 import 'daily_adhkar_hub_screen.dart';
-import '../../core/notification_service.dart';
 import '../../core/intention_service.dart';
 import '../../core/theme_service.dart';
 import '../../core/prayer_service.dart';
@@ -30,16 +33,24 @@ class _HomeScreenState extends State<HomeScreen>
   late Animation<double> _fadeAnimation;
 
   final List<Map<String, String>> inspirations = [
-    {'text': 'ألا بذكر الله تطمئن القلوب', 'source': 'سورة الرعد'},
-    {'text': 'فاذكروني أذكركم', 'source': 'سورة البقرة'},
-    {'text': 'والذاكرين الله كثيراً والذاكرات', 'source': 'سورة الأحزاب'},
     {
-      'text': 'من لزم الاستغفار جعل الله له من كل ضيق مخرجاً',
-      'source': 'حديث شريف',
+      'text': 'أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ',
+      'source': 'سُورَةُ الرَّعْدِ',
+    },
+    {'text': 'فَاذْكُرُونِي أَذْكُرْكُمْ', 'source': 'سُورَةُ الْبَقَرَةِ'},
+    {
+      'text': 'وَالذَّاكِرِينَ اللَّهَ كَثِيرًا وَالذَّاكِرَاتِ',
+      'source': 'سُورَةُ الْأَحْزَابِ',
     },
     {
-      'text': 'كلمتان خفيفتان على اللسان ثقيلتان في الميزان',
-      'source': 'حديث شريف',
+      'text':
+          'مَنْ لَزِمَ الِاسْتِغْفَارَ جَعَلَ اللَّهُ لَهُ مِنْ كُلِّ ضِيقٍ مَخْرَجًا',
+      'source': 'حَدِيثٌ شَرِيفٌ',
+    },
+    {
+      'text':
+          'كَلِمَتَانِ خَفِيفَتَانِ عَلَى اللِّسَانِ ثَقِيلَتَانِ فِي الْمِيزَانِ',
+      'source': 'حَدِيث شَرِيف',
     },
   ];
 
@@ -84,14 +95,17 @@ class _HomeScreenState extends State<HomeScreen>
 
   String _getGreeting() {
     final hour = DateTime.now().hour;
-    if (hour >= 5 && hour < 12) return 'صباح الخير والذكر';
-    if (hour >= 12 && hour < 17) return 'طاب يومكِ بذكر الله';
-    if (hour >= 17 && hour < 22) return 'مساء السكينة والطمأنينة';
-    return 'ليلة هادئة في حفظ الله';
+    if (hour >= 5 && hour < 12) return 'صَبَاح الْخَيْر وَالذّكْر';
+    if (hour >= 12 && hour < 17) return 'طَابَ يَوْمُك بِذِكْر اللَّه';
+    if (hour >= 17 && hour < 22) return 'مَسَاء السَّكِينَة وَالطُّمَأْنِينَة';
+    return 'لَيْلَة هَادِئَة فِي حِفْظ اللَّه';
   }
 
   Color _getThemeTint() {
-    return Colors.transparent; // Keep background consistent regardless of time
+    final isNightMode = ThemeService().isNightMode;
+    return isNightMode
+        ? Colors.transparent
+        : const Color(0xFFFFF6EC).withValues(alpha: 0.15);
   }
 
   @override
@@ -105,9 +119,10 @@ class _HomeScreenState extends State<HomeScreen>
     final hijriDate = HijriCalendar.now();
     final hijriMonth = _getArabicHijriMonth(hijriDate.hMonth);
 
-    // Formatting date for diary style (without "اليوم")
-    final dateFormatted =
-        '$dayName $gregorianDay $gregorianMonth $gregorianYear • ${hijriDate.hDay} $hijriMonth ${hijriDate.hYear} هـ';
+    // Formatting date parts
+    final gregorianDate =
+        '$dayName $gregorianDay $gregorianMonth $gregorianYear';
+    final hijriDateStr = '${hijriDate.hDay} $hijriMonth ${hijriDate.hYear} هـ';
 
     return ListenableBuilder(
       listenable: ThemeService(),
@@ -117,9 +132,6 @@ class _HomeScreenState extends State<HomeScreen>
         final primaryTextColor = isNightMode
             ? const Color(0xFFF5F5DC)
             : const Color(0xFF5D4037);
-        final secondaryTextColor = isNightMode
-            ? const Color(0xFFE6C98A).withValues(alpha: 0.9)
-            : const Color(0xFF8D6E63).withValues(alpha: 0.8);
         final dateTextColor = isNightMode
             ? const Color(0xFFE6C98A).withValues(alpha: 0.9)
             : const Color(0xFF8D6E63);
@@ -145,8 +157,15 @@ class _HomeScreenState extends State<HomeScreen>
                     color: const Color(0xFFC09D63),
                     size: 26,
                   ),
-                  onPressed: () => notifications.toggleNotifications(),
-                  tooltip: 'التنبيهات',
+                  onPressed: () {
+                    showModalBottomSheet(
+                      context: context,
+                      backgroundColor: Colors.transparent,
+                      isScrollControlled: true,
+                      builder: (context) => const NotificationSettingsSheet(),
+                    );
+                  },
+                  tooltip: 'التَّنْبِيهَات',
                 );
               },
             ),
@@ -158,7 +177,9 @@ class _HomeScreenState extends State<HomeScreen>
                   size: 26,
                 ),
                 onPressed: () => ThemeService().toggle(),
-                tooltip: isNightMode ? 'الوضع النهاري' : 'الوضع الليلي',
+                tooltip: isNightMode
+                    ? 'الْوَضْع النَّهَارِي'
+                    : 'الْوَضْع اللَّيْلِي',
               ),
               const SizedBox(width: 8),
             ],
@@ -182,54 +203,57 @@ class _HomeScreenState extends State<HomeScreen>
                     Column(
                       children: [
                         Text(
-                          'السلام عليكِ يا غالية',
-                          style: AppTypography.arabic(
-                            fontSize: 18,
-                          ).copyWith(color: secondaryTextColor, height: 1.2),
+                          _getGreeting().preventOrphan().stripKasraFromShadda(),
+                          style: AppTypography.thuluth(
+                            fontSize: 32,
+                          ).copyWith(color: primaryTextColor),
                         ),
-                        const SizedBox(height: 8),
-                        Text(
-                          _getGreeting(),
-                          style: AppTypography.arabic(fontSize: 24).copyWith(
-                            // Larger and bolder
-                            color: primaryTextColor,
-                            fontWeight: FontWeight.bold,
-                            height: 1.2,
+                        const SizedBox(height: 12),
+                        Image.asset(
+                          'assets/images/divider.png',
+                          width: 250,
+                          height: 40,
+                          fit: BoxFit.contain,
+                        ),
+                        const SizedBox(height: 12),
+                        Text.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(text: gregorianDate),
+                              WidgetSpan(
+                                alignment: PlaceholderAlignment.middle,
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 10,
+                                  ),
+                                  child: Icon(
+                                    Icons.favorite,
+                                    size: 14,
+                                    color: const Color(
+                                      0xFFC09D63,
+                                    ).withValues(alpha: 0.8),
+                                  ),
+                                ),
+                              ),
+                              TextSpan(text: hijriDateStr),
+                            ],
                           ),
-                        ),
-                        const SizedBox(height: 10),
-                        // Small decorative separator
-                        Container(
-                          width: 40,
-                          height: 2,
-                          decoration: BoxDecoration(
-                            color: const Color(
-                              0xFFE6C98A,
-                            ).withValues(alpha: 0.5),
-                            borderRadius: BorderRadius.circular(1),
-                          ),
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          dateFormatted,
                           textAlign: TextAlign.center,
-                          style: AppTypography.arabic(fontSize: 14).copyWith(
-                            color: dateTextColor,
+                          style: AppTypography.arabic(fontSize: 16).copyWith(
+                            color: dateTextColor.withValues(alpha: 0.7),
                             fontStyle: FontStyle.italic,
-                            height: 1.5,
+                            height: 1.2,
                           ),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 16),
-
                     const SizedBox(height: 25),
                     PrayerIndicator(isNightMode: isNightMode),
-                    const SizedBox(height: 35),
+                    const SizedBox(height: 30),
 
                     // Intention Renewal Section
                     _FeatureSection(
-                      title: 'ركن تجديد النية',
+                      title: 'رُكْن تَجْدِيد النّيَّة',
                       isNightMode: isNightMode,
                       onTap: () {
                         // ... dialog code ...
@@ -249,10 +273,11 @@ class _HomeScreenState extends State<HomeScreen>
                             ),
                             title: Center(
                               child: Text(
-                                'تذكّري دائمًا… النية محلّها القلب',
+                                'تَذَكَّرِي يَا غَالِيَتِي أَنَّ النِّيَّةَ مَحَلُّهَا الْقَلْبُ'
+                                    .stripKasraFromShadda(),
                                 textAlign: TextAlign.center,
-                                style: AppTypography.arabic(
-                                  fontSize: 20,
+                                style: AppTypography.thuluth(
+                                  fontSize: 22,
                                 ).copyWith(color: const Color(0xFFC09D63)),
                               ),
                             ),
@@ -283,7 +308,7 @@ class _HomeScreenState extends State<HomeScreen>
 
                     // Daily Adhkars Section (Hub)
                     _FeatureSection(
-                      title: 'أذكاري اليومية',
+                      title: 'أَذْكَارِي الْيَوْمِيَّة',
                       isNightMode: isNightMode,
                       onTap: () => Navigator.push(
                         context,
@@ -295,7 +320,7 @@ class _HomeScreenState extends State<HomeScreen>
 
                     // Sebha Section (Floral Frame A)
                     _FeatureSection(
-                      title: 'سبحتي',
+                      title: 'سَبْحَتِي',
                       isNightMode: isNightMode,
                       onTap: () => Navigator.push(
                         context,
@@ -307,7 +332,7 @@ class _HomeScreenState extends State<HomeScreen>
 
                     // Feature Section: Feelings
                     _FeatureSection(
-                      title: 'كيف حالكِ؟',
+                      title: 'كَيْفَ حَالُك؟',
                       isNightMode: isNightMode,
                       onTap: () => Navigator.push(
                         context,
@@ -315,55 +340,24 @@ class _HomeScreenState extends State<HomeScreen>
                       ),
                     ),
 
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 24),
 
                     GratitudeCorner(isNightMode: isNightMode),
-                    const SizedBox(height: 48),
+                    const SizedBox(height: 40),
 
-                    // Inspiration Section (Simple style - no frame)
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 30,
-                        vertical: 10,
-                      ),
-                      child: Column(
-                        children: [
-                          Text(
-                            dailyInspiration['text']!,
-                            textAlign: TextAlign.center,
-                            style: AppTypography.arabic(fontSize: 18).copyWith(
-                              color: isNightMode
-                                  ? const Color(
-                                      0xFFE6C98A,
-                                    ).withValues(alpha: 0.9)
-                                  : const Color(0xFF8D6E63),
-                              fontStyle: FontStyle.italic,
-                            ),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            '— ${dailyInspiration['source']}',
-                            style: AppTypography.header(fontSize: 12).copyWith(
-                              color: isNightMode
-                                  ? const Color(
-                                      0xFFE6C98A,
-                                    ).withValues(alpha: 0.6)
-                                  : const Color(
-                                      0xFF8D6E63,
-                                    ).withValues(alpha: 0.6),
-                            ),
-                          ),
-                        ],
-                      ),
+                    // Inspiration Section (Styled Card)
+                    _InspirationCard(
+                      text: dailyInspiration['text']!,
+                      source: dailyInspiration['source']!,
+                      isNightMode: isNightMode,
                     ),
 
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 24),
 
                     // Contact Us Section
                     const _ContactSection(),
 
-                    const SizedBox(height: 30),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 40),
                   ],
                 ),
               ),
@@ -453,16 +447,68 @@ class _FeatureSection extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(20),
-        child: Center(
-          child: Text(
-            title,
-            style: AppTypography.header(fontSize: 24).copyWith(
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          child: Center(
+            child: Text(
+              title.stripKasraFromShadda(),
+              style: AppTypography.thuluth(fontSize: 26).copyWith(
+                color: isNightMode
+                    ? const Color(0xFFF5F5DC)
+                    : const Color(0xFF5D4037),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _InspirationCard extends StatelessWidget {
+  final String text;
+  final String source;
+  final bool isNightMode;
+
+  const _InspirationCard({
+    required this.text,
+    required this.source,
+    required this.isNightMode,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+      child: Column(
+        children: [
+          const Icon(
+            Icons.format_quote_rounded,
+            color: Color(0xFFE6C98A),
+            size: 30,
+          ),
+          const SizedBox(height: 12),
+          Text(
+            text,
+            textAlign: TextAlign.center,
+            style: AppTypography.thuluth(fontSize: 24).copyWith(
               color: isNightMode
                   ? const Color(0xFFF5F5DC)
                   : const Color(0xFF5D4037),
             ),
           ),
-        ),
+          const SizedBox(height: 16),
+          Text(
+            '— $source',
+            style: AppTypography.arabic(fontSize: 12).copyWith(
+              color: isNightMode
+                  ? const Color(0xFFE6C98A).withValues(alpha: 0.7)
+                  : const Color(0xFF8D6E63),
+              fontStyle: FontStyle.italic,
+            ),
+          ),
+        ],
       ),
     );
   }
