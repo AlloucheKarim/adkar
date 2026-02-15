@@ -106,34 +106,6 @@ class _SuratAlMulkScreenState extends State<SuratAlMulkScreen> {
                     borderRadius: BorderRadius.circular(14),
                     child: Stack(
                       children: [
-                        // Decorative Corner Assets (Top Left)
-                        Positioned(
-                          top: -10,
-                          left: -10,
-                          child: Opacity(
-                            opacity: 0.1,
-                            child: Image.asset(
-                              'assets/images/header_frame_a.png',
-                              width: 100,
-                            ),
-                          ),
-                        ),
-                        // Decorative Corner Assets (Bottom Right)
-                        Positioned(
-                          bottom: -10,
-                          right: -10,
-                          child: Opacity(
-                            opacity: 0.1,
-                            child: Transform.rotate(
-                              angle: 3.14159,
-                              child: Image.asset(
-                                'assets/images/header_frame_a.png',
-                                width: 100,
-                              ),
-                            ),
-                          ),
-                        ),
-
                         Padding(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 20,
