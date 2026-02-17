@@ -9,8 +9,6 @@ import '../../core/transitions.dart';
 import '../../core/utils.dart';
 import '../dhikr_detail/dhikr_detail_screen.dart';
 
-import 'package:adhkars_app/core/haptic_service.dart';
-
 class EmotionDetailScreen extends StatelessWidget {
   final String emotionTag;
   final String emotionLabel;
@@ -87,7 +85,7 @@ class _DuaCardState extends State<_DuaCard> {
         languageMode = LanguageMode.arabic;
       }
     });
-    HapticService().selectionClick();
+    // Haptic removed
   }
 
   String _getDisplayText() {

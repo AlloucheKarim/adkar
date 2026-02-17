@@ -2,19 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'core/theme.dart';
 import 'features/onboarding/splash_screen.dart';
-import 'core/notification_service.dart';
 import 'core/prayer_service.dart';
 import 'core/gratitude_service.dart';
-import 'core/haptic_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize services in background to avoid blocking the Splash Screen
-  NotificationService().initialize();
   PrayerService().initialize();
   GratitudeService().initialize();
-  await HapticService().init();
 
   runApp(const AdhkarsApp());
 }

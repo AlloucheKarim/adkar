@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
-import 'package:flutter/services.dart'; // For HapticFeedback
 import '../../core/design_system.dart';
 import '../../core/models.dart';
 import '../../core/repository.dart';
@@ -10,7 +9,6 @@ import '../../core/progress_service.dart';
 import '../../core/transitions.dart';
 import '../../core/theme_service.dart';
 import '../../core/utils.dart';
-import '../../core/haptic_service.dart';
 import 'surat_al_mulk_screen.dart';
 
 class DhikrListScreen extends StatefulWidget {
@@ -63,33 +61,33 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
         ProgressService().unmarkCompleted(dhikr.id);
       }
     });
-    HapticService().mediumImpact();
+    // Haptic removed
   }
 
   void _zoomIn() {
     setState(() {
       if (fontSizeMultiplier < 1.3) fontSizeMultiplier += 0.3;
     });
-    HapticService().selectionClick();
+    // Haptic removed
   }
 
   void _zoomOut() {
     setState(() {
       if (fontSizeMultiplier > 0.71) fontSizeMultiplier -= 0.3;
     });
-    HapticService().selectionClick();
+    // Haptic removed
   }
 
   void _toggleNightMode() {
     ThemeService().toggle();
-    HapticService().mediumImpact();
+    // Haptic removed
   }
 
   void _toggleShortMode() {
     setState(() {
       isShortMode = !isShortMode;
     });
-    HapticService().mediumImpact();
+    // Haptic removed
   }
 
   @override
@@ -244,21 +242,6 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
                       color: const Color(0xFFC09D63),
                     ),
                     const SizedBox(width: 8),
-                    ValueListenableBuilder<bool>(
-                      valueListenable: HapticService().vibrationNotifier,
-                      builder: (context, isEnabled, _) {
-                        return _buildActionButton(
-                          icon: isEnabled
-                              ? Icons.vibration
-                              : Icons.stay_current_portrait,
-                          onPressed: () => HapticService().toggleVibration(),
-                          tooltip: isEnabled
-                              ? 'تعطيل الاهتزاز'
-                              : 'تفعيل الاهتزاز',
-                          color: const Color(0xFFC09D63),
-                        );
-                      },
-                    ),
                   ],
                 ),
               ),
@@ -412,13 +395,13 @@ class _DhikrCardState extends State<_DhikrCard> {
       setState(() {
         currentCount--;
       });
-      HapticService().lightImpact();
+      // Haptic removed
 
       if (currentCount == 0) {
         setState(() {
           isCompleted = true;
         });
-        HapticService().mediumImpact();
+        // Haptic removed
         widget.onCompleted(); // Notifier le parent
       }
     }
@@ -434,7 +417,7 @@ class _DhikrCardState extends State<_DhikrCard> {
         languageMode = LanguageMode.arabic;
       }
     });
-    HapticService().selectionClick();
+    // Haptic removed
   }
 
   String _getDisplayText() {

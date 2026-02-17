@@ -1,7 +1,5 @@
 import 'dart:ui';
-import 'package:adhkars_app/features/home/widgets/notification_settings_sheet.dart';
 import 'package:flutter/material.dart';
-import '../../core/notification_service.dart';
 import '../../core/utils.dart';
 import 'package:hijri/hijri_calendar.dart';
 import '../../core/design_system.dart';
@@ -145,30 +143,6 @@ class _HomeScreenState extends State<HomeScreen>
             centerTitle: true,
             title:
                 null, // Title removed from body header, preserved in app metadata
-            leading: ListenableBuilder(
-              listenable: NotificationService(),
-              builder: (context, _) {
-                final notifications = NotificationService();
-                return IconButton(
-                  icon: Icon(
-                    notifications.isEnabled
-                        ? Icons.notifications_active_outlined
-                        : Icons.notifications_off_outlined,
-                    color: const Color(0xFFC09D63),
-                    size: 26,
-                  ),
-                  onPressed: () {
-                    showModalBottomSheet(
-                      context: context,
-                      backgroundColor: Colors.transparent,
-                      isScrollControlled: true,
-                      builder: (context) => const NotificationSettingsSheet(),
-                    );
-                  },
-                  tooltip: 'التَّنْبِيهَات',
-                );
-              },
-            ),
             actions: [
               IconButton(
                 icon: Icon(
@@ -241,7 +215,6 @@ class _HomeScreenState extends State<HomeScreen>
                           textAlign: TextAlign.center,
                           style: AppTypography.arabic(fontSize: 16).copyWith(
                             color: dateTextColor.withValues(alpha: 0.7),
-                            fontStyle: FontStyle.italic,
                             height: 1.2,
                           ),
                         ),
@@ -260,44 +233,59 @@ class _HomeScreenState extends State<HomeScreen>
                         final intention = IntentionService().dailyIntention;
                         showDialog(
                           context: context,
-                          builder: (context) => AlertDialog(
-                            backgroundColor: isNightMode
-                                ? const Color(0xFF4E342E)
-                                : const Color(0xFFFFF8E1),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(24),
-                              side: const BorderSide(
-                                color: Color(0xFFE6C98A),
-                                width: 1.5,
-                              ),
+                          builder: (context) => Dialog(
+                            backgroundColor: Colors.transparent,
+                            insetPadding: const EdgeInsets.symmetric(
+                              horizontal: 24,
+                              vertical: 24,
                             ),
-                            title: Center(
-                              child: Text(
-                                'تَذَكَّرِي يَا غَالِيَتِي أَنَّ النِّيَّةَ مَحَلُّهَا الْقَلْبُ'
-                                    .stripKasraFromShadda(),
-                                textAlign: TextAlign.center,
-                                style: AppTypography.thuluth(
-                                  fontSize: 22,
-                                ).copyWith(color: const Color(0xFFC09D63)),
-                              ),
-                            ),
-                            content: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                const SizedBox(height: 8),
-                                Text(
-                                  intention.description,
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.arabic(fontSize: 19)
-                                      .copyWith(
-                                        color: isNightMode
-                                            ? const Color(0xFFF5F5DC)
-                                            : const Color(0xFF5D4037),
-                                        height: 1.6,
-                                      ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: isNightMode
+                                    ? const Color(0xFF4E342E)
+                                    : const Color(0xFFFFF8E1),
+                                borderRadius: BorderRadius.circular(24),
+                                border: Border.all(
+                                  color: const Color(0xFFE6C98A),
+                                  width: 1.5,
                                 ),
-                                const SizedBox(height: 16),
-                              ],
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: const Color(
+                                      0xFFE6C98A,
+                                    ).withValues(alpha: 0.3),
+                                    blurRadius: 25,
+                                    spreadRadius: 2,
+                                  ),
+                                ],
+                              ),
+                              padding: const EdgeInsets.all(24),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    'تَذَكَّرِي يَا غَالِيَتِي أَنَّ النِّيَّةَ مَحَلُّهَا الْقَلْبُ'
+                                        .stripKasraFromShadda(),
+                                    textAlign: TextAlign.center,
+                                    style: AppTypography.thuluth(
+                                      fontSize: 22,
+                                    ).copyWith(color: const Color(0xFFC09D63)),
+                                  ),
+                                  const SizedBox(height: 20),
+                                  Text(
+                                    intention.description,
+                                    textAlign: TextAlign.center,
+                                    style: AppTypography.arabic(fontSize: 19)
+                                        .copyWith(
+                                          color: isNightMode
+                                              ? const Color(0xFFF5F5DC)
+                                              : const Color(0xFF5D4037),
+                                          height: 1.6,
+                                        ),
+                                  ),
+                                  const SizedBox(height: 8),
+                                ],
+                              ),
                             ),
                           ),
                         );

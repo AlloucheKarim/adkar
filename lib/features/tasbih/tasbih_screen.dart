@@ -5,7 +5,6 @@ import 'dart:math' as math;
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../core/design_system.dart';
 import '../../core/theme_service.dart';
-import '../../core/haptic_service.dart';
 import '../../shared/scaffold_with_background.dart';
 
 class TasbihScreen extends StatefulWidget {
@@ -91,8 +90,7 @@ class _TasbihScreenState extends State<TasbihScreen>
     });
     _saveCounter();
 
-    // Haptics - use service
-    HapticService().lightImpact();
+    // Haptics removed
 
     _beadController.reset();
     _beadController.forward();
@@ -103,7 +101,7 @@ class _TasbihScreenState extends State<TasbihScreen>
       _counter = 0;
     });
     _saveCounter();
-    HapticService().vibrate();
+    // Haptics removed
   }
 
   @override
@@ -304,42 +302,17 @@ class _TasbihScreenState extends State<TasbihScreen>
 
                     const SizedBox(height: 10),
 
-                    // Action Row (Reset + Vibration)
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ValueListenableBuilder<bool>(
-                          valueListenable: HapticService().vibrationNotifier,
-                          builder: (context, isEnabled, _) {
-                            return IconButton(
-                              onPressed: () =>
-                                  HapticService().toggleVibration(),
-                              icon: Icon(
-                                isEnabled
-                                    ? Icons.vibration
-                                    : Icons.stay_current_portrait,
-                                color: const Color(0xFFC09D63),
-                                size: 28,
-                              ),
-                              tooltip: isEnabled
-                                  ? 'تعطيل الاهتزاز'
-                                  : 'تفعيل الاهتزاز',
-                            );
-                          },
-                        ),
-                        const SizedBox(width: 30),
-                        IconButton(
-                          onPressed: _reset,
-                          icon: const Icon(
-                            Icons.refresh_rounded,
-                            color: Color(0xFFC09D63),
-                            size: 32,
-                          ),
-                          padding: EdgeInsets.zero,
-                          constraints: const BoxConstraints(),
-                          tooltip: 'إعادة الضبط',
-                        ),
-                      ],
+                    // Centralized Reset Button
+                    IconButton(
+                      onPressed: _reset,
+                      icon: const Icon(
+                        Icons.refresh_rounded,
+                        color: Color(0xFFC09D63),
+                        size: 32,
+                      ),
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(),
+                      tooltip: 'إعادة الضبط',
                     ),
 
                     const SizedBox(height: 30),

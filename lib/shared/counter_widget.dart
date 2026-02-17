@@ -31,7 +31,6 @@ class CounterWidget extends StatelessWidget {
           onTap: isComplete
               ? null
               : () {
-                  HapticFeedback.lightImpact();
                   onTap();
                 },
           child: AnimatedContainer(
