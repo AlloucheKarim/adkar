@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../../core/utils.dart';
 import '../../core/design_system.dart';
 import '../../shared/scaffold_with_background.dart';
@@ -42,32 +41,13 @@ class _SuratAlMulkScreenState extends State<SuratAlMulkScreen> {
 
       final String verseNumber = match.group(1)!;
       spans.add(
-        WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              Text(
-                '\u06DD',
-                style: TextStyle(
-                  color: const Color(0xFFC09D63),
-                  fontSize: 22 * fontSizeMultiplier,
-                  fontFamily: 'Scheherazade New',
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 1),
-                child: Text(
-                  verseNumber,
-                  style: TextStyle(
-                    color: const Color(0xFFC09D63),
-                    fontSize: 9 * fontSizeMultiplier,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Inter',
-                  ),
-                ),
-              ),
-            ],
+        TextSpan(
+          text: '($verseNumber)',
+          style: TextStyle(
+            color: const Color(0xFFC09D63),
+            fontSize: 18 * fontSizeMultiplier,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'Scheherazade New',
           ),
         ),
       );
