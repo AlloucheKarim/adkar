@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../../core/utils.dart';
-import 'package:hijri/hijri_calendar.dart';
+
 import '../../core/design_system.dart';
 import '../../core/progress_service.dart';
 import '../../shared/scaffold_with_background.dart';
@@ -108,13 +108,14 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   Widget build(BuildContext context) {
-    final now = DateTime.now();
+    final prayerService = PrayerService();
+    final now = prayerService.currentDate;
     final dayName = _getArabicDayName(now.weekday);
     final gregorianDay = now.day;
     final gregorianMonth = _getArabicGregorianMonth(now.month);
     final gregorianYear = now.year;
 
-    final hijriDate = HijriCalendar.now();
+    final hijriDate = prayerService.currentHijriDate;
     final hijriMonth = _getArabicHijriMonth(hijriDate.hMonth);
 
     // Formatting date parts

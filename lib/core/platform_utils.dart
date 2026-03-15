@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 
 class PlatformUtils {
   static const String androidStoreUrl =
-      'https://play.google.com/store/apps/details?id=com.adkar.app';
+      'https://play.google.com/store/apps/details?id=com.adhkars.app.adhkars_app';
   static const String iosStoreUrl = 'https://apps.apple.com/app/id123456789';
 
   static String get currentStoreUrl {

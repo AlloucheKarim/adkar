@@ -84,13 +84,12 @@ class ShareSheet extends StatelessWidget {
           ),
           const SizedBox(height: 24),
           LinkRow(
-            label: 'رَابِطُ الْمَتْجَرِ',
             link: PlatformUtils.currentStoreUrl,
             icon: Icons.link_rounded,
             onCopy: () => _copyToClipboard(
               context,
               '$shareText\n\n${PlatformUtils.currentStoreUrl}',
-              'الرِّسَالَةُ',
+              'التطبيق',
             ),
             isNightMode: isNightMode,
           ),
@@ -104,7 +103,7 @@ class ShareSheet extends StatelessWidget {
             },
             icon: const Icon(Icons.share_rounded, size: 20),
             label: Text(
-              'مُشَارَكَةٌ الْآنَ'.preventOrphan(),
+              'مشاركة الآن'.preventOrphan(),
               style: AppTypography.arabic(
                 fontSize: 16,
               ).copyWith(fontWeight: FontWeight.bold),

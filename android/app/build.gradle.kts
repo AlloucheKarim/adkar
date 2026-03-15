@@ -32,7 +32,7 @@ android {
     defaultConfig {
         applicationId = "com.adhkars.app.adhkars_app"
         minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -58,5 +58,6 @@ flutter {
 }
 
 dependencies {
+    implementation("androidx.activity:activity-ktx:1.9.3")
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
 }

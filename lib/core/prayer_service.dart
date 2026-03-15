@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:adhan/adhan.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'package:hijri/hijri_calendar.dart';
 class PrayerService extends ChangeNotifier {
   static final PrayerService _instance = PrayerService._internal();
   factory PrayerService() => _instance;
@@ -23,6 +23,19 @@ class PrayerService extends ChangeNotifier {
   String? get errorMessage => _errorMessage;
   bool get hasData => _prayerTimes != null;
 
+  // Location-based dates
+  DateTime get currentDate => DateTime.now();
+
+  HijriCalendar get currentHijriDate {
+    final now = DateTime.now();
+    var hDate = HijriCalendar.fromDate(now);
+    final maghribTime = getTimeForPrayer(Prayer.maghrib);
+    // In Islam, the new day starts exactly at Maghrib
+    if (maghribTime != null && now.isAfter(maghribTime)) {
+      hDate = HijriCalendar.fromDate(now.add(const Duration(days: 1)));
+    }
+    return hDate;
+  }
   // Prayer names in Arabic
   static const Map<Prayer, String> prayerNames = {
     Prayer.fajr: 'الْفَجْر',
