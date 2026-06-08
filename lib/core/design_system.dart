@@ -75,4 +75,16 @@ class AppTypography {
     color: color ?? AppColors.textPrimary,
     height: 1.5,
   );
+
+  static TextStyle phonetic({
+    Color? color,
+    double fontSize = 16,
+    FontWeight? fontWeight,
+  }) => GoogleFonts.outfit(
+    fontSize: fontSize,
+    fontWeight: fontWeight ?? FontWeight.w400,
+    color: color ?? AppColors.textPrimary,
+    height: 1.4,
+    letterSpacing: 0.2, // Un peu d'espace pour la lisibilité académique
+  );
 }

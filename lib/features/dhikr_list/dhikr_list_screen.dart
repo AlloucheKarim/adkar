@@ -376,7 +376,7 @@ class _DhikrCard extends StatefulWidget {
   State<_DhikrCard> createState() => _DhikrCardState();
 }
 
-enum LanguageMode { arabic, english, french }
+enum LanguageMode { arabic, english, french, phonetic }
 
 class _DhikrCardState extends State<_DhikrCard> {
   late int currentCount;
@@ -410,9 +410,11 @@ class _DhikrCardState extends State<_DhikrCard> {
   void _toggleLanguage() {
     setState(() {
       if (languageMode == LanguageMode.arabic) {
-        languageMode = LanguageMode.english;
-      } else if (languageMode == LanguageMode.english) {
+        languageMode = LanguageMode.phonetic;
+      } else if (languageMode == LanguageMode.phonetic) {
         languageMode = LanguageMode.french;
+      } else if (languageMode == LanguageMode.french) {
+        languageMode = LanguageMode.english;
       } else {
         languageMode = LanguageMode.arabic;
       }
@@ -426,6 +428,10 @@ class _DhikrCardState extends State<_DhikrCard> {
         return widget.dhikr.englishText;
       case LanguageMode.french:
         return widget.dhikr.frenchText;
+      case LanguageMode.phonetic:
+        return widget.dhikr.phoneticText.isEmpty 
+            ? "Transcription en cours..." 
+            : widget.dhikr.phoneticText;
       case LanguageMode.arabic:
         return widget.dhikr.arabicText.preventOrphan();
     }
@@ -473,10 +479,14 @@ class _DhikrCardState extends State<_DhikrCard> {
               Text(
                 _getDisplayText(),
                 textAlign: TextAlign.center,
-                style:
-                    (languageMode == LanguageMode.arabic
-                            ? AppTypography.arabic(
-                                fontSize: 22 * widget.fontSizeMultiplier,
+                style: (languageMode == LanguageMode.arabic
+                        ? AppTypography.arabic(
+                            fontSize: 22 * widget.fontSizeMultiplier,
+                          )
+                        : languageMode == LanguageMode.phonetic
+                            ? AppTypography.phonetic(
+                                fontSize: 18 * widget.fontSizeMultiplier,
+                                fontWeight: FontWeight.w500,
                               )
                             : AppTypography.uiBody(
                                 fontSize: 16 * widget.fontSizeMultiplier,

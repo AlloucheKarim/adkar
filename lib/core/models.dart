@@ -16,6 +16,7 @@ class Dhikr {
   final String arabicText;
   final String englishText; // Added translation
   final String frenchText;  // Added translation
+  final String phoneticText; // Added academic transliteration
   final String virtue; // Replaces whyToRecite and benefit
   final String sourceText;
   final String sourceRef;
@@ -29,6 +30,7 @@ class Dhikr {
     required this.arabicText,
     required this.englishText,
     required this.frenchText,
+    required this.phoneticText,
     required this.virtue,
     required this.sourceText,
     required this.sourceRef,

@@ -61,7 +61,7 @@ class EmotionDetailScreen extends StatelessWidget {
   }
 }
 
-enum LanguageMode { arabic, english, french }
+enum LanguageMode { arabic, english, french, phonetic }
 
 class _DuaCard extends StatefulWidget {
   final Dhikr dhikr;
@@ -78,9 +78,11 @@ class _DuaCardState extends State<_DuaCard> {
   void _toggleLanguage() {
     setState(() {
       if (languageMode == LanguageMode.arabic) {
-        languageMode = LanguageMode.english;
-      } else if (languageMode == LanguageMode.english) {
+        languageMode = LanguageMode.phonetic;
+      } else if (languageMode == LanguageMode.phonetic) {
         languageMode = LanguageMode.french;
+      } else if (languageMode == LanguageMode.french) {
+        languageMode = LanguageMode.english;
       } else {
         languageMode = LanguageMode.arabic;
       }
@@ -94,6 +96,10 @@ class _DuaCardState extends State<_DuaCard> {
         return widget.dhikr.englishText;
       case LanguageMode.french:
         return widget.dhikr.frenchText;
+      case LanguageMode.phonetic:
+        return widget.dhikr.phoneticText.isEmpty 
+            ? "Transcription en cours..." 
+            : widget.dhikr.phoneticText;
       case LanguageMode.arabic:
         return widget.dhikr.arabicText.preventOrphan();
     }
@@ -131,16 +137,15 @@ class _DuaCardState extends State<_DuaCard> {
                 Text(
                   _getDisplayText(),
                   textAlign: TextAlign.center,
-                  style:
-                      (languageMode == LanguageMode.arabic
-                              ? AppTypography.arabic(fontSize: 22)
+                  style: (languageMode == LanguageMode.arabic
+                          ? AppTypography.arabic(fontSize: 22)
+                          : languageMode == LanguageMode.phonetic
+                              ? AppTypography.phonetic(fontSize: 18, fontWeight: FontWeight.w500)
                               : AppTypography.uiBody(fontSize: 16))
-                          .copyWith(
-                            color: textColor,
-                            height: languageMode == LanguageMode.arabic
-                                ? 1.5
-                                : 1.3,
-                          ),
+                      .copyWith(
+                    color: textColor,
+                    height: languageMode == LanguageMode.arabic ? 1.5 : 1.3,
+                  ),
                 ),
                 const SizedBox(height: 20),
                 Row(

@@ -12,6 +12,7 @@ class DhikrRepository {
           'Allah! There is no god but He, the Living, the Self-subsisting, Eternal. No slumber can seize Him nor sleep. His are all things in the heavens and on earth. Who is there can intercede in His presence except as He permitteth? He knoweth what (appeareth to His creatures as) before or after or behind them, nor shall they compass aught of His knowledge except as He willeth. His Throne doth extend over the heavens and the earth, and He feeleth no fatigue in guarding and preserving them for He is the Most High, the Supreme (in glory)',
       frenchText:
           'Allah ! Point de divinité à part Lui, le Vivant, Celui qui subsiste par Lui-même "Al-Qayyûm". Ni somnolence ni sommeil ne Le saisissent. À Lui appartient tout ce qui est dans les cieux et sur la terre. Qui peut intercéder auprès de Lui sans Sa permission ? Il connaît leur passé et leur futur. Et, de Sa science, ils n’embrassent que ce qu’Il veut. Son Trône "Kursî" déborde les cieux et la terre, dont la garde ne Lui coûte aucune peine. Et Il est le Très Haut, l’Immense',
+      phoneticText: 'Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūm, lā ta’khudhuhu sinatun wa-lā nawm, lahu mā fī as-samāwāti wa-mā fī al-arḍ, man dhā alladhī yashfa‘u ‘indahu illā bi-idhnih, ya‘lamu mā bayna aydīhim wa-mā khalfahum, wa-lā yuḥīṭūna bi-shay’in min ‘ilmihi illā bi-mā shā’, wasi‘a kursiyyuhu as-samāwāti wa-l-arḍ, wa-lā ya’ūduhu ḥifẓuhumā wa-huwa al-‘aliyyu al-‘aẓīm',
       virtue:
           'هِيَ أَعْظَمُ آيَةٍ فِي كِتَابِ اللَّهِ، مَنْ قَرَأَهَا حِينَ يُصْبِحُ أُجِيرَ مِنَ الْجِنِّ حَتَّى يُمْسِيَ.',
       sourceText:
@@ -29,6 +30,7 @@ class DhikrRepository {
           'Say: He is Allah, the One and Only. Allah, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him',
       frenchText:
           'Dis : "Il est Allah, Unique. Allah, Le Seul à être imploré pour ce que nous désirons. Il n’a jamais engendré, n’a pas été engendré non plus. Et nul n’est égal à Lui"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul huwa Allāhu aḥad, Allāhu aṣ-ṣamad, lam yalid wa-lam yūlad, wa-lam yakun lahu kufuwan aḥad',
       virtue:
           'سُورَةُ الْإِخْلَاصِ تَعْدِلُ ثُلُثَ الْقُرْآنِ، وَقِرَاءَتُهَا مَعَ الْمُعَوِّذَتَيْنِ ثَلَاثاً تَكْفِيكَ مِنْ كُلِّ شَيْءٍ.',
       sourceText:
@@ -46,6 +48,7 @@ class DhikrRepository {
           'Say: I seek refuge with the Lord of the Dawn. From the mischief of created things; From the mischief of Darkness as it overspreads; From the mischief of those who blow on knots; And from the mischief of the envious one as he practises envy',
       frenchText:
           'Dis : "Je cherche protection auprès du Seigneur de l’aube naissante, contre le mal des êtres qu’Il a créés, contre le mal de l’obscurité quand elle s’approfondit, contre le mal de celles qui soufflent [les sorcières] sur les nœuds, et contre le mal de l’envieux quand il envie"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul a‘ūdhu bi-rabbi al-falaq, min sharri mā khalaq, wa-min sharri ghāsiqin idhā waqab, wa-min sharri an-naffāthāti fī al-‘uqad, wa-min sharri ḥāsidin idhā ḥasad',
       virtue:
           'لِلِاسْتِعَاذَةِ بِاللَّهِ مِنْ شُرُورِ الْمَخْلُوقَاتِ وَالسِّحْرِ وَالْحَسَدِ.',
       sourceText:
@@ -63,6 +66,7 @@ class DhikrRepository {
           'Say: I seek refuge with the Lord of Mankind, the King of Mankind, the God of Mankind, from the mischief of the Whisperer (of Evil), who withdraws (after his whisper). Who whispers into the hearts of Mankind. Among Jinns and among Men',
       frenchText:
           'Dis : "Je cherche protection auprès du Seigneur des hommes, Le Souverain des hommes, Dieu des hommes, contre le mal du mauvais conseiller, furtif, qui souffle le mal dans les poitrines des hommes, qu’il [le conseiller] soit un djinn, ou un être humain"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul a‘ūdhu bi-rabbi an-nās, maliki an-nās, ilāhi an-nās, min sharri al-waswāsi al-khannās, alladhī yuwaswisu fī ṣudūri an-nās, mina al-jinnati wa-an-nās',
       virtue:
           'يُقْرَأُ مَعَ الْإِخْلَاصِ وَالْفَلَقِ ثَلَاثاً، تَكْفِيكَ مِنْ كُلِّ شَيْءٍ.',
       sourceText:
@@ -80,6 +84,7 @@ class DhikrRepository {
           'We have reached the morning and at this very time unto Allah belongs all sovereignty, and all praise is for Allah. None has the right to be worshipped except Allah, alone, without partner, to Him belongs all sovereignty and praise and He is over all things omnipotent. My Lord, I ask You for the good of this day and the good of what follows it and I seek refuge in You from the evil of this day and the evil of what follows it. My Lord, I seek refuge in You from laziness and senility. My Lord, I seek refuge in You from torment in the Fire and torment in the grave',
       frenchText:
           'Nous sommes au matin et la royauté appartient à Allah. Louange à Allah. Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose. Seigneur ! Je Te demande le bien de ce jour et le bien de ce qui le suit ; et je me réfugie auprès de Toi contre le mal de ce jour et le mal de ce qui le suit. Seigneur ! Je me réfugie auprès de Toi contre la paresse et les maux de la vieillesse. Seigneur ! Je me réfugie auprès de Toi contre le châtiment du Feu et le châtiment de la tombe',
+      phoneticText: 'Aṣbaḥnā wa-aṣbaḥa al-mulku lillāh, wa-l-ḥamdu lillāh, lā ilāha illā Allāh waḥdahu lā sharīka lah, lahu al-mulku wa-lahu al-ḥamdu, wa-huwa ‘alā kulli shay’in qadīr. Rabbi as’aluka khayra mā fī hādhā al-yawmi wa-khayra mā ba‘dahu, wa-a‘ūdhu bika min sharri mā fī hādhā al-yawmi wa-sharri mā ba‘dahu, rabbi a‘ūdhu bika mina al-kasali wa-sū’i al-kibar, rabbi a‘ūdhu bika min ‘adhābin fī an-nāri wa-‘adhābin fī al-qabr',
       virtue:
           'اعْتِرَافٌ بِمُلْكِ اللَّهِ الْمُطْلَقِ، وَطَلَبُ السَّكِينَةِ وَالْحِمَايَةِ مِنْ عَذَابِ الْقَبْرِ.',
       sourceText:
@@ -96,6 +101,7 @@ class DhikrRepository {
           'O Allah, by Your leave we have reached the morning and by Your leave we have reached the evening, by Your leave we live and die and unto You is our resurrection',
       frenchText:
           'Ô Allah ! C’est par Toi que nous sommes au matin et c’est par Toi que nous sommes au soir. C’est par Toi que nous vivons et c’est par Toi que nous mourons, et c’est vers Toi que se fera la résurrection',
+      phoneticText: 'Allāhumma bika aṣbaḥnā, wa-bika amsaynā, wa-bika naḥyā, wa-bika namūtu, wa-ilayka an-nushūr',
       virtue: 'اعتراف بفضل الله وتدبيره للأوقات والحياة والموت.',
       sourceText:
           'عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: كَانَ النَّبِيُّ ﷺ يُعَلِّمُ أَصْحَابَهُ يَقُولُ: "إِذَا أَصْبَحَ أَحَدُكُمْ فَلْيَقُلْ: اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ".',
@@ -111,6 +117,7 @@ class DhikrRepository {
           'O Allah, You are my Lord, none has the right to be worshipped except You. You created me and I am Your servant, and I abide by Your covenant and promise as best I can. I seek refuge in You from the evil of what I have done. I acknowledge Your favor upon me and I acknowledge my sin, so forgive me, for none forgives sins except You',
       frenchText:
           'Ô Allah ! Tu es mon Seigneur, il n’y a de divinité que Toi. C’est Toi qui m’as créé et je suis Ton serviteur. Je suis Ton engagement et Ta promesse autant que je le puis. Je me réfugie auprès de Toi contre le mal de ce que j’ai fait. Je reconnais Tes bienfaits envers moi et je reconnais mon péché. Pardonne-moi donc, car nul ne pardonne les péchés si ce n’est Toi',
+      phoneticText: 'Allāhumma anta rabbī lā ilāha illā ant, khalaqtanī wa-anā ‘abduk, wa-anā ‘alā ‘ahdika wa-wa‘dika mā astaṭa‘t, a‘ūdhu bika min sharri mā ṣana‘t, abū’u laka bi-ni‘matika ‘alayy, wa-abū’u bi-dhanbī fa-ghfir lī fa-innahu lā gaghfiru adh-dhunūba illā ant',
       virtue:
           'سَيِّدُ الِاسْتِغْفَارِ، مَنْ قَالَهُ مُوقِنًا بِهِ وَمَاتَ مِنْ يَوْمِهِ دَخَلَ الْجَنَّةَ.',
       sourceText:
@@ -128,6 +135,7 @@ class DhikrRepository {
           "O Allah, I have entered the morning and I call upon You, the bearers of Your Throne, Your angels and all of Your creation to witness that surely You are Allah, there is none worthy of worship but You alone, You have no partners, and that Muhammad is Your slave and Your Messenger",
       frenchText:
           "Ô Allah ! Me voici au matin, je Te prends à témoin, et je prends à témoin les porteurs de Ton Trône, Tes anges et toute Ta création, pour témoigner que Tu es Allah, nulle divinité ne mérite d'être adorée à part Toi, l'Unique sans associé, et que Muhammad est Ton serviteur et Ton Messager",
+      phoneticText: 'Allāhumma innī aṣbaḥtu ush-hiduka, wa-ush-hidu ḥamalata ‘arshika, wa-malā’ikataka, wa-jamī‘a khalqik, annaka anta Allāhu lā ilāha illā anta waḥdaka lā sharīka lak, wa-anna Muḥammadan ‘abduka wa-rasūluk',
       virtue:
           'مَنْ قَالَهَا أَرْبَعَ مَرَّاتٍ حِينَ يُصْبِحُ أَعْتَقَهُ اللَّهُ مِنَ النَّارِ.',
       sourceText:
@@ -144,6 +152,7 @@ class DhikrRepository {
           'O Allah, whatever blessing has been received by me or by any of Your creatures in the morning is from You alone, without partner. To You belongs all praise and to You belongs all thanks',
       frenchText:
           'Ô Allah ! Tout bienfait qui m’arrive à moi ou à l’une de Tes créatures en ce matin provient de Toi seul, sans associé. À Toi la louange et à Toi le remerciement',
+      phoneticText: 'Allāhumma mā aṣbaḥa bī min ni‘matin aw bi-aḥadin min khalqika fa-minka waḥdaka lā sharīka lak, fa-laka al-ḥamdu wa-laka ash-shukr',
       virtue: 'مَنْ قَالَهَا حِينَ يُصْبِحُ فَقَدْ أَدَّى شُكْرَ يَوْمِهِ.',
       sourceText:
           'قَالَ رَسُولُ اللَّهِ ﷺ: "مَنْ قَالَ حِينَ يُصْبِحُ: اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ، أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ، فَقَدْ أَدَّى شُكْرَ يَوْمِهِ، وَمَنْ قَالَ مِثْلَ ذَلِكَ حِينَ يُمْسِي فَقَدْ أَدَّى شُكْرَ لَيْلَتِهِ".',
@@ -157,6 +166,7 @@ class DhikrRepository {
           'حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ',
       frenchText:
           'Allah me suffit. Il n’y a de divinité que Lui. C’est en Lui que je place ma confiance et Il est le Seigneur du Trône Immense',
+      phoneticText: 'Ḥasbiya Allāhu lā ilāha illā huwa ‘alayhi tawakkaltu wa-huwa rabbu al-arshi al-‘aẓīm',
       englishText:
           'Allah is sufficient for me. None has the right to be worshipped except Him. In Him I put my trust and He is the Lord of the Mighty Throne',
       virtue:
@@ -174,6 +184,7 @@ class DhikrRepository {
           'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ: فِي دِينِي وَدُنْيَايَ وَأَهْلِي، وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي، وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي',
       frenchText:
           'Ô Allah ! Je Te demande le pardon et le salut dans ma religion, ma vie ici-bas, ma famille et mes biens. Ô Allah ! Cache mes défauts et apaise mes craintes. Ô Allah ! Protège-moi par devant, par derrière, sur ma droite, sur ma gauche et au-dessus de moi. Et je me réfugie auprès de Ta grandeur contre le fait d’être englouti par-dessous moi',
+      phoneticText: 'Allāhumma innī as’aluka al-‘afwa wa-l-‘āfiyata fī ad-dunyā wa-l-ākhirah, Allāhumma innī as’aluka al-‘afwa wa-l-‘āfiyata fī dīnī wa-dunyāya wa-ahlī wa-mālī, Allāhumma astur ‘awrātī wa-āmin raw‘ātī, Allāhumma iḥfaẓnī min bayni yadayy wa-min khalfī wa-‘an yamīnī wa-‘an shimālī wa-min fawqī, wa-a‘ūdhu bi-caẓamatika an ughtāla min taḥtī',
       englishText:
           'O Allah, I ask You for pardon and well-being in this world and the next. O Allah, I ask You for pardon and well-being in my religion and my worldly affairs, and in my family and my property. O Allah, conceal my faults and soothe my fears. O Allah, guard me from the front and from behind, from my right and from my left, and from above me, and I seek refuge in Your Greatness lest I be swallowed up from beneath me',
       virtue:
@@ -190,6 +201,7 @@ class DhikrRepository {
           'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَهَ إِلَّا أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَهَ إِلَّا أَنْتَ',
       frenchText:
           'Ô Allah ! Préserve ma santé dans mon corps, mon ouïe et ma vue. Il n’y a de divinité que Toi. Ô Allah ! Je me réfugie auprès de Toi contre la mécréance et la pauvreté, et je me réfugie auprès de Toi contre le châtiment de la tombe. Il n’y a de divinité que Toi',
+      phoneticText: 'Allāhumma ‘āfinī fī badanī, Allāhumma ‘āfinī fī sam‘ī, Allāhumma ‘āfinī fī baṣarī, lā ilāha illā ant. Allāhumma innī a‘ūdhu bika mina al-kufri wa-l-faqri, wa-a‘ūdhu bika min ‘adhābi al-qabr, lā ilāha illā ant',
       englishText:
           'O Allah, make me healthy in my body, my hearing and my sight. None has the right to be worshipped except You. O Allah, I seek refuge in You from disbelief and poverty, and I seek refuge in You from the torment of the grave. None has the right to be worshipped except You',
       virtue:
@@ -208,6 +220,7 @@ class DhikrRepository {
           'In the Name of Allah, Who with His Name nothing can cause harm in the earth nor in the heavens, and He is the All-Hearing, the All-Knowing',
       frenchText:
           'Au nom d’Allah, tel qu’en compagnie de Son Nom rien ne peut nuire sur terre ni dans le ciel, et Il est l’Audient, l’Omniscient',
+      phoneticText: 'Bismillāhi alladhī lā yaḍurru ma‘a ismihi shay’un fī al-arḍi wa-lā fī as-samā’i wa-huwa as-samī‘u al-‘alīm',
       virtue: 'تحصين شامل، من قاله ثلاث مرات لم يضره شيء.',
       sourceText:
           'عَنْ عُثْمَانَ بْنِ عَفَّانَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ ﷺ: "مَا مِنْ عَبْدٍ يَقُولُ فِي صَبَاحِ كُلِّ يَوْمٍ وَمَسَاءِ كُلِّ لَيْلَةٍ: بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ ثَلَاثَ مَرَّاتٍ لَمْ يَضُرَّهُ شَيْءٌ".',
@@ -224,6 +237,7 @@ class DhikrRepository {
           'I am pleased with Allah as my Lord, with Islam as my religion and with Muhammad (peace and blessings of Allah be upon him) as my Prophet',
       frenchText:
           'J’ai agréé Allah comme Seigneur, l’Islam comme religion et Muhammad (salut et bénédictions d’Allah sur lui) comme Prophète',
+      phoneticText: 'Raḍītu billāhi rabban, wa-bi-l-islāmi dīnan, wa-bi-Muḥammadin ﷺ nabiyyan',
       virtue:
           'كَانَ النَّبِيُّ ﷺ يَضَعُ يَدَهُ الْيُمْنَى تَحْتَ خَدِّهِ وَيَقُولُهَا ثَلَاثاً.',
       sourceText:
@@ -239,6 +253,7 @@ class DhikrRepository {
           'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ',
       frenchText:
           'Ô Vivant ! Ô Celui qui subsiste par Lui-même ! C’est par Ta miséricorde que j’appelle au secours. Améliore ma situation entière et ne me laisse pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil',
+      phoneticText: 'Yā Ḥayyu yā Qayyūm bi-raḥmatika astaghīth aṣliḥ lī sha’nī kullahu wa-lā takilnī ilā nafsī ṭarfata ‘ayn',
       englishText:
           'O Ever Living, O Self-Subsisting, by Your mercy I seek help. Amend for me all my affairs and do not leave me to myself even for the blinking of an eye',
       virtue:
@@ -257,6 +272,7 @@ class DhikrRepository {
           "O Allah, Knower of the unseen and the seen, Creator of the heavens and the earth, Lord and Sovereign of all things. I bear witness that none has the right to be worshipped except You. I seek refuge in You from the evil of my soul and from the evil and shirk of the devil, and from committing any wrong against myself or bringing it upon another Muslim",
       frenchText:
           "Ô Allah ! Toi qui connais l'Inconnu et le Témoigné, Créateur des cieux et de la terre, Seigneur et Souverain de toute chose. Je témoigne qu'il n'y a de divinité que Toi. Je me réfugie auprès de Toi contre le mal de mon âme, contre le mal de Satan et de son polythéisme, et contre le fait de me faire du mal à moi-même ou d'en faire à un autre musulman",
+      phoneticText: 'Allāhumma ‘ālimal-ghaybi wash-shahādah, fāṭira as-samāwāti wa-l-arḍ, rabba kulli shay’in wa-malīkah, ash-hadu an lā ilāha illā ant, a‘ūdhu bika min sharri nafsī, wa-min sharri ash-shayṭāni wa-shirkih, wa-an aqtarifa ‘alā nafsī sū’an, aw ajurrahu ilā muslim',
       virtue:
           'يُقَالُ فِي الصَّبَاحِ وَالْمَسَاءِ وَعِنْدَ النَّوْمِ لِلْحِفْظِ مِنَ الشُّرُورِ.',
       sourceText:
@@ -273,6 +289,7 @@ class DhikrRepository {
           "We have entered the morning upon the natural religion of Islam, the word of sincere devotion, the religion of our Prophet Muhammad (peace and blessings of Allah be upon him), and the faith of our father Ibrahim, a man of pure belief and a Muslim, and he was not of those who worship others besides Allah",
       frenchText:
           "Nous voici au matin, sur la saine nature de l'Islam, sur la parole du dévouement sincère, sur la religion de notre Prophète Muhammad (salut et bénédictions d'Allah sur lui) et sur la confession de notre père Ibrahim, qui était un pur monothéiste, soumis à Allah, et n'était point du nombre des associateurs",
+      phoneticText: "",
       virtue:
           'تَدْجِيدُ الْعَهْدِ مَعَ اللَّهِ عَلَى الْفِطْرَةِ وَالتَّوْحِيدِ وَالِاتِّبَاعِ.',
       sourceText:
@@ -287,6 +304,7 @@ class DhikrRepository {
           'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ: عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ',
       frenchText:
           'Gloire et louange à Allah, autant de fois qu’Il a de créatures, autant qu’Il Lui plaît, autant que pèse Son Trône et autant qu’il faudrait d’encre pour écrire Ses paroles',
+      phoneticText: 'Subḥān Allāhi wa-bi-ḥamdih, ‘adada khalqih, wa-riḍā nafsih, wa-zinata ‘arshih, wa-midāda kalimātih',
       englishText:
           'Glory is to Allah and praise is to Him, by the multitude of His creation, by His Pleasure, by the weight of His Throne, and by the extent of His Words',
       virtue:
@@ -305,6 +323,7 @@ class DhikrRepository {
           "I seek the forgiveness of Allah the Mighty, whom there is none worthy of worship except Him, the Living, the Eternal, and I repent to Him",
       frenchText:
           "Je demande pardon à Allah l'Immense, en dehors duquel il n'y a pas d'autre divinité, le Vivant, Celui qui subsiste par Lui-même, et je me repens à Lui",
+      phoneticText: 'Astaghfiru Allāha al-‘aẓīm alladhī lā ilāha illā huwa al-ḥayyu al-qayyūmu wa-atūbu ilayh',
       virtue: 'مَنْ قَالَهَا غُفِرَ لَهُ وَإِنْ كَانَ فَرَّ مِنَ الزَّحْفِ.',
       sourceText:
           'قَالَ رَسُولُ اللَّهِ ﷺ: "مَنْ قَالَ: أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ، غُفِرَ لَهُ وَإِنْ كَانَ فَرَّ مِنَ الزَّحْفِ".',
@@ -318,6 +337,7 @@ class DhikrRepository {
           'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ شَيْئًا أَعْلَمُهُ، وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُهُ',
       frenchText:
           'Ô Allah ! Je cherche protection auprès de Toi contre le fait de T’associer quoi que ce soit alors que je le sais, et je Te demande pardon pour ce que je ne sais pas',
+      phoneticText: 'Allāhumma innī a‘ūdhu bika an ushrika bika shay’an a‘lamuh, wa-astaghfiruka limā lā a‘lamuh',
       englishText:
           'O Allah, I seek refuge in You lest I should associate anything with You while I know it, and I seek Your forgiveness for what I do not know',
       virtue: 'حماية من الشرك الأصغر والخفي، ويذهب عنك كبير الشرك وصغيره.',
@@ -333,6 +353,7 @@ class DhikrRepository {
           'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا',
       frenchText:
           'Ô Allah ! Je Te demande un savoir utile, une subsistance bonne et une œuvre agréée',
+      phoneticText: 'Allāhumma innī as’aluka ‘ilman nāfi‘an, wa-rizqan ṭayyiban, wa-‘amalan mutaqabbalan',
       englishText:
           'O Allah, I ask You for knowledge that is of benefit, a good provision, and deeds that will be accepted',
       virtue:
@@ -349,6 +370,7 @@ class DhikrRepository {
           'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ',
       frenchText:
           'Ô Allah ! Je me protège auprès de Toi contre l’anxiété et la tristesse, l’incapacité et la paresse, l’avarice et la lâcheté, le poids de la dette et la domination des hommes',
+      phoneticText: 'Allāhumma innī a‘ūdhu bika mina al-hammi wa-l-ḥazan, wa-l-‘ajzi wa-l-kasal, wa-l-jubni wa-l-bukhl, wa-ḍala‘i ad-dayni wa-ghalabati ar-rijāl',
       englishText:
           'O Allah, I seek refuge in You from anxiety and sorrow, weakness and laziness, miserliness and cowardice, the burden of debts and from being overpowered by men',
       virtue:
@@ -364,6 +386,7 @@ class DhikrRepository {
       arabicText: 'اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ',
       englishText: 'O Allah, send prayers and peace upon our Prophet Muhammad',
       frenchText: 'Ô Allah, prie sur notre Prophète Muhammad et salue-le',
+      phoneticText: 'Allāhumma ṣalli wa-sallim ‘alā nabiyyinā Muḥammad',
       virtue:
           'مَنْ صَلَّى عَلَيَّ حِينَ يُصْبِحُ عَشْراً وَحِينَ يُمْسِي عَشْراً أَدْرَكَتْهُ شَفَاعَتِي يَوْمَ الْقِيَامَةِ.',
       sourceText:
@@ -378,6 +401,7 @@ class DhikrRepository {
           'لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ',
       frenchText:
           'Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose',
+      phoneticText: 'Lā ilāha illā Allāh waḥdahu lā sharīka lah, lahu al-mulku wa-lahu al-ḥamdu, wa-huwa ‘alā kulli shay’in qadīr',
       englishText:
           'None has the right to be worshipped except Allah, alone, without partner. To Him belongs all sovereignty and praise and He is over all things omnipotent',
       virtue: 'كانت له عدل عشر رقاب، وكتبت له مائة حسنة، ومحيت عنه مائة سيئة.',
@@ -392,6 +416,7 @@ class DhikrRepository {
       arabicText: 'أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ',
       englishText: 'I seek Allah’s forgiveness and I turn in repentance to Him',
       frenchText: 'Je demande pardon à Allah et je me repens à Lui',
+      phoneticText: 'Astaghfiru Allāha wa-atūbu ilayh',
       virtue: 'امتثال لسنة النبي ﷺ الذي كان يستغفر باليوم مائة مرة.',
       sourceText:
           'قال ﷺ: "يا أيها الناس توبوا إلى الله فإني أتوب في اليوم مائة مرة".',
@@ -404,6 +429,7 @@ class DhikrRepository {
       arabicText: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',
       englishText: 'Glory is to Allah and praise is to Him',
       frenchText: 'Gloire et louange à Allah',
+      phoneticText: 'Subḥān Allāhi wa bi-ḥamdih',
       virtue:
           'مَنْ قَالَهَا مِائَةَ مَرَّةٍ حُطَّتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ.',
       sourceText:
@@ -422,6 +448,7 @@ class DhikrRepository {
           'Allah! There is no god but He, the Living, the Self-subsisting, Eternal. No slumber can seize Him nor sleep. His are all things in the heavens and on earth. Who is there can intercede in His presence except as He permitteth? He knoweth what (appeareth to His creatures as) before or after or behind them, nor shall they compass aught of His knowledge except as He willeth. His Throne doth extend over the heavens and the earth, and He feeleth no fatigue in guarding and preserving them for He is the Most High, the Supreme (in glory)',
       frenchText:
           'Allah ! Point de divinité à part Lui, le Vivant, Celui qui subsiste par Lui-même "Al-Qayyûm". Ni somnolence ni sommeil ne Le saisissent. À Lui appartient tout ce qui est dans les cieux et sur la terre. Qui peut intercéder auprès de Lui sans Sa permission ? Il connaît leur passé et leur futur. Et, de Sa science, ils n’embrassent que ce qu’Il veut. Son Trône "Kursî" déborde les cieux et la terre, dont la garde ne Lui coûte aucune peine. Et Il est le Très Haut, l’Immense',
+      phoneticText: 'Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūm, lā ta’khudhuhu sinatun wa-lā nawm, lahu mā fī as-samāwāti wa-mā fī al-arḍ, man dhā alladhī yashfa‘u ‘indahu illā bi-idhnih, ya‘lamu mā bayna aydīhim wa-mā khalfahum, wa-lā yuḥīṭūna bi-shay’in min ‘ilmihi illā bi-mā shā’, wasi‘a kursiyyuhu as-samāwāti wa-l-arḍ, wa-lā ya’ūduhu ḥifẓuhumā wa-huwa al-‘aliyyu al-‘aẓīm',
       virtue:
           'لحفظ المسلم من أذى الشياطين طوال الليل، من قرأها أجير من الجن حتى يصبح.',
       sourceText:
@@ -439,6 +466,7 @@ class DhikrRepository {
           'Say: He is Allah, the One and Only. Allah, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him',
       frenchText:
           'Dis : "Il est Allah, Unique. Allah, Le Seul à être imploré pour ce que nous désirons. Il n’a jamais engendré, n’a pas été engendré non plus. Et nul n’est égal à Lui"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul huwa Allāhu aḥad, Allāhu aṣ-ṣamad, lam yalid wa-lam yūlad, wa-lam yakun lahu kufuwan aḥad',
       virtue:
           'قِرَاءَتُهَا مَعَ الْمُعَوِّذَتَيْنِ ثَلَاثاً تَكْفِيكَ مِنْ كُلِّ سُوءٍ.',
       sourceText:
@@ -456,6 +484,7 @@ class DhikrRepository {
           'Say: I seek refuge with the Lord of the Dawn. From the mischief of created things; From the mischief of Darkness as it overspreads; From the mischief of those who blow on knots; And from the mischief of the envious one as he practises envy',
       frenchText:
           'Dis : "Je cherche protection auprès du Seigneur de l’aube naissante, contre le mal des êtres qu’Il a créés, contre le mal de l’obscurité quand elle s’approfondit, contre le mal de celles qui soufflent [les sorcières] sur les nœuds, et contre le mal de l’envieux quand il envie"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul a‘ūdhu bi-rabbi al-falaq, min sharri mā khalaq, wa-min sharri ghāsiqin idhā waqab, wa-min sharri an-naffāthāti fī al-‘uqad, wa-min sharri ḥāsidin idhā ḥasad',
       virtue: 'حِمَايَةٌ مِنْ كُلِّ شَرٍّ وَسِحْرٍ وَحَسَدٍ فِي اللَّيْلِ.',
       sourceText:
           'قَالَ رَسُولُ اللَّهِ ﷺ: "قُلْ هُوَ اللَّهُ أَحَدٌ وَالْمُعَوِّذَتَيْنِ حِينَ تُمْسِي وَحِينَ تُصْبِحُ ثَلَاثَ مَرَّاتٍ تَكْفِيكَ مِنْ كُلِّ شَيْءٍ".',
@@ -472,6 +501,7 @@ class DhikrRepository {
           'Say: I seek refuge with the Lord of Mankind, the King of Mankind, the God of Mankind, from the mischief of the Whisperer (of Evil), who withdraws (after his whisper). Who whispers into the hearts of Mankind. Among Jinns and among Men',
       frenchText:
           'Dis : "Je cherche protection auprès du Seigneur des hommes, Le Souverain des hommes, Dieu des hommes, contre le mal du mauvais conseiller, furtif, qui souffle le mal dans les poitrines des hommes, qu’il [le conseiller] soit un djinn, ou un être humain"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul a‘ūdhu bi-rabbi an-nās, maliki an-nās, ilāhi an-nās, min sharri al-waswāsi al-khannās, alladhī yuwaswisu fī ṣudūri an-nās, mina al-jinnati wa-an-nās',
       virtue: 'حِمَايَةٌ مِنْ وَسَاوِسِ الشَّيَاطِينِ وَمِنْ شَرِّ الْجِنَّةِ وَالنَّاسِ.',
       sourceText:
           'قَالَ رَسُولُ اللَّهِ ﷺ لِعَبْدِ اللَّهِ بْنِ خُبَيْبٍ رَضِيَ اللَّهُ عَنْهُ: "قُلْ: {قُلْ هُوَ اللَّهُ أَحَدٌ} وَالْمُعَوِّذَتَيْنِ حِينَ تُمْسِي وَحِينَ تُصْبِحُ ثَلَاثَ مَرَّاتٍ تَكْفِيكَ مِنْ كُلِّ شَيْءٍ".',
@@ -488,6 +518,7 @@ class DhikrRepository {
           'We have reached the evening and at this very time unto Allah belongs all sovereignty, and all praise is for Allah. None has the right to be worshipped except Allah, alone, without partner, to Him belongs all sovereignty and praise and He is over all things omnipotent. My Lord, I ask You for the good of this night and the good of what follows it and I seek refuge in You from the evil of this night and the evil of what follows it. My Lord, I seek refuge in You from laziness and senility. My Lord, I seek refuge in You from torment in the Fire and torment in the grave',
       frenchText:
           'Nous sommes au soir et la royauté appartient à Allah. Louange à Allah. Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose. Seigneur ! Je Te demande le bien de cette nuit et le bien de ce qui la suit ; et je me réfugie auprès de Toi contre le mal de cette nuit et le mal de ce qui la suit. Seigneur ! Je me réfugie auprès de Toi contre la paresse et les maux de la vieillesse. Seigneur ! Je me réfugie auprès de Toi contre le châtiment du Feu et le châtiment de la tombe',
+      phoneticText: 'Amsaynā wa-amsā al-mulku lillāh, wa-l-ḥamdu lillāh, lā ilāha illā Allāh waḥdahu lā sharīka lah, lahu al-mulku wa-lahu al-ḥamdu, wa-huwa ‘alā kulli shay’in qadīr. Rabbi as’aluka khayra mā fī hādhīhi al-laylati wa-khayra mā ba‘dahā, wa-a‘ūdhu bika min sharri mā fī hādhīhi al-laylati wa-sharri mā ba‘dahā, rabbi a‘ūdhu bika mina al-kasali wa-sū’i al-kibar, rabbi a‘ūdhu bika min ‘adhābin fī an-nāri wa-‘adhābin fī al-qabr',
       virtue:
           'تَسْلِيمُ النَّفْسِ لِلَّهِ وَطَلَبُ الْعَافِيَةِ، وَهِيَ حِصْنٌ حَصِينٌ خِلَالَ سَاعَاتِ اللَّيْلِ.',
       sourceText:
@@ -504,6 +535,7 @@ class DhikrRepository {
           'O Allah, by Your leave we have reached the evening and by Your leave we have reached the morning, by Your leave we live and die and unto You is our return',
       frenchText:
           'Ô Allah ! C’est par Toi que nous sommes au soir et c’est par Toi que nous sommes au matin. C’est par Toi que nous vivons et c’est par Toi que nous mourons, et c’est vers Toi que se fera le retour',
+      phoneticText: 'Allāhumma bika amsaynā, wa-bika aṣbaḥnā, wa-bika naḥyā, wa-bika namūtu, wa-ilayka al-maṣīr',
       virtue:
           'اعْتِرَافٌ بِفَضْلِ اللَّهِ وَتَدْبِيرِهِ لِلْأَوْقَاتِ وَالْحَيَاةِ وَالْمَوْتِ.',
       sourceText:
@@ -520,6 +552,7 @@ class DhikrRepository {
           'O Allah, You are my Lord, none has the right to be worshipped except You. You created me and I am Your servant, and I abide by Your covenant and promise as best I can. I seek refuge in You from the evil of what I have done. I acknowledge Your favor upon me and I acknowledge my sin, so forgive me, for none forgives sins except You',
       frenchText:
           'Ô Allah ! Tu es mon Seigneur, il n’y a de divinité que Toi. C’est Toi qui m’as créé et je suis Ton serviteur. Je suis Ton engagement et Ta promesse autant que je le puis. Je me réfugie auprès de Toi contre le mal de ce que j’ai fait. Je reconnais Tes bienfaits envers moi et je reconnais mon péché. Pardonne-moi donc, car nul ne pardonne les péchés si ce n’est Toi',
+      phoneticText: 'Allāhumma anta rabbī lā ilāha illā ant, khalaqtanī wa-anā ‘abduk, wa-anā ‘alā ‘ahdika wa-wa‘dika mā astaṭa‘t, a‘ūdhu bika min sharri mā ṣana‘t, abū’u laka bi-ni‘matika ‘alayy, wa-abū’u bi-dhanbī fa-ghfir lī fa-innahu lā gaghfiru adh-dhunūba illā ant',
       virtue: 'سيد الاستغفار، من قاله موقناً به ومات من ليلته دخل الجنة.',
       sourceText:
           'قال رسول الله ﷺ: "سيد الاستغفار أن تقول: اللهم أنت ربي..." فذكر الحديث.',
@@ -536,6 +569,7 @@ class DhikrRepository {
           "O Allah, I have entered the evening and I call upon You, the bearers of Your Throne, Your angels and all of Your creation to witness that surely You are Allah, there is none worthy of worship but You alone, You have no partners, and that Muhammad is Your slave and Your Messenger",
       frenchText:
           "Ô Allah ! Me voici au soir, je Te prends à témoin, et je prends à témoin les porteurs de Ton Trône, Tes anges et toute Ta création, pour témoigner que Tu es Allah, nulle divinité ne mérite d'être adorée à part Toi, l'Unique sans associé, et que Muhammad est Ton serviteur et Ton Messager",
+      phoneticText: 'Allāhumma innī amsaytu ush-hiduka, wa-ush-hidu ḥamalata ‘arshika, wa-malā’ikataka, wa-jamī‘a khalqik, annaka anta Allāhu lā ilāha illā anta waḥdaka lā sharīka lak, wa-anna Muḥammadan ‘abduka wa-rasūluk',
       virtue:
           'مَنْ قَالَهَا أَرْبَعَ مَرَّاتٍ حِينَ يُمْسِي أَعْتَقَهُ اللَّهُ مِنَ النَّارِ.',
       sourceText:
@@ -552,6 +586,7 @@ class DhikrRepository {
           'O Allah, whatever blessing has been received by me or by any of Your creatures in the evening is from You alone, without partner. To You belongs all praise and to You belongs all thanks',
       frenchText:
           'Ô Allah ! Tout bienfait qui m’arrive à moi ou à l’une de Tes créatures en ce soir provient de Toi seul, sans associé. À Toi la louange et à Toi le remerciement',
+      phoneticText: 'Allāhumma mā amsā bī min ni‘matin aw bi-aḥadin min khalqika fa-minka waḥdaka lā sharīka lak, fa-laka al-ḥamdu wa-laka ash-shukr',
       virtue: 'مَنْ قَالَهَا حِينَ يُمْسِي فَقَدْ أَدَّى شُكْرَ لَيْلَتِهِ.',
       sourceText:
           'قَالَ رَسُولُ اللَّهِ ﷺ: "مَنْ قَالَ حِينَ يُمْسِي: اللَّهُمَّ مَا أَمْسَى بِي مِنْ نِعْمَةٍ، أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ، فَقَدْ أَدَّى شُكْرَ لَيْلَتِهِ، وَمَنْ قَالَ مِثْلَ ذَلِكَ حِينَ يُصْبِحُ فَقَدْ أَدَّى شُكْرَ يَوْمِهِ".',
@@ -565,6 +600,7 @@ class DhikrRepository {
           'حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ',
       frenchText:
           'Allah me suffit. Il n’y a de divinité que Lui. C’est en Lui que je place ma confiance et Il est le Seigneur du Trône Immense',
+      phoneticText: 'Ḥasbiya Allāhu lā ilāha illā huwa ‘alayhi tawakkaltu wa-huwa rabbu al-arshi al-‘aẓīm',
       englishText:
           'Allah is sufficient for me. None has the right to be worshipped except Him. In Him I put my trust and He is the Lord of the Mighty Throne',
       virtue:
@@ -582,6 +618,7 @@ class DhikrRepository {
           'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ: فِي دِينِي وَدُنْيَايَ وَأَهْلِي، وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي، وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي',
       frenchText:
           'Ô Allah ! Je Te demande le pardon et le salut dans ma religion, ma vie ici-bas, ma famille et mes biens. Ô Allah ! Cache mes défauts et apaise mes craintes. Ô Allah ! Protège-me par devant, par derrière, sur ma droite, sur ma gauche et au-dessus de moi. Et je me réfugie auprès de Ta grandeur contre le fait d’être englouti par-dessous moi',
+      phoneticText: 'Allāhumma innī as’aluka al-‘afwa wa-l-‘āfiyata fī ad-dunyā wa-l-ākhirah, Allāhumma innī as’aluka al-‘afwa wa-l-‘āfiyata fī dīnī wa-dunyāya wa-ahlī wa-mālī, Allāhumma astur ‘awrātī wa-āmin raw‘ātī, Allāhumma iḥfaẓnī min bayni yadayy wa-min khalfī wa-‘an yamīnī wa-‘an shimālī wa-min fawqī, wa-a‘ūdhu bi-caẓamatika an ughtāla min taḥtī',
       englishText:
           'O Allah, I ask You for pardon and well-being in this world and the next. O Allah, I ask You for pardon and well-being in my religion and my worldly affairs, and in my family and my property. O Allah, conceal my faults and soothe my fears. O Allah, guard me from the front and from behind, from my right and from my left, and from above me, and I seek refuge in Your Greatness lest I be swallowed up from beneath me',
       virtue:
@@ -598,6 +635,7 @@ class DhikrRepository {
           'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَهَ إِلَّا أَنْتَ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ، وَالْفَقْرِ، وَأَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَهَ إِلَّا أَنْتَ',
       frenchText:
           'Ô Allah ! Préserve ma santé dans mon corps, mon ouïe et ma vue. Il n’y a de divinité que Toi. Ô Allah ! Je me réfugie auprès de Toi contre la mécréance et la pauvreté, et je me réfugie auprès de Toi contre le châtiment de la tombe. Il n’y a de divinité que Toi',
+      phoneticText: 'Allāhumma ‘āfinī fī badanī, Allāhumma ‘āfinī fī sam‘ī, Allāhumma ‘āfinī fī baṣarī, lā ilāha illā ant. Allāhumma innī a‘ūdhu bika mina al-kufri wa-l-faqri, wa-a‘ūdhu bika min ‘adhābi al-qabr, lā ilāha illā ant',
       englishText:
           'O Allah, make me healthy in my body, my hearing and my sight. None has the right to be worshipped except You. O Allah, I seek refuge in You from disbelief and poverty, and I seek refuge in You from the torment of the grave. None has the right to be worshipped except You',
       virtue:
@@ -616,6 +654,7 @@ class DhikrRepository {
           'In the Name of Allah, Who with His Name nothing can cause harm in the earth nor in the heavens, and He is the All-Hearing, the All-Knowing',
       frenchText:
           'Au nom d’Allah, tel qu’en compagnie de Son Nom rien ne peut nuire sur terre ni dans le ciel, et Il est l’Audient, l’Omniscient',
+      phoneticText: 'Bismillāhi alladhī lā yaḍurru ma‘a ismihi shay’un fī al-arḍi wa-lā fī as-samā’i wa-huwa as-samī‘u al-‘alīm',
       virtue:
           'حِمَايَةٌ إِلَهِيَّةٌ مِنْ كُلِّ مَكْرُوهٍ وَسُوءٍ فِي اللَّيْلِ.',
       sourceText:
@@ -633,6 +672,7 @@ class DhikrRepository {
           'I am pleased with Allah as my Lord, with Islam as my religion and with Muhammad (peace and blessings of Allah be upon him) as my Prophet',
       frenchText:
           'J’ai agréé Allah comme Seigneur, l’Islam comme religion et Muhammad (salut et bénédictions d’Allah sur lui) comme Prophète',
+      phoneticText: 'Raḍītu billāhi rabban, wa-bi-l-islāmi dīnan, wa-bi-Muḥammadin ﷺ nabiyyan',
       virtue:
           'وَعْدٌ نَبَوِيٌّ لِمَنْ قَالَهُ بِالرِّضَا وَالْبُشْرَى يَوْمَ الْقِيَامَةِ.',
       sourceText:
@@ -650,6 +690,7 @@ class DhikrRepository {
           'I take refuge in Allah’s perfect words from the evil that He has created',
       frenchText:
           'Je cherche protection auprès des paroles parfaites d’Allah contre le mal des êtres qu’Il a créés',
+      phoneticText: 'A‘ūdhu bi-kalimāti Allāhi at-tāmmāti min sharri mā khalaq',
       virtue:
           'حِفْظٌ مِنَ اللَّدَغَاتِ وَالْحَشَرَاتِ وَالْأَذَى فِي اللَّيْلِ وَمَنْ نَزَلَ مَنْزِلاً.',
       sourceText:
@@ -665,6 +706,7 @@ class DhikrRepository {
           'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ',
       frenchText:
           'Ô Vivant ! Ô Celui qui subsiste par Lui-même ! C’est par Ta miséricorde que j’appelle au secours. Améliore ma situation entière et ne me laisse pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil',
+      phoneticText: 'Yā Ḥayyu yā Qayyūm bi-raḥmatika astaghīth aṣliḥ lī sha’nī kullahu wa-lā takilnī ilā nafsī ṭarfata ‘ayn',
       englishText:
           'O Ever Living, O Self-Subsisting, by Your mercy I seek help. Amend for me all my affairs and do not leave me to myself even for the blinking of an eye',
       virtue:
@@ -683,6 +725,7 @@ class DhikrRepository {
           "O Allah, Knower of the unseen and the seen, Creator of the heavens and the earth, Lord and Sovereign of all things. I bear witness that none has the right to be worshipped except You. I seek refuge in You from the evil of my soul and from the evil and shirk of the devil, and from committing any wrong against myself or bringing it upon another Muslim",
       frenchText:
           "Ô Allah ! Toi qui connais l'Inconnu et le Témoigné, Créateur des cieux et de la terre, Seigneur et Souverain de toute chose. Je témoigne qu'il n'y a de divinité que Toi. Je me réfugie auprès de Toi contre le mal de mon âme, contre le mal de Satan et de son polythéisme, et contre le fait de me faire du mal à moi-même ou d'en faire à un autre musulman",
+      phoneticText: 'Allāhumma ‘ālimal-ghaybi wash-shahādah, fāṭira as-samāwāti wa-l-arḍ, rabba kulli shay’in wa-malīkah, ash-hadu an lā ilāha illā ant, a‘ūdhu bika min sharri nafsī, wa-min sharri ash-shayṭāni wa-shirkih, wa-an aqtarifa ‘alā nafsī sū’an, aw ajurrahu ilā muslim',
       virtue:
           'يُقَالُ فِي الصَّبَاحِ وَالْمَسَاءِ وَعِنْدَ النَّوْمِ لِلْحِفْظِ مِنَ الشُّرُورِ.',
       sourceText:
@@ -699,6 +742,7 @@ class DhikrRepository {
           "We have entered the evening upon the natural religion of Islam, the word of sincere devotion, the religion of our Prophet Muhammad (peace and blessings of Allah be upon him), and the faith of our father Ibrahim, a man of pure belief and a Muslim, and he was not of those who worship others besides Allah",
       frenchText:
           "Nous voici au soir, sur la saine nature de l'Islam, sur la parole du dévouement sincère, sur la religion de notre Prophète Muhammad (salut et bénédictions d'Allah sur lui) et sur la confession de notre père Ibrahim, qui était un pur monothéiste, soumis à Allah, et n'était point du nombre des associateurs",
+      phoneticText: "",
       virtue:
           'تَدْجِيدُ الْعَهْدِ مَعَ اللَّهِ عَلَى الْفِطْرَةِ وَالتَّوْحِيدِ وَالِاتِّبَاعِ.',
       sourceText:
@@ -715,6 +759,7 @@ class DhikrRepository {
           "I seek the forgiveness of Allah the Mighty, whom there is none worthy of worship except Him, the Living, the Eternal, and I repent to Him",
       frenchText:
           "Je demande pardon à Allah l'Immense, en dehors duquel il n'y a pas d'autre divinité, le Vivant, Celui qui subsiste par Lui-même, et je me repens à Lui",
+      phoneticText: 'Astaghfiru Allāha al-‘aẓīm alladhī lā ilāha illā huwa al-ḥayyu al-qayyūmu wa-atūbu ilayh',
       virtue: 'مَنْ قَالَهَا غُفِرَ لَهُ وَإِنْ كَانَ فَرَّ مِنَ الزَّحْفِ.',
       sourceText:
           'قَالَ رَسُولُ اللَّهِ ﷺ: "مَنْ قَالَ: أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ، غُفِرَ لَهُ وَإِنْ كَانَ فَرَّ مِنَ الزَّحْفِ".',
@@ -728,6 +773,7 @@ class DhikrRepository {
           'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ شَيْئًا أَعْلَمُهُ، وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُهُ',
       frenchText:
           'Ô Allah ! Je cherche protection auprès de Toi contre le fait de T’associer quoi que ce soit alors que je le sais, et je Te demande pardon pour ce que je ne sais pas',
+      phoneticText: 'Allāhumma innī a‘ūdhu bika an ushrika bika shay’an a‘lamuh, wa-astaghfiruka limā lā a‘lamuh',
       englishText:
           'O Allah, I seek refuge in You lest I should associate anything with You while I know it, and I seek Your forgiveness for what I do not know',
       virtue: 'حماية من الشرك الأصغر والخفي، ويذهب عنك كبير الشرك وصغيره.',
@@ -743,6 +789,7 @@ class DhikrRepository {
           'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ، وَغَلَبَةِ الرِّجَالِ',
       frenchText:
           'Ô Allah ! Je me protège auprès de Toi contre l’anxiété et la tristesse, l’incapacité et la paresse, l’avarice et la lâcheté, le poids de la dette et la domination des hommes',
+      phoneticText: 'Allāhumma innī a‘ūdhu bika mina al-hammi wa-l-ḥazan, wa-l-‘ajzi wa-l-kasal, wa-l-jubni wa-l-bukhl, wa-ḍala‘i ad-dayni wa-ghalabati ar-rijāl',
       englishText:
           'O Allah, I seek refuge in You from anxiety and sorrow, weakness and laziness, miserliness and cowardice, the burden of debts and from being overpowered by men',
       virtue:
@@ -758,6 +805,7 @@ class DhikrRepository {
       arabicText: 'اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ',
       englishText: 'O Allah, send prayers and peace upon our Prophet Muhammad',
       frenchText: 'Ô Allah, prie sur notre Prophète Muhammad',
+      phoneticText: 'Allāhumma ṣalli wa-sallim ‘alā nabiyyinā Muḥammad',
       virtue:
           'شَفَاعَةُ النَّبِيِّ ﷺ يَوْمَ الْقِيَامَةِ لِمَنْ صَلَّى عَلَيْهِ عَشْراً.',
       sourceText:
@@ -774,6 +822,7 @@ class DhikrRepository {
           'None has the right to be worshipped except Allah, alone, without partner. To Him belongs all sovereignty and praise and He is over all things omnipotent',
       frenchText:
           'Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose',
+      phoneticText: 'Lā ilāha illā Allāh waḥdahu lā sharīka lah, lahu al-mulku wa-lahu al-ḥamdu, wa-huwa ‘alā kulli shay’in qadīr',
       virtue: 'فَضْلٌ عَظِيمٌ وَحِمَايَةٌ مِنَ الشَّيْطَانِ طِوَالَ اللَّيْلِ.',
       sourceText:
           'قَالَ رَسُولُ اللَّهِ ﷺ: "مَنْ قَالَ: لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، فِي يَوْمٍ مِائَةَ مَرَّةٍ كَانَتْ لَهُ عَدْلَ عَشْرِ رِقَابٍ وَكُتِبَتْ لَهُ مِائَةُ حَسَنَةٍ وَمُحِيَتْ عَنْهُ مِائَةُ سَيِّئَةٍ".',
@@ -786,6 +835,7 @@ class DhikrRepository {
       arabicText: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',
       englishText: 'Glory is to Allah',
       frenchText: 'Gloire et louange à Allah',
+      phoneticText: 'Subḥān Allāhi wa bi-ḥamdih',
       virtue:
           'مَنْ قَالَهَا مِائَةَ مَرَّةٍ لَمْ يَأْتِ أَحَدٌ يَوْمَ الْقِيَامَةِ بِأَفْضَلَ مِمَّا جَاءَ بِهِ إِلَّا مَنْ قَالَ مِثْلَ ذَلِكَ.',
       sourceText:
@@ -804,6 +854,7 @@ class DhikrRepository {
           'Praise is to Allah who gives us life after He has caused us to die and to Him is the resurrection',
       frenchText:
           'Louange à Allah qui nous a rendu la vie après nous avoir fait mourir, et c\'est vers Lui que se fera le retour',
+      phoneticText: 'Al-ḥamdu lillāhi alladhī aḥyānā ba‘da mā amātanā wa-ilayhi an-nushūr',
       virtue:
           'شُكْرٌ لِلَّهِ عَلَى حَيَاةٍ جَدِيدَةٍ، وَاعْتِرَافٌ بِفَضْلِهِ فِي اسْتِعَادَةِ الرُّوحِ.',
       sourceText:
@@ -820,6 +871,7 @@ class DhikrRepository {
           'Praise is to Allah Who has given my body health, and restored my soul to me, and permitted me to remember Him',
       frenchText:
           'Louange à Allah qui m\'a rendu la santé, m\'a restitué mon âme et m\'a permis de L\'évoquer',
+      phoneticText: 'Al-ḥamdu lillāhi alladhī ‘āfānī fī jasadī, wa-radda ‘alayya rūḥī, wa-adhina lī bi-dhikrih',
       virtue:
           'شُكْرُ اللَّهِ عَلَى الْعَافِيَةِ الْبَدَنِيَّةِ وَالرُّوحِيَّةِ، وَحِفْظٌ لِلصِّحَّةِ النَّفْسِيَّةِ وَالْجَسَدِيَّةِ.',
       sourceText:
@@ -839,6 +891,7 @@ class DhikrRepository {
           'Say: He is Allah, the One and Only. Allah, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him',
       frenchText:
           'Dis : "Il est Allah, Unique. Allah, Le Seul à être imploré pour ce que nous désirons. Il n’a jamais engendré, n’a pas été engendré non plus. Et nul n’est égal à Lui"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul huwa Allāhu aḥad, Allāhu aṣ-ṣamad, lam yalid wa-lam yūlad, wa-lam yakun lahu kufuwan aḥad',
       virtue:
           'سُنَّةٌ نَبَوِيَّةٌ عِنْدَ النَّوْمِ لِلتَّحْصِينِ وَالْبَرَكَةِ، يَجْمَعُ كَفَّيْهِ وَيَنْفُثُ فِيهِمَا ثُمَّ يَمْسَحُ جَسَدَهُ.',
       sourceText:
@@ -855,6 +908,7 @@ class DhikrRepository {
           'Say: I seek refuge with the Lord of the Dawn. From the mischief of created things; From the mischief of Darkness as it overspreads; From the mischief of those who blow on knots; And from the mischief of the envious one as he practises envy',
       frenchText:
           'Dis : "Je cherche protection auprès du Seigneur de l’aube naissante, contre le mal des êtres qu’Il a créés, contre le mal de l’obscurité quand elle s’approfondit, contre le mal de celles qui soufflent [les sorcières] sur les nœuds, et contre le mal de l’envieux quand il envie"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul a‘ūdhu bi-rabbi al-falaq, min sharri mā khalaq, wa-min sharri ghāsiqin idhā waqab, wa-min sharri an-naffāthāti fī al-‘uqad, wa-min sharri ḥāsidin idhā ḥasad',
       virtue: 'تَحْصِينٌ مِنْ شُرُورِ الْمَخْلُوقَاتِ وَالسِّحْرِ وَالْحَسَدِ.',
       sourceText:
           'عَنْ عَائِشَةَ رَضِيَ اللَّهُ عَنْهَا أَنَّ النَّبِيَّ ﷺ كَانَ إِذَا أَوَى إِلَى فِرَاشِهِ كُلَّ لَيْلَةٍ، جَمَعَ كَفَّيْهِ ثُمَّ نَفَثَ فِيهِمَا فَقَرَأَ فِيهِمَا: {قُلْ هُوَ اللَّهُ أَحَدٌ}، وَ {قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ}، وَ {قُلْ أَعُوذُ بِرَبِّ النَّاسِ}، ثُمَّ يَمْسَحُ بِهِمَا مَا اسْتَطَاعَ مِنْ جَسَدِهِ.',
@@ -871,6 +925,7 @@ class DhikrRepository {
           'Say: I seek refuge with the Lord of Mankind, the King of Mankind, the God of Mankind, from the mischief of the Whisperer (of Evil), who withdraws (after his whisper), (the same) who whispers into the hearts of Mankind, among Jinns and among men',
       frenchText:
           'Dis : "Je cherche protection auprès du Seigneur des hommes. Le Souverain des hommes, Dieu des hommes, contre le mal du mauvais conseiller furtif, qui souffle le mal dans les poitrines des hommes, qu’il [le conseiller] soit un djinn, ou un être humain"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul a‘ūdhu bi-rabbi an-nās, maliki an-nās, ilāhi an-nās, min sharri al-waswāsi al-khannās, alladhī yuwaswisu fī ṣudūri an-nās, mina al-jinnati wa-an-nās',
       virtue: 'تَحْصِينٌ مِنْ وَسْوَاسِ الشَّيْطَانِ وَالْجِنِّ.',
       sourceText:
           'عَنْ عَائِشَةَ رَضِيَ اللَّهُ عَنْهَا أَنَّ النَّبِيَّ ﷺ كَانَ إِذَا أَوَى إِلَى فِرَاشِهِ كُلَّ لَيْلَةٍ، جَمَعَ كَفَّيْهِ ثُمَّ نَفَثَ فِيهِمَا فَقَرَأَ فِيهِمَا: {قُلْ هُوَ اللَّهُ أَحَدٌ}، وَ {قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ}، وَ {قُلْ أَعُوذُ بِرَبِّ النَّاسِ}، ثُمَّ يَمْسَحُ بِهِمَا مَا اسْتَطَاعَ مِنْ جَسَدِهِ.',
@@ -887,6 +942,7 @@ class DhikrRepository {
           'Allah! There is no god but He, the Living, the Self-subsisting, Eternal. No slumber can seize Him nor sleep. His are all things in the heavens and on earth. Who is there can intercede in His presence except as He permitteth? He knoweth what (appeareth to His creatures as) before or after or behind them, nor shall they compass aught of His knowledge except as He willeth. His Throne doth extend over the heavens and the earth, and He feeleth no fatigue in guarding and preserving them for He is the Most High, the Supreme (in glory)',
       frenchText:
           'Allah ! Point de divinité à part Lui, le Vivant, Celui qui subsiste par Lui-même "Al-Qayyûm". Ni somnolence ni sommeil ne Le saisissent. À Lui appartient tout ce qui est dans les cieux et sur la terre. Qui peut intercéder auprès de Lui sans Sa permission ? Il connaît leur passé et leur futur. Et, de Sa science, ils n’embrassent que ce qu’Il veut. Son Trône "Kursî" déborde les cieux et la terre, dont la garde ne Lui coûte aucune peine. Et Il est le Très Haut, l’Immense',
+      phoneticText: 'Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūm, lā ta’khudhuhu sinatun wa-lā nawm, lahu mā fī as-samāwāti wa-mā fī al-arḍ, man dhā alladhī yashfa‘u ‘indahu illā bi-idhnih, ya‘lamu mā bayna aydīhim wa-mā khalfahum, wa-lā yuḥīṭūna bi-shay’in min ‘ilmihi illā bi-mā shā’, wasi‘a kursiyyuhu as-samāwāti wa-l-arḍ, wa-lā ya’ūduhu ḥifẓuhumā wa-huwa al-‘aliyyu al-‘aẓīm',
       virtue:
           'مَنْ قَرَأَهَا إِذَا أَوَى إِلَى فِرَاشِهِ لَمْ يَزَلْ عَلَيْهِ مِنَ اللَّهِ حَافِظٌ وَلَا يَقْرَبُهُ شَيْطَانٌ حَتَّى يُصْبِحَ.',
       sourceText:
@@ -904,6 +960,7 @@ class DhikrRepository {
           'O Allah, I submit myself to You, entrust my affairs to You, turn my face to You, and lay myself down in reliance upon You, out of hope and fear of You. There is no refuge or escape from You except to You. I believe in Your Book which You have revealed and in Your Prophet whom You have sent',
       frenchText:
           'Ô Allah ! Je Te soumets mon âme, je Te confie mes affaires, je tourne mon visage vers Toi et je m’appuie sur Toi, par désir pour Toi et par crainte de Toi. Il n’y a de refuge ni de salut contre Toi qu’en Toi-même. Je crois au Livre que Tu as descendu et au Prophète que Tu as envoyé',
+      phoneticText: 'Allāhumma aslamtu nafsī ilayk, wa-fawwaḍtu amrī ilayk, wa-wajjahtu wajhī ilayk, wa-alja’tu ẓahrī ilayk, raghbatan wa-rahbatan ilayk, lā malja’a wa-lā manjā minka illā ilayk, āmantu bi-kitābika alladhī anzalt, wa-bi-nabiyyika alladhī arsalt',
       virtue: 'مَنْ قَالَهَا وَمَاتَ مِنْ لَيْلَتِهِ كَانَ عَلَى الْفِطْرَةِ.',
       sourceText:
           'قَالَ رَسُولُ اللَّهِ ﷺ: "إِذَا أَتَيْتَ مَضْجَعَكَ فَتَوَضَّأْ وُضُوءَكَ لِلصَّلَاةِ ثُمَّ اضْطَجِعْ عَلَى شِقِّكَ الْأَيْمَنِ وَقُلْ: اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ...".',
@@ -920,6 +977,7 @@ class DhikrRepository {
           'In Your name my Lord, I lie down and in Your name I rise. If You should take my soul then have mercy upon it, and if You should return my soul then protect it in the manner You do for Your righteous servants',
       frenchText:
           'C’est en Ton nom, Seigneur, que je pose mon côté et c’est en Ton nom que je me relève. Si Tu reprends mon âme, fais-lui miséricorde ; et si Tu me la rends, protège-la comme Tu protèges Tes serviteurs vertueux',
+      phoneticText: 'Bismika rabbī waḍa‘tu janbī, wa-bika arfa‘uh, fa-in amsakta nafsī fa-rḥam-hā, wa-in arsaltahā fa-ḥfaẓ-hā bi-mā taḥfaẓu bihi ‘ibādaka aṣ-ṣāliḥīn',
       virtue:
           'دُعَاءٌ لِلِاسْتِسْلَامِ لِلَّهِ فِي النَّوْمِ وَطَلَبُ الرَّحْمَةِ وَالْحِفْظِ.',
       sourceText:
@@ -936,6 +994,7 @@ class DhikrRepository {
           'The Messenger has believed in what was revealed to him from his Lord, and [so have] the believers. All of them have believed in Allah and His angels and His books and His messengers... Allah does not charge a soul except with that which is within its capacity. It will have [the consequence of] what [good] it has gained, and it will bear [the consequence of] what [evil] it has earned. "Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our protector, so give us victory over the disbelieving people."',
       frenchText:
           'Le Messager a cru en ce qui lui a été descendu de son Seigneur, et aussi les croyants : tous ont cru en Allah, en Ses Anges, à Ses Livres et en Ses Messagers... Allah n’impose à aucune âme une charge supérieure à sa capacité. Elle sera récompensée du bien qu’elle aura fait, et punie du mal qu’elle aura fait. "Seigneur, ne nous châtie pas s’il nous arrive d’oublier ou de commettre une erreur. Seigneur ! Ne nous charge pas d’un fardeau lourd comme Tu as chargé ceux qui vécurent avant nous. Seigneur ! Ne nous impose pas ce que nous ne pouvons supporter, efface nos fautes, pardonne-nous et fais-nous miséricorde. Tu es notre Maître, accorde-nous donc la victoire sur les peuples infidèles"',
+      phoneticText: 'Āmana ar-rasūlu bi-mā unzila ilayhi min rabbihi wa-l-mu’minūn. Kullun āmana billāhi wa-malā’ikatihi wa-kutubihi wa-rusulih, lā nufarriqu bayna aḥadin min rusulih, wa-qālū sami‘nā wa-aṭa‘nā, ghufrānaka rabbanā wa-ilayka al-maṣīr. Lā yukallifu Allāhu nafsan illā wus‘ahā, lahā mā kasabat wa-‘alayhā mā aktasabat. Rabbanā lā tu’ākhidhnā in nasīnā aw akhṭa’nā, rabbanā wa-lā taḥmil ‘alaynā iṣran kamā ḥamaltahu ‘alā alladhīna min qablinā, rabbanā wa-lā tuḥammilnā mā lā ṭāqata lanā bih, wa-fu ‘annā wa-ghfir lanā wa-rḥamnā, anta mawlānā fa-nṣurnā ‘alā al-qawmi al-kāfirīn',
       virtue: 'مَنْ قَرَأَهُمَا فِي لَيْلَةٍ كَفَتَاهُ.',
       sourceText:
           'عَنْ أَبِي مَسْعُودٍ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ النَّبِيُّ ﷺ: "مَنْ قَرَأَ بِالْآيَتَيْنِ مِنْ آخِرِ سُورَةِ الْبَقَرَةِ فِي لَيْلَةٍ كَفَتَاهُ".',
@@ -951,6 +1010,7 @@ class DhikrRepository {
           'O Allah, save me from Your punishment the Day You resurrect Your slaves',
       frenchText:
           'Ô Allah ! Préserve-moi de Ton châtiment le jour où Tu ressusciteras Tes serviteurs',
+      phoneticText: 'Allāhumma qinī ‘adhābaka yawma tab‘athu ‘ibādak',
       virtue:
           'كَانَ النَّبِيُّ ﷺ يَضَعُ يَدَهُ الْيُمْنَى تَحْتَ خَدِّهِ وَيَقُولُهَا ثَلَاثاً.',
       sourceText:
@@ -964,6 +1024,7 @@ class DhikrRepository {
       arabicText: 'سُبْحَانَ اللَّهِ',
       englishText: 'Glory is to Allah',
       frenchText: 'Gloire à Allah',
+      phoneticText: 'Subḥān Allāh',
       virtue: 'خير لكما من خادم، يعطي قوة للبدن في اليوم التالي.',
       sourceText:
           'أن فاطمة رضي الله عنها أتت النبي ﷺ تسأله خادماً، فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال علي: فجاءنا وقد أخذنا مضاجعنا، فقال: "ألا أدلكما على خير مما سألتما؟ إذا أويتما إلى فراشكما فسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، وكبرا أربعاً وثلاثين، فهو خير لكما من خادم".',
@@ -976,6 +1037,7 @@ class DhikrRepository {
       arabicText: 'الْحَمْدُ لِلَّهِ',
       englishText: 'Praise is to Allah',
       frenchText: 'Louange à Allah',
+      phoneticText: 'Al-ḥamdu lillāh',
       virtue: 'خير لكما من خادم، يعطي قوة للبدن في اليوم التالي.',
       sourceText:
           'أن فاطمة رضي الله عنها أتت النبي ﷺ تسأله خادماً، فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال علي: فجاءنا وقد أخذنا مضاجعنا، فقال: "ألا أدلكما على خير مما سألتما؟ إذا أويتما إلى فراشكما فسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، وكبرا أربعاً وثلاثين، فهو خير لكما من خادم".',
@@ -988,6 +1050,7 @@ class DhikrRepository {
       arabicText: 'اللَّهُ أَكْبَرُ',
       englishText: 'Allah is the Greatest',
       frenchText: 'Allah est le plus Grand',
+      phoneticText: 'Allāhu akbar',
       virtue: 'خير لكما من خادم، يعطي قوة للبدن في اليوم التالي.',
       sourceText:
           'أن فاطمة رضي الله عنها أتت النبي ﷺ تسأله خادماً، فلم تجده، فذكرت ذلك لعائشة، فلما جاء أخبرته، قال علي: فجاءنا وقد أخذنا مضاجعنا، فقال: "ألا أدلكما على خير مما سألتما؟ إذا أويتما إلى فراشكما فسبحا ثلاثاً وثلاثين، واحمدا ثلاثاً وثلاثين، وكبرا أربعاً وثلاثين، فهو خير لكما من خادم".',
@@ -1003,6 +1066,7 @@ class DhikrRepository {
           'Say, "O disbelievers, I do not worship what you worship. Nor are you worshippers of what I worship. Nor will I be a worshipper of what you worship. Nor will you be worshippers of what I worship. For you is your religion, and for me is my religion."',
       frenchText:
           'Dis : "Ô vous les infidèles ! Je n’adore pas ce que vous adorez. Et vous n’êtes pas adorateurs de ce que j’adore. Et je ne suis pas adorateur de ce que vous avez adoré. Et vous n’êtes pas adorateurs de ce que j’adore. À vous votre religion, et à moi ma religion"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul yā ayyuhā al-kāfirūn, lā a‘budu mā ta‘budūn, wa-lā antum ‘ābidūna mā a‘bud, wa-lā anā ‘ābidun mā ‘abadtum, wa-lā antum ‘ābidūna mā a‘bud, lakum dīnukum wa-liya dīn',
       virtue: 'بَرَاءَةٌ مِنَ الشِّرْكِ لِمَنْ قَرَأَهَا قَبْلَ النَّوْمِ.',
       sourceText:
           'عَنْ فَرْوَةَ بْنِ نَوْفَلٍ رَضِيَ اللَّهُ عَنْهُ قَالَ: "أَتَيْتُ النَّبِيَّ ﷺ فَقُلْتُ: يَا رَسُولَ اللَّهِ عَلِّمْنِي شَيْئاً أَقُولُهُ إِذَا أَوَيْتُ إِلَى فِرَاشِي، فَقَالَ: اقْرَأْ {قُلْ يَا أَيُّهَا الْكَافِرُونَ} فَإِنَّهَا بَرَاءَةٌ مِنَ الشِّرْكِ".',
@@ -1017,6 +1081,7 @@ class DhikrRepository {
       arabicText: 'أَسْتَغْفِرُ اللهَ',
       englishText: 'I ask Allah for forgiveness',
       frenchText: 'Je demande pardon à Allah',
+      phoneticText: 'Astaghfiru Allāh',
       virtue: 'سُنَّةُ النَّبِيِّ ﷺ دُبُرَ كُلِّ صَلَاةٍ مَكْتُوبَةٍ.',
       sourceText:
           'عَنْ ثَوْبَانَ رَضِيَ اللَّهُ عَنْهُ قَالَ: كَانَ رَسُولُ اللَّهِ ﷺ إِذَا انْصَرَفَ مِنْ صَلَاتِهِ اسْتَغْفَرَ ثَلَاثاً، وَقَالَ: اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ.',
@@ -1032,6 +1097,7 @@ class DhikrRepository {
           'O Allah, You are Peace and from You comes peace. Blessed are You, O Owner of Majesty and Honor',
       frenchText:
           'Ô Allah ! Tu es la Paix et la paix vient de Toi. Béni sois-Tu, ô Détenteur de la Majesté et de la Générosité',
+      phoneticText: 'Allāhumma anta as-salām wa-minka as-salām, tabārakta yā dhā al-jalāli wa-l-ikrām',
       virtue: 'ثَنَاءٌ عَلَى اللَّهِ بِصِفَةِ السَّلَامِ.',
       sourceText:
           'عَنْ ثَوْبَانَ رَضِيَ اللَّهُ عَنْهُ قَالَ: كَانَ رَسُولُ اللَّهِ ﷺ إِذَا انْصَرَفَ مِنْ صَلَاتِهِ اسْتَغْفَرَ ثَلَاثاً، وَقَالَ: "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ".',
@@ -1047,6 +1113,7 @@ class DhikrRepository {
           'None has the right to be worshipped but Allah alone, Who has no partner, His is the dominion and His is the praise, and He is Able to do all things. O Allah, none can prevent what You have granted, nor can anyone grant what You have prevented, and no wealth or majesty can benefit anyone, as from You is all wealth and majesty',
       frenchText:
           'Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose. Ô Allah, nul ne peut retenir ce que Tu as donné et nul ne peut donner ce que Tu as retenu. La fortune des fortunés ne leur est d’aucune utilité auprès de Toi',
+      phoneticText: 'Lā ilāha illā Allāh waḥdahu lā sharīka lah, lahu al-mulku wa-lahu al-ḥamdu, wa-huwa ‘alā kulli shay’in qadīr, Allāhumma lā māni‘a limā a‘ṭayt, wa-lā mu‘ṭiya limā mana‘t, wa-lā yanfa‘u dhā al-jaddi minka al-jadd',
       virtue:
           'اعْتِرَافٌ بِتَوْحِيدِ اللَّهِ وَقُدْرَتِهِ الْمُطْلَقَةِ وَسَعَةِ عَطَائِهِ.',
       sourceText:
@@ -1060,6 +1127,7 @@ class DhikrRepository {
       arabicText: 'سُبْحَانَ اللهِ',
       englishText: 'Glory is to Allah',
       frenchText: 'Gloire à Allah',
+      phoneticText: 'Subḥān Allāh',
       virtue:
           'مَنْ سَبَّحَ اللَّهَ فِي دُبُرِ كُلِّ صَلَاةٍ ثَلَاثاً وَثَلَاثِينَ... غُفِرَتْ خَطَايَاهُ وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ.',
       sourceText:
@@ -1073,6 +1141,7 @@ class DhikrRepository {
       arabicText: 'الْحَمْدُ للهِ',
       englishText: 'Praise is to Allah',
       frenchText: 'Louange à Allah',
+      phoneticText: 'Al-ḥamdu lillāh',
       virtue:
           'مَنْ حَمِدَ اللَّهَ فِي دُبُرِ كُلِّ صَلَاةٍ ثَلَاثاً وَثَلَاثِينَ... غُفِرَتْ خَطَايَاهُ.',
       sourceText:
@@ -1086,6 +1155,7 @@ class DhikrRepository {
       arabicText: 'اللهُ أَكْبَرُ',
       englishText: 'Allah is the Greatest',
       frenchText: 'Allah est le plus Grand',
+      phoneticText: 'Allāhu akbar',
       virtue:
           'مَنْ كَبَّرَ اللَّهَ فِي دُبُرِ كُلِّ صَلَاةٍ ثَلَاثاً وَثَلَاثِينَ... غُفِرَتْ خَطَايَاهُ.',
       sourceText:
@@ -1102,6 +1172,7 @@ class DhikrRepository {
           'None has the right to be worshipped but Allah alone, Who has no partner, His is the dominion and His is the praise, and He is Able to do all things',
       frenchText:
           'Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose',
+      phoneticText: 'Lā ilāha illā Allāh waḥdahu lā sharīka lah, lahu al-mulku wa-lahu al-ḥamdu, wa-huwa ‘alā kulli shay’in qadīr',
       virtue:
           'تَكْمِلَةُ الْمِائَةِ بَعْدَ التَّسْبِيحِ وَالتَّحْمِيدِ وَالتَّكْبِيرِ، لِتُغْفَرَ الْخَطَايَا وَإِنْ كَانَتْ مِثْلَ زَبَدِ الْبَحْرِ.',
       sourceText:
@@ -1118,6 +1189,7 @@ class DhikrRepository {
           'None has the right to be worshipped but Allah alone, Who has no partner, His is the dominion and His is the praise. He gives life and causes death, and He is Able to do all things',
       frenchText:
           'Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange. Il donne la vie et donne la mort, et Il est Capable de toute chose',
+      phoneticText: 'Lā ilāha illā Allāh waḥdahu lā sharīka lah, lahu al-mulku wa-lahu al-ḥamdu, yuḥyī wa-yumīt, wa-huwa ‘alā kulli shay’in qadīr',
       virtue:
           'مَنْ قَالَهَا بَعْدَ صَلَاةِ الْفَجْرِ وَالْمَغْرِبِ عَشْرَ مَرَّاتٍ كَانَتْ لَهُ غِرَاساً فِي الْجَنَّةِ وَحِرْزاً مِنْ كُلِّ سُوءٍ.',
       sourceText:
@@ -1134,6 +1206,7 @@ class DhikrRepository {
           'Allah! There is no god but He, the Living, the Self-subsisting, Eternal. No slumber can seize Him nor sleep. His are all things in the heavens and on earth. Who is there can intercede in His presence except as He permitteth? He knoweth what (appeareth to His creatures as) before or after or behind them, nor shall they compass aught of His knowledge except as He willeth. His Throne doth extend over the heavens and the earth, and He feeleth no fatigue in guarding and preserving them for He is the Most High, the Supreme (in glory)',
       frenchText:
           'Allah ! Point de divinité à part Lui, le Vivant, Celui qui subsiste par Lui-même "Al-Qayyûm". Ni somnolence ni sommeil ne Le saisissent. À Lui appartient tout ce qui est dans les cieux et sur la terre. Qui peut intercéder auprès de Lui sans Sa permission ? Il connaît leur passé et leur futur. Et, de Sa science, ils n’embrassent que ce qu’Il veut. Son Trône "Kursî" déborde les cieux et la terre, dont la garde ne Lui coûte aucune peine. Et Il est le Très Haut, l’Immense',
+      phoneticText: 'Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūm, lā ta’khudhuhu sinatun wa-lā nawm, lahu mā fī as-samāwāti wa-mā fī al-arḍ, man dhā alladhī yashfa‘u ‘indahu illā bi-idhnih, ya‘lamu mā bayna aydīhim wa-mā khalfahum, wa-lā yuḥīṭūna bi-shay’in min ‘ilmihi illā bi-mā shā’, wasi‘a kursiyyuhu as-samāwāti wa-l-arḍ, wa-lā ya’ūduhu ḥifẓuhumā wa-huwa al-‘aliyyu al-‘aẓīm',
       virtue:
           'مَنْ قَرَأَهَا دُبُرَ كُلِّ صَلَاةٍ لَمْ يَمْنَعْهُ مِنْ دُخُولِ الْجَنَّةِ إِلَّا أَنْ يَمُوتَ.',
       sourceText:
@@ -1150,6 +1223,7 @@ class DhikrRepository {
           'Say: He is Allah, the One and Only. Allah, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him',
       frenchText:
           'Dis : "Il est Allah, Unique. Allah, Le Seul à être imploré pour ce que nous désirons. Il n’a jamais engendré, n’a pas été engendré non plus. Et nul n’est égal à Lui"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul huwa Allāhu aḥad, Allāhu aṣ-ṣamad, lam yalid wa-lam yūlad, wa-lam yakun lahu kufuwan aḥad',
       virtue:
           'سُنَّةٌ دُبُرَ كُلِّ صَلَاةٍ فِي الْأَوْقَاتِ الْعَادِيَّةِ، وَتُكَرَّرُ ثَلَاثاً فِي الصُّبْحِ وَالْمَغْرِبِ.',
       sourceText:
@@ -1166,6 +1240,7 @@ class DhikrRepository {
           'Say: I seek refuge with the Lord of the Dawn. From the mischief of created things; From the mischief of Darkness as it overspreads; From the mischief of those who blow on knots; And from the mischief of the envious one as he practises envy',
       frenchText:
           'Dis : "Je cherche protection auprès du Seigneur de l’aube naissante, contre le mal des êtres qu’Il a créés, contre le mal de l’obscurité quand elle s’approfondit, contre le mal de celles qui soufflent [les sorcières] sur les nœuds, et contre le mal de l’envieux quand il envie"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul a‘ūdhu bi-rabbi al-falaq, min sharri mā khalaq, wa-min sharri ghāsiqin idhā waqab, wa-min sharri an-naffāthāti fī al-‘uqad, wa-min sharri ḥāsidin idhā ḥasad',
       virtue:
           'سُنَّةٌ دُبُرَ كُلِّ صَلَاةٍ فِي الْأَوْقَاتِ الْعَادِيَّةِ، وَتُكَرَّرُ ثَلَاثاً فِي الصُّبْحِ وَالْمَغْرِبِ.',
       sourceText:
@@ -1182,6 +1257,7 @@ class DhikrRepository {
           'Say: I seek refuge with the Lord of Mankind, the King of Mankind, the God of Mankind, from the mischief of the Whisperer (of Evil), who withdraws (after his whisper), (the same) who whispers into the hearts of Mankind, among Jinns and among men',
       frenchText:
           'Dis : "Je cherche protection auprès du Seigneur des hommes. Le Souverain des hommes, Dieu des hommes, contre le mal du mauvais conseiller furtif, qui souffle le mal dans les poitrines des hommes, qu’il [le conseiller] soit un djinn, ou un être humain"',
+      phoneticText: 'Bismi-llāhi ar-raḥmāni ar-raḥīm. Qul a‘ūdhu bi-rabbi an-nās, maliki an-nās, ilāhi an-nās, min sharri al-waswāsi al-khannās, alladhī yuwaswisu fī ṣudūri an-nās, mina al-jinnati wa-an-nās',
       virtue:
           'سُنَّةٌ دُبُرَ كُلِّ صَلَاةٍ فِي الْأَوْقَاتِ الْعَادِيَّةِ، وَتُكَرَّرُ ثَلَاثاً فِي الصُّبْحِ وَالْمَغْرِبِ.',
       sourceText:
@@ -1205,6 +1281,7 @@ class DhikrRepository {
           'We belong to Allah and to Him we shall return. O Allah, reward me for my affliction and give me something better than it in exchange',
       frenchText:
           'Nous sommes à Allah et nous reviendrons à Lui. Ô Allah, récompense-moi dans mon malheur et remplace-le moi par quelque chose de meilleur',
+      phoneticText: 'Innā lillāhi wa-innā ilayhi rāji‘ūn, Allāhumma’-jurnī fī muṣībatī, wa-akhlif lī khayran minhā',
       virtue: 'عِوَضُ اللَّهِ الصَّابِرِينَ بِأَفْضَلَ مِمَّا فَقَدُوا.',
       repetitions: 1,
     ),
@@ -1218,6 +1295,7 @@ class DhikrRepository {
           'There is no god but You, glory be to You, I have indeed been among the wrongdoers',
       frenchText:
           'Il n’y a pas d’autre divinité que Toi, Gloire à Toi, j’ai été du nombre des injustes',
+      phoneticText: 'Lā ilāha illā anta subḥānaka innī kuntu mina aẓ-ẓālimīn',
       virtue:
           'دُعَاءُ ذِي النُّونِ، مَا دَعَا بِهِ مُسْلِمٌ فِي كَرْبٍ إِلَّا اسْتَجَابَ اللَّهُ لَهُ.',
       sourceText:
@@ -1235,6 +1313,7 @@ class DhikrRepository {
           'O Allah, I hope for Your mercy, so do not leave me to myself even for the blinking of an eye, and amend all my affairs for me, there is no god but You',
       frenchText:
           'Ô Allah ! C’est Ta miséricorde que j’espère. Ne me laisse donc pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil. Améliore ma situation entière. Il n’y a de divinité que Toi',
+      phoneticText: 'Allāhumma raḥmataka arjū falā takilnī ilā nafsī ṭarfata ‘ayn, wa-aṣliḥ lī sha’nī kullahu lā ilāha illā ant',
       virtue:
           'دُعَاءُ الْمَكْرُوبِ، لِتَفْوِيضِ الْأَمْرِ كُلِّهِ لِلَّهِ وَتَوْكِيلِهِ.',
       sourceText:
@@ -1252,6 +1331,7 @@ class DhikrRepository {
           'O Allah, I seek refuge in You from anxiety and sorrow, weakness and laziness, miserliness and cowardice, the burden of debts and from being overpowered by men',
       frenchText:
           'Ô Allah ! Je me protège auprès de Toi contre l’anxiété et la tristesse, l’incapacité et la paresse, l’avarice et la lâcheté, le poids de la dette et la domination des hommes',
+      phoneticText: 'Allāhumma innī a‘ūdhu bika mina al-hammi wa-l-ḥazan, wa-l-‘ajzi wa-l-kasal, wa-l-jubni wa-l-bukhl, wa-ḍala‘i ad-dayni wa-ghalabati ar-rijāl',
       virtue:
           'اسْتِعَاذَةٌ شَامِلَةٌ مِنْ آفَاتِ الْقُلُوبِ وَالْأَبْدَانِ وَالدُّيُونِ.',
       sourceText:
@@ -1267,6 +1347,7 @@ class DhikrRepository {
       englishText:
           'Allah is sufficient for us, and He is the best Disposer of affairs',
       frenchText: 'Allah nous suffit, quel excellent Protecteur !',
+      phoneticText: 'Ḥasbunā Allāhu wa-ni‘ma al-wakīl',
       virtue:
           'كَلِمَةُ الِاسْتِنْصَارِ فِي الشَّدَائِدِ، لِكِفَايَةِ اللَّهِ لِلْعَبْدِ وَحِمَايَتِهِ.',
       sourceText:
@@ -1286,6 +1367,7 @@ class DhikrRepository {
           'O Ever Living, O Self-Subsisting, by Your mercy I seek help. Amend for me all my affairs and do not leave me to myself even for the blinking of an eye',
       frenchText:
           'Ô Vivant ! Ô Celui qui subsiste par Lui-même ! C’est par Ta miséricorde que j’appelle au secours. Améliore ma situation entière et ne me laisse pas à mon propre sort, ne serait-ce que le temps d’un clin d’œil',
+      phoneticText: 'Yā Ḥayyu yā Qayyūm bi-raḥmatika astaghīth aṣliḥ lī sha’nī kullahu wa-lā takilnī ilā nafsī ṭarfata ‘ayn',
       virtue:
           'وَصِيَّةٌ نَبَوِيَّةٌ لِلِاسْتِغَاثَةِ بِأَسْمَاءِ اللَّهِ الْعُظْمَى لِكِفَايَةِ الْهَمِّ.',
       sourceText:
@@ -1303,6 +1385,7 @@ class DhikrRepository {
           'O Allah, I am Your slave, the son of Your slave, the son of Your maidservant; my forelock is in Your hand, Your command over me is forever executed and Your decree over me is just. I ask You by every name belonging to You which You have named Yourself with, or revealed in Your Book, or taught to any of Your creation, or You have preserved in the knowledge of the unseen with You, that You make the Quran the spring of my heart and the light of my chest, the banisher of my sadness and the reliever of my distress',
       frenchText:
           'Ô Allah ! Je suis Ton serviteur, fils de Ton serviteur, fils de Ta servante. Mon toupet est dans Ta main, Ton jugement s’accomplit sur moi, Ton décret sur moi est juste. Je Te demande par chacun de Tes noms par lesquels Tu T’es nommé, ou que Tu as révélé dans Ton Livre, ou que Tu as enseigné à l’une de Tes créatures, ou que Tu as gardé secret dans la science de l’invisible auprès de Toi, de faire du Coran le printemps de mon cœur, la lumière de ma poitrine, la dissipation de ma tristesse et la fin de mes soucis',
+      phoneticText: 'Allāhumma innī ‘abduk, wa-ibnu ‘abdik, wa-ibnu amatik, nāṣiyatī bi-yadik, māḍin fiyya ḥukmuk, ‘adlun fiyya qaḍā’uk, as’aluka bi-kulli ismin huwa lak sammayta bihi nafsak, aw anzaltahu fī kitābik, aw ‘allamtahu aḥadan min khalqik, aw ista’tharta bihi fī ‘ilmi al-ghaybi ‘indak, an taj‘ala al-qur’āna rabī‘a qalbī, wa-nūra ṣadrī, wa-jalā’a ḥuznī, wa-dhahāba hammī',
       virtue:
           'دُعَاءٌ لِإِذْهَابِ الْهَمِّ وَالْغَمِّ وَإِبْدَالِهِ فَرَحاً وَسُرُوراً.',
       sourceText:
@@ -1320,6 +1403,7 @@ class DhikrRepository {
           'There is no god but Allah, the Great, the Forbearing; There is no god but Allah, the Lord of the Magnificent Throne; There is no god but Allah, the Lord of the heavens and the Lord of the earth, and the Lord of the Noble Throne',
       frenchText:
           'Point de divinité à part Allah, le Magnifique, le Clément. Point de divinité à part Allah, le Seigneur du Trône Immense. Point de divinité à part Allah, le Seigneur des cieux, le Seigneur de la terre et le Seigneur du Trône Généreux',
+      phoneticText: 'Lā ilāha illā Allāhu al-‘aẓīmu al-ḥalīm, lā ilāha illā Allāhu rabbu al-‘arshi al-‘aẓīm, lā ilāha illā Allāhu rabbu as-samāwāti wa-rabbu al-arḍi wa-rabbu al-arshi al-karīm',
       virtue:
           'دُعَاءُ الْكَرْبِ، لِتَفْرِيجِ الشَّدَائِدِ وَتَهْوِينِ الصِّعَابِ.',
       sourceText:
@@ -1337,6 +1421,7 @@ class DhikrRepository {
           'O Allah, suffice me with what You have allowed instead of what You have forbidden, and make me independent of all others besides You',
       frenchText:
           'Ô Allah ! Accorde-moi de Tes biens licites pour m’épargner Tes interdits, et accorde-moi de Ta grâce pour ne plus dépendre d’aucun autre que Toi',
+      phoneticText: 'Allāhumma-kfinī bi-ḥalālika ‘an ḥarāmik, wa-aghninī bi-faḍlika ‘amman siwāk',
       virtue:
           'لِقَضَاءِ الدُّيُونِ، لَوْ كَانَ عَلَيْكَ مِثْلُ جَبَلٍ دَيْناً أَدَّاهُ اللَّهُ عَنْكَ.',
       sourceText:
@@ -1351,6 +1436,7 @@ class DhikrRepository {
       arabicText: 'لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',
       englishText: 'There is no might and no power except with Allah',
       frenchText: 'Il n’y a de force et de puissance que par Allah',
+      phoneticText: 'Lā ḥawla wa-lā quwwata illā billāh',
       virtue:
           'كَنْزٌ مِنْ كُنُوزِ الْجَنَّةِ، وَدَوَاءٌ لِأَيْسَرِ الدَّاءِ وَهُوَ الْهَمُّ.',
       sourceText:
@@ -1370,6 +1456,7 @@ class DhikrRepository {
           'Praise be to Allah, by Whose grace good things are accomplished',
       frenchText:
           'Louange à Allah par la grâce de qui s’accomplissent les bonnes œuvres',
+      phoneticText: 'Al-ḥamdu lillāhi alladhī bi-ni‘matihi tatimmu aṣ-ṣāliḥāt',
       virtue:
           'شُكْرٌ لِلَّهِ عِنْدَ السُّرُورِ، وَاعْتِرَافٌ بِفَضْلِهِ فِي تَمَامِ النِّعَمِ.',
       sourceText:
@@ -1387,6 +1474,7 @@ class DhikrRepository {
           'My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents and to do righteousness of which You approve',
       frenchText:
           'Seigneur ! Permets-moi d’être reconnaissant pour le bienfait dont Tu m’as comblé, ainsi que mes parents, et de faire le bien qui Te dise',
+      phoneticText: 'Rabbi awzi‘nī an ashkura ni‘mataka allatī an‘amta ‘alayya wa-‘alā wālidayya wa-an a‘mala ṣāliḥan tarḍāh',
       virtue:
           'دُعَاءُ الْأَنْبِيَاءِ لِطَلَبِ التَّوْفِيقِ لِلشُّكْرِ وَزِيَادَةِ النِّعَمِ.',
       sourceText:
@@ -1404,6 +1492,7 @@ class DhikrRepository {
           'O Allah, help me to remember You, to give thanks to You and to worship You in the best way',
       frenchText:
           'Ô Allah ! Aide-moi à T’évoquer, à Te remercier et à T’adorer de la meilleure manière',
+      phoneticText: 'Allāhumma a‘innī ‘alā dhikrika, wa-shukrika, wa-ḥusni ‘ibādatik',
       virtue:
           'وَصِيَّةٌ نَبَوِيَّةٌ لِطَلَبِ الْعَوْنِ عَلَى الذِّكْرِ وَالشُّكْرِ وَحُسْنِ الْعِبَادَةِ.',
       sourceText:
@@ -1420,6 +1509,7 @@ class DhikrRepository {
           'What Allah willed [has occurred]; there is no power except in Allah',
       frenchText:
           'Telle est la volonté d’Allah ! Il n’y a de puissance que par Allah',
+      phoneticText: 'Mā shā’a Allāhu lā quwwata illā billāh',
       virtue:
           'لِحِفْظِ النِّعَمِ مِنَ الزَّوَالِ وَالْعَيْنِ، وَحُلُولِ الْبَرَكَةِ.',
       sourceText:
@@ -1435,6 +1525,7 @@ class DhikrRepository {
           'الْحَمْدُ لِلَّهِ حَمْداً كَثِيراً طَيِّباً مُبَارَكاً فِيهِ',
       englishText: 'Praise be to Allah, much praise, good and blessed',
       frenchText: 'Louange à Allah, une louange abondante, pure et bénie',
+      phoneticText: 'Al-ḥamdu lillāhi ḥamdan kathīran ṭayyiban mubārakan fīh',
       virtue:
           'تَمْجِيدٌ عَظِيمٌ لِلَّهِ، يَبْتَدِرُهُ الْمَلَائِكَةُ لِكِتَابَتِهِ مِنْ عِظَمِ أَجْرِهِ.',
       sourceText:
@@ -1451,6 +1542,7 @@ class DhikrRepository {
       arabicText: 'سُبْحَانَ اللَّهِ',
       englishText: 'Glory is to Allah',
       frenchText: 'Gloire à Allah',
+      phoneticText: 'Subḥān Allāh',
       virtue:
           'يُقَالُ عِنْدَ التَّعَبِ الْجَسَدِيِّ، وَهُوَ خَيْرٌ مِنْ خَادِمٍ وَيُقَوِّي الْبَدَنَ.',
       sourceText:
@@ -1465,6 +1557,7 @@ class DhikrRepository {
       arabicText: 'الْحَمْدُ لِلَّهِ',
       englishText: 'Praise is to Allah',
       frenchText: 'Louange à Allah',
+      phoneticText: 'Al-ḥamdu lillāh',
       virtue:
           'يُقَالُ عِنْدَ التَّعَبِ الْجَسَدِيِّ، وَهُوَ خَيْرٌ مِنْ خَادِمٍ وَيُقَوِّي الْبَدَنَ.',
       sourceText:
@@ -1479,6 +1572,7 @@ class DhikrRepository {
       arabicText: 'اللَّهُ أَكْبَرُ',
       englishText: 'Allah is the Greatest',
       frenchText: 'Allah est le plus Grand',
+      phoneticText: 'Allāhu akbar',
       virtue:
           'يُقَالُ عِنْدَ التَّعَبِ الْجَسَدِيِّ، وَهُوَ خَيْرٌ مِنْ خَادِمٍ وَيُقَوِّي الْبَدَنَ.',
       sourceText:
@@ -1496,6 +1590,7 @@ class DhikrRepository {
           'O Allah, make me healthy in my body. O Allah, make me healthy in my hearing. O Allah, make me healthy in my sight. None has the right to be worshipped except You',
       frenchText:
           'Ô Allah ! Préserve ma santé dans mon corps. Ô Allah ! Préserve mon ouïe. Ô Allah ! Préserve ma vue. Point de divinité à part Toi',
+      phoneticText: 'Allāhumma ‘āfinī fī badanī, Allāhumma ‘āfinī fī sam‘ī, Allāhumma ‘āfinī fī baṣarī, lā ilāha illā ant',
       virtue:
           'طَلَبُ الْعَافِيَةِ التَّامَّةِ لِلْبَدَنِ وَالْحَوَاسِّ، وَحِفْظُ الصِّحَّةِ.',
       sourceText:
@@ -1513,6 +1608,7 @@ class DhikrRepository {
           'None has the right to be worshipped except Allah, alone, without partner. To Him belongs all sovereignty and praise and He is over all things omnipotent',
       frenchText:
           'Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose',
+      phoneticText: 'Lā ilāha illā Allāh waḥdahu lā sharīka lah, lahu al-mulku wa-lahu al-ḥamdu, wa-huwa ‘alā kulli shay’in qadīr',
       virtue:
           'تَجْدِيدٌ لِلتَّوْحِيدِ وَنَشَاطٌ لِلرُّوحِ، وَحِصْنٌ مِنَ الشَّيْطَانِ.',
       sourceText:
@@ -1527,6 +1623,7 @@ class DhikrRepository {
       arabicText: 'اللَّهُمَّ بَارِكْ لِي فِي وَقْتِي وَجُهْدِي',
       englishText: 'O Allah, bless my time and my efforts',
       frenchText: 'Ô Allah ! Bénis mon temps et mes efforts',
+      phoneticText: 'Allāhumma bārik lī fī waqtī wa-juhdī',
       virtue:
           'طَلَبُ الْبَرَكَةِ فِي الْوَقْتِ وَالْجُهْدِ، لِإِنْجَازِ الْكَثِيرِ بِالْقَلِيلِ.',
       sourceText:
@@ -1544,6 +1641,7 @@ class DhikrRepository {
           'I seek the forgiveness of Allah the Magnificent, besides Whom there is no other god, the Living, the Self-Subsisting, and I repent to Him',
       frenchText:
           'Je demande pardon à Allah l’Immense, en dehors de Qui il n’y a point de divinité, le Vivant, Celui qui subsiste par Lui-même, et je me repens à Lui',
+      phoneticText: 'Astaghfiru Allāha al-‘aẓīm alladhī lā ilāha illā huwa al-ḥayyu al-qayyūmu wa-atūbu ilayh',
       virtue:
           'الِاسْتِغْفَارُ مَجْلَبَةٌ لِلْقُوَّةِ وَالرِّزْقِ، وَيَزِيدُكُمْ قُوَّةً إِلَى قُوَّتِكُمْ.',
       sourceText:
@@ -1561,6 +1659,7 @@ class DhikrRepository {
       englishText: 'O Turner of hearts, keep my heart firm on Your religion',
       frenchText:
           'Ô Toi qui retournes les cœurs ! Raffermis mon cœur dans Ta religion',
+      phoneticText: 'Yā muqalliba al-qulūbi thabbit qalbī ‘alā dīnik',
       virtue:
           'كَانَ أَكْثَرُ دُعَاءِ النَّبِيِّ ﷺ لِطَلَبِ الثَّبَاتِ عِنْدَ الْفِتَنِ.',
       sourceText:
@@ -1575,6 +1674,7 @@ class DhikrRepository {
       arabicText: 'اللَّهُمَّ اهْدِنِي وَسَدِّدْنِي',
       englishText: 'O Allah, guide me and keep me on the right path',
       frenchText: 'Ô Allah ! Guis-moi et affermis mes pas',
+      phoneticText: 'Allāhumma ihdinī wa-saddidnī',
       virtue:
           'طَلَبُ الْهِدَايَةِ وَالسَّدَادِ، وَتَوْفِيقُ اللَّهِ لِلْحَقِّ عِنْدَ الْحَيْرَةِ.',
       sourceText:
@@ -1592,6 +1692,7 @@ class DhikrRepository {
           'Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower',
       frenchText:
           'Seigneur ! Ne laisse pas nos cœurs dévier après que Tu nous as guidés ; et accorde-nous Ta miséricorde. C’est Toi, certes, le Grand Dispensateur',
+      phoneticText: 'Rabbanā lā tuzigh qulūbanā ba‘da idh hadaytanā wa-hab lanā min ladunka raḥmatan innaka anta al-wahhāb',
       virtue:
           'دُعَاءُ الرَّاسِخِينَ فِي الْعِلْمِ لِلْحِمَايَةِ مِنَ الضَّلَالِ بَعْدَ الْهِدَايَةِ.',
       sourceText:
@@ -1609,6 +1710,7 @@ class DhikrRepository {
           'O Allah, I ask You for guidance, piety, chastity and self-sufficiency',
       frenchText:
           'Ô Allah ! Je Te demande la guidée, la piété, la chasteté et la suffisance',
+      phoneticText: 'Allāhumma innī as’aluka al-hudā wa-t-tuqā wa-l-‘afāfa wa-l-ghinā',
       virtue:
           'طَلَبُ أُصُولِ الْخَيْرِ كُلِّهَا: الْهُدَى وَالتُّقَى وَالْعَفَافُ وَالْغِنَى.',
       sourceText:
@@ -1626,6 +1728,7 @@ class DhikrRepository {
           'O Allah, Lord of Jibrail, Mikhail and Israfil, Creator of the heavens and the earth, Knower of the unseen and the seen, You judge between Your servants concerning that wherein they differ. Guide me to the truth concerning that wherein they differed by Your permission. Verily, You guide whom You will to a straight path',
       frenchText:
           'Ô Allah ! Seigneur de Jibrîl, Mîkâ’îl et Isrâfîl, Créateur des cieux et de la terre, Connaisseur de l’invisible et du visible. C’est Toi qui juges entre Tes serviteurs ce sur quoi ils divergeaient. Guide-moi, avec Ta permission, vers la vérité là où il y a eu divergence. Certes, Tu guides qui Tu veux vers le droit chemin',
+      phoneticText: 'Allāhumma rabba Jibrā’īla wa-Mīkā’īla wa-Isrāfīla, fāṭira as-samāwāti wa-l-arḍ, ‘ālimal-ghaybi wash-shahādah, anta taḥkumu bayna ‘ibādika fīmā kānū fīhi yakhtalifūn, ihdinī limā akhtulifa fīhi mina al-ḥaqqi bi-idhnika, innaka tahdī man tashā’u ilā ṣirāṭin mustaqīm',
       virtue:
           'دُعَاءٌ لِكَشْفِ الْحَقِيقَةِ وَالِالْتِبَاسِ عِنْدَ تَضَارُبِ الْآرَاءِ.',
       sourceText:
@@ -1642,6 +1745,7 @@ class DhikrRepository {
       arabicText: 'أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ',
       englishText: 'I seek refuge in Allah from Satan the outcast',
       frenchText: 'Je cherche protection auprès d’Allah contre Satan le maudit',
+      phoneticText: 'A‘ūdhu billāhi min ash-shayṭān ir-rajīm',
       virtue:
           'يُذْهِبُ جَمْرَةَ الشَّيْطَانِ مِنَ الْقَلْبِ وَيُطْفِئُ الْغَضَبَ.',
       sourceText:
@@ -1659,6 +1763,7 @@ class DhikrRepository {
           'O Allah, forgive my sin, remove the anger of my heart, and protect me from Satan',
       frenchText:
           'Ô Allah ! Pardonne mes péchés, dissipe la colère de mon cœur et protège-moi de Satan',
+      phoneticText: 'Allāhumma ighfir lī dhanbī, wa-adhhib ghayẓa qalbī, wa-ajirnī mina ash-shayṭān',
       virtue:
           'دُعَاءٌ لِسَكِينَةِ الْقَلْبِ وَالتَّحَكُّمِ فِي النَّفْسِ وَطَلَبِ الْمَغْفِرَةِ.',
       sourceText:
@@ -1676,6 +1781,7 @@ class DhikrRepository {
           'O Allah, Lord of the Prophet Muhammad, forgive my sin, remove the anger of my heart, and protect me from the misleading trials',
       frenchText:
           'Ô Allah ! Seigneur du Prophète Muhammad, pardonne mon péché, dissipe la colère de mon cœur et protège-moi des épreuves qui égarent',
+      phoneticText: 'Allāhumma rabba an-nabiyyi Muḥammad ighfir lī dhanbī wa-adhhib ghayẓa qalbī wa-a‘idhnī min muḍillāti al-fitan',
       virtue:
           'لِلتَّغَلُّبِ عَلَى الْغَضَبِ الشَّدِيدِ وَالْفِتَنِ، وَالثَّبَاتِ عَلَى الْحَقِّ.',
       sourceText:
@@ -1693,6 +1799,7 @@ class DhikrRepository {
           'O Allah, I ask You for the word of truth in anger and in pleasure',
       frenchText:
           'Ô Allah ! Je Te demande la parole de vérité dans la colère comme dans la satisfaction',
+      phoneticText: 'Allāhumma innī as’aluka kalimata al-ḥaqqi fī al-ghaḍabi wa-r-riḍā',
       virtue:
           'لِضَمَانِ الْعَدْلِ وَالصِّدْقِ وَالْحِكْمَةِ حَتَّى عِنْدَ الْغَضَبِ.',
       sourceText:
@@ -1710,6 +1817,7 @@ class DhikrRepository {
           'O Allah, protect me from the evil of myself and confirm for me the most guided course of my affairs',
       frenchText:
           'Ô Allah ! Protège-moi contre mon propre mal, et affermis-moi pour suivre la voie la plus droite',
+      phoneticText: 'Allāhumma qinī sharra nafsī, wa-a‘zim lī ‘alā arshadi amrī',
       virtue:
           'لِلسَّيْطَرَةِ عَلَى هَوَى النَّفْسِ وَرَدْعِهَا عَنِ الْخَطَأِ.',
       sourceText:
@@ -1728,6 +1836,7 @@ class DhikrRepository {
           'In the name of Allah, I place my trust in Allah, there is no might nor power except with Allah',
       frenchText:
           'Au nom d\'Allah, je place ma confiance en Allah, il n\'y a de force et de puissance que par Allah',
+      phoneticText: 'Bismillāh, tawakkaltu ‘alā Allāh, wa-lā ḥawla wa-lā quwwata illā billāh',
       virtue:
           'يُقَالُ لَهُ: هُدِيْتَ، وَكُفِيتَ، وَوُقِيتَ، وَتَتَنَحَّى عَنْهُ الشَّيَاطِينُ.',
       sourceText:
@@ -1744,6 +1853,7 @@ class DhikrRepository {
           'O Allah, I seek refuge in You lest I stray or be led astray, or slip or be made to slip, or cause injustice or suffer injustice, or be ignorant or be treated with ignorance',
       frenchText:
           'Ô Allah ! Je me réfugie en Toi de ce que je m\'égare ou que je sois égaré, que je glisse ou que l\'on me fasse glisser, que je commette une injustice ou que j\'en subisse une, que je sois ignorant ou qu\'on le soit envers moi',
+      phoneticText: 'Allāhumma innī a‘ūdhu bika an aḍilla aw uḍall, aw azilla aw uzall, aw aẓlima aw uẓlam, aw ajhala aw yujhala ‘alayy',
       virtue: 'حماية شاملة من الزلل والظلم والجهل.',
       sourceText:
           'عَنْ أُمِّ سَلَمَةَ رَضِيَ اللَّهُ عَنْهَا قَالَتْ: مَا خَرَجَ النَّبِيُّ ﷺ مِنْ بَيْتِي قَطُّ إِلَّا رَفَعَ طَرْفَهُ إِلَى السَّمَاءِ فَقَالَ: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ، أَوْ أُضَلَّ، أَوْ أَزِلَّ، أَوْ أُزَلَّ، أَوْ أَظْلِمَ، أَوْ أُظْلَمَ، أَوْ أَجْهَلَ، أَوْ يُجْهَلَ عَلَيَّ".',
@@ -1761,6 +1871,7 @@ class DhikrRepository {
           'In the name of Allah we enter, in the name of Allah we leave, and upon Allah our Lord we depend',
       frenchText:
           'Au nom d\'Allah nous entrons, au nom d\'Allah nous sortons, et en Allah notre Seigneur nous plaçons notre confiance',
+      phoneticText: 'Allāhumma innī as’aluka khayra al-mawliji wa-khayra al-makhraj, bismillāhi walajnā, wa-bismillāhi kharajnā, wa-‘alā Allāhi rabbinā tawakkalnā',
       virtue:
           'السُّنَّةُ عِنْدَ الدُّخُولِ ذِكْرُ اللَّهِ ثُمَّ السَّلَامُ عَلَى الْأَهْلِ، فَإِنَّهُ يَمْنَعُ الشَّيْطَانَ مِنَ الْمَبِيتِ فِي الْبَيْتِ.',
       sourceText:
