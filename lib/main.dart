@@ -4,6 +4,7 @@ import 'core/theme.dart';
 import 'features/onboarding/splash_screen.dart';
 import 'core/prayer_service.dart';
 import 'core/gratitude_service.dart';
+import 'core/progress_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,6 +12,7 @@ void main() async {
   // Initialize services in background to avoid blocking the Splash Screen
   PrayerService().initialize();
   GratitudeService().initialize();
+  ProgressService().initialize();
 
   runApp(const AdhkarsApp());
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../../core/design_system.dart';
 import '../../core/models.dart';
 import '../../core/repository.dart';
@@ -97,8 +96,8 @@ class _DuaCardState extends State<_DuaCard> {
       case LanguageMode.french:
         return widget.dhikr.frenchText;
       case LanguageMode.phonetic:
-        return widget.dhikr.phoneticText.isEmpty 
-            ? "Transcription en cours..." 
+        return widget.dhikr.phoneticText.isEmpty
+            ? "Transcription en cours..."
             : widget.dhikr.phoneticText;
       case LanguageMode.arabic:
         return widget.dhikr.arabicText.preventOrphan();
@@ -137,15 +136,21 @@ class _DuaCardState extends State<_DuaCard> {
                 Text(
                   _getDisplayText(),
                   textAlign: TextAlign.center,
-                  style: (languageMode == LanguageMode.arabic
-                          ? AppTypography.arabic(fontSize: 22)
-                          : languageMode == LanguageMode.phonetic
-                              ? AppTypography.phonetic(fontSize: 18, fontWeight: FontWeight.w500)
+                  style:
+                      (languageMode == LanguageMode.arabic
+                              ? AppTypography.arabic(fontSize: 22)
+                              : languageMode == LanguageMode.phonetic
+                              ? AppTypography.phonetic(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                )
                               : AppTypography.uiBody(fontSize: 16))
-                      .copyWith(
-                    color: textColor,
-                    height: languageMode == LanguageMode.arabic ? 1.5 : 1.3,
-                  ),
+                          .copyWith(
+                            color: textColor,
+                            height: languageMode == LanguageMode.arabic
+                                ? 1.5
+                                : 1.3,
+                          ),
                 ),
                 const SizedBox(height: 20),
                 Row(

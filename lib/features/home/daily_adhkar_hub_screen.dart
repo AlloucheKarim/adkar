@@ -8,6 +8,7 @@ import '../../shared/scaffold_with_background.dart';
 import '../../core/transitions.dart';
 import '../dhikr_list/dhikr_list_screen.dart';
 import '../../core/theme_service.dart';
+import 'dhikr_log_screen.dart';
 
 class DailyAdhkarHubScreen extends StatelessWidget {
   const DailyAdhkarHubScreen({super.key});
@@ -60,7 +61,9 @@ class DailyAdhkarHubScreen extends StatelessWidget {
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      const SizedBox(height: 30),
+                      const SizedBox(height: 24),
+                      _buildSpiritualProgressHeader(context, isNightMode),
+                      const SizedBox(height: 24),
                       // 1. أذكار الاستيقاظ
                       _CategoryCard(
                         title: 'أَذْكَار الِاسْتِيَقَاظ',
@@ -188,6 +191,131 @@ class DailyAdhkarHubScreen extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+
+  Widget _buildSpiritualProgressHeader(BuildContext context, bool isNightMode) {
+    final streak = ProgressService().getStreak();
+
+    final cardColor = isNightMode
+        ? const Color(0xFF4E342E).withValues(alpha: 0.4)
+        : Colors.white.withValues(alpha: 0.5);
+
+    final titleColor = isNightMode
+        ? const Color(0xFFF5F5DC)
+        : const Color(0xFF5D4037);
+
+    final subtitleColor = isNightMode
+        ? const Color(0xFFE6C98A).withValues(alpha: 0.8)
+        : const Color(0xFF8D6E63);
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: cardColor,
+        borderRadius: BorderRadius.circular(24),
+        border: Border.all(
+          color: const Color(0xFFE6C98A).withValues(alpha: 0.25),
+        ),
+        boxShadow: isNightMode ? null : AppColors.premiumShadow,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Row 1: Streak (Constance)
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  const Icon(
+                    Icons.brightness_low_rounded,
+                    color: Color(0xFFE6C98A),
+                    size: 22,
+                  ),
+                  const SizedBox(width: 10),
+                  Text(
+                    'الِاسْتِمْرَارِيَّةُ'.preventOrphan(),
+                    style: AppTypography.arabic(
+                      fontSize: 18,
+                    ).copyWith(fontWeight: FontWeight.bold, color: titleColor),
+                  ),
+                ],
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Text(
+                    '$streak يَوْمًا مُتَتَالِيًا'.preventOrphan(),
+                    style: AppTypography.arabic(fontSize: 16).copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: const Color(0xFFC09D63),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          const Padding(
+            padding: EdgeInsets.symmetric(vertical: 12),
+            child: Divider(color: Color(0xFFE6C98A), thickness: 0.3),
+          ),
+
+          // Row 2: Dhikr Log Button
+          SizedBox(
+            width: double.infinity,
+            child: OutlinedButton.icon(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  BookPageRoute(page: const DhikrLogScreen()),
+                );
+              },
+              icon: const Icon(
+                Icons.history_rounded,
+                color: Color(0xFFC09D63),
+                size: 20,
+              ),
+              label: Text(
+                'سِجِلُّ الأَذْكَارِ',
+                style: AppTypography.arabic(fontSize: 16).copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: const Color(0xFFC09D63),
+                ),
+              ),
+              style: OutlinedButton.styleFrom(
+                side: const BorderSide(color: Color(0xFFE6C98A), width: 1.2),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                padding: const EdgeInsets.symmetric(vertical: 12),
+              ),
+            ),
+          ),
+
+          const SizedBox(height: 16),
+
+          // Row 3: Hadith and Spiritual Reminder
+          Center(
+            child: Column(
+              children: [
+                Text(
+                  '« أَحَبُّ الْأَعْمَالِ إِلَى اللَّهِ أَدْوَمُهَا وَإِنْ قَلَّ »'
+                      .preventOrphan(),
+                  textAlign: TextAlign.center,
+                  style: AppTypography.arabic(fontSize: 14).copyWith(
+                    color: const Color(0xFFC09D63),
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

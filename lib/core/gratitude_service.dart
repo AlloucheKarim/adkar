@@ -67,6 +67,12 @@ class GratitudeService extends ChangeNotifier {
     }
   }
 
+  void deleteEntry(String dateStr) async {
+    _entries.removeWhere((e) => e.date == dateStr);
+    notifyListeners();
+    await _saveToStorage();
+  }
+
   Future<void> _saveToStorage() async {
     try {
       final prefs = await SharedPreferences.getInstance();

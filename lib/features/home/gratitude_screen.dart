@@ -4,6 +4,8 @@ import '../../core/design_system.dart';
 import '../../shared/scaffold_with_background.dart';
 import '../../core/gratitude_service.dart';
 import '../../core/theme_service.dart';
+import '../../core/transitions.dart';
+import 'gratitude_history_screen.dart';
 
 class GratitudeScreen extends StatefulWidget {
   const GratitudeScreen({super.key});
@@ -62,6 +64,21 @@ class _GratitudeScreenState extends State<GratitudeScreen> {
                   ? const Color(0xFFF5F5DC)
                   : const Color(0xFF5D4037),
             ),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.history),
+                color: isNightMode
+                    ? const Color(0xFFF5F5DC)
+                    : const Color(0xFF5D4037),
+                tooltip: 'سِجِلُّ الِامْتِنَانِ',
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    BookPageRoute(page: const GratitudeHistoryScreen()),
+                  );
+                },
+              ),
+            ],
           ),
           body: Padding(
             padding: const EdgeInsets.all(24.0),

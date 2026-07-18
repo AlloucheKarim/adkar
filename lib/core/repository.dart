@@ -737,12 +737,13 @@ class DhikrRepository {
       id: 'evening_fitra',
       category: DhikrCategory.evening,
       arabicText:
-          'أَمْسَيْنَا عَلَى فِطْرَةِ الْإِخْلَاصِ، وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا، وَمَا كَانَ مِنَ الْمُشْرِكِينَ',
+          'أَمْسَيْنَا عَلَى فِطْرَةِ الْإِسْلَامِ، وَعَلَى كَلِمَةِ الْإِخْلَاصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ ﷺ، وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ',
       englishText:
           "We have entered the evening upon the natural religion of Islam, the word of sincere devotion, the religion of our Prophet Muhammad (peace and blessings of Allah be upon him), and the faith of our father Ibrahim, a man of pure belief and a Muslim, and he was not of those who worship others besides Allah",
       frenchText:
           "Nous voici au soir, sur la saine nature de l'Islam, sur la parole du dévouement sincère, sur la religion de notre Prophète Muhammad (salut et bénédictions d'Allah sur lui) et sur la confession de notre père Ibrahim, qui était un pur monothéiste, soumis à Allah, et n'était point du nombre des associateurs",
-      phoneticText: "",
+      phoneticText:
+          "Amsaynā ‘alā fiṭrati al-islām, wa-‘alā kalimati al-ikhlāṣ, wa-‘alā dīni nabiyyinā Muḥammadin ﷺ, wa-‘alā millati abīnā Ibrāhīma ḥanīfan musliman wa-mā kāna mina al-mushrikīn",
       virtue:
           'تَدْجِيدُ الْعَهْدِ مَعَ اللَّهِ عَلَى الْفِطْرَةِ وَالتَّوْحِيدِ وَالِاتِّبَاعِ.',
       sourceText:

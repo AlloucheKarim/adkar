@@ -30,6 +30,7 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
   final Set<String> completedIds = {};
   double fontSizeMultiplier = 1.0;
   bool isShortMode = false;
+  final List<String> _completionHistory = [];
 
   @override
   void initState() {
@@ -49,8 +50,19 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
     if (mounted) {
       setState(() {
         completedIds.add(id);
+        _completionHistory.add(id);
       });
       ProgressService().markCompleted(id);
+    }
+  }
+
+  void _undoLastCompleted() {
+    if (_completionHistory.isNotEmpty) {
+      final lastId = _completionHistory.removeLast();
+      setState(() {
+        completedIds.remove(lastId);
+      });
+      ProgressService().unmarkCompleted(lastId);
     }
   }
 
@@ -60,6 +72,7 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
         completedIds.remove(dhikr.id);
         ProgressService().unmarkCompleted(dhikr.id);
       }
+      _completionHistory.clear();
     });
     // Haptic removed
   }
@@ -228,7 +241,6 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
                       tooltip: 'إِعَادَةُ ضَبْطِ التَّقَدُّمِ',
                       color: const Color(0xFFC09D63),
                     ),
-                    const SizedBox(width: 8),
                     _buildActionButton(
                       icon: Icons.zoom_out,
                       onPressed: _zoomOut,
@@ -240,6 +252,15 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
                       onPressed: _zoomIn,
                       tooltip: 'تكبير الخط',
                       color: const Color(0xFFC09D63),
+                    ),
+                    const SizedBox(width: 8),
+                    _buildActionButton(
+                      icon: Icons.undo_rounded,
+                      onPressed: _completionHistory.isEmpty ? null : _undoLastCompleted,
+                      tooltip: 'تراجع عن الذكر الأخير',
+                      color: _completionHistory.isEmpty
+                          ? Colors.grey.withValues(alpha: 0.5)
+                          : const Color(0xFFC09D63),
                     ),
                     const SizedBox(width: 8),
                   ],
@@ -342,7 +363,7 @@ class _DhikrListScreenState extends State<DhikrListScreen> {
 
   Widget _buildActionButton({
     required IconData icon,
-    required VoidCallback onPressed,
+    required VoidCallback? onPressed,
     required String tooltip,
     required Color color,
   }) {
