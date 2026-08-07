@@ -2,15 +2,20 @@
 
 set -e
 
-brew install cocoapods
+echo "===== Flutter Version ====="
 
-git clone https://github.com/flutter/flutter.git --depth 1
+if command -v flutter >/dev/null 2>&1; then
+    flutter --version
+else
+    echo "Flutter n'est pas installé sur cette image."
+    exit 1
+fi
 
-export PATH="$PATH:`pwd`/flutter/bin"
-
-flutter precache --ios
+echo "===== Flutter Pub Get ====="
 
 flutter pub get
+
+echo "===== CocoaPods ====="
 
 cd ios
 
