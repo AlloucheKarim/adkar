@@ -30,6 +30,10 @@
 	<string>نحتاج للوصول إلى موقعكِ لتحديد مواعيد الصلاة بدقة بناءً على منطقتكِ الجغرافية.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>نحتاج للوصول إلى موقعكِ لتحديد مواعيد الصلاة بدقة بناءً على منطقتكِ الجغرافية.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>نحتاج للوصول إلى مكتبة الصور لإضافة صور في ركن الامتنان.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>نحتاج للوصول إلى الكاميرا لالتقاط صور في ركن الامتنان.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
