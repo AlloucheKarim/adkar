@@ -3,7 +3,7 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-echo "===== Xcode Cloud ci_post_clone.sh Started ====="
+echo "===== Xcode Cloud ci_post_clone.sh Started (Swift Package Manager Mode) ====="
 
 # Navigate to project root directory containing pubspec.yaml
 if [ -n "$CI_PRIMARY_REPOSITORY_PATH" ]; then
