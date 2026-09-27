@@ -36,6 +36,8 @@
 	<string>نحتاج للوصول إلى مكتبة الصور لإضافة صور في ركن الامتنان.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>نحتاج للوصول إلى الكاميرا لالتقاط صور في ركن الامتنان.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>نحتاج للوصول إلى المايكروفون عند تسجيل الفيديو في التطبيق.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
