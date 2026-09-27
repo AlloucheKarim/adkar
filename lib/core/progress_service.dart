@@ -129,14 +129,49 @@ class ProgressService extends ChangeNotifier {
 
       final todayStr = _getTodayDateStr();
 
-      // Find which category this dhikr belongs to and remove its log entry if category is no longer complete
+      // Find which category this dhikr belongs to and update log entries
       for (final cat in _allCategories) {
-        final catIds = DhikrRepository.getByCategory(cat).map((d) => d.id).toSet();
-        if (catIds.contains(id)) {
-          // Category is no longer fully complete → remove today's log for this category
-          _dhikrLogs.removeWhere((e) => e.date == todayStr && e.category == cat);
-          break;
+        final allDhikrs = DhikrRepository.getByCategory(cat);
+        final catIds = allDhikrs.map((d) => d.id).toSet();
+        if (!catIds.contains(id)) continue;
+
+        final essentialIds =
+            allDhikrs.where((d) => d.isEssential).map((d) => d.id).toSet();
+
+        final fullDone = _completedIds.containsAll(catIds);
+        final shortDone =
+            essentialIds.isNotEmpty && _completedIds.containsAll(essentialIds);
+
+        final shortCategory = cat == DhikrCategory.morning
+            ? DhikrCategory.morningShort
+            : cat == DhikrCategory.evening
+                ? DhikrCategory.eveningShort
+                : null;
+
+        if (!fullDone) {
+          // Remove full category log
+          _dhikrLogs.removeWhere(
+            (e) => e.date == todayStr && e.category == cat,
+          );
+
+          if (shortDone && shortCategory != null) {
+            // Downgrade to short category log if essential is still complete
+            final alreadyLoggedShort = _dhikrLogs.any(
+              (e) => e.date == todayStr && e.category == shortCategory,
+            );
+            if (!alreadyLoggedShort) {
+              _dhikrLogs.add(
+                DhikrLogEntry(date: todayStr, category: shortCategory),
+              );
+            }
+          } else if (shortCategory != null) {
+            // Remove short category log
+            _dhikrLogs.removeWhere(
+              (e) => e.date == todayStr && e.category == shortCategory,
+            );
+          }
         }
+        break;
       }
 
       // If no dhikrs completed at all today, remove today from active dates
@@ -159,17 +194,49 @@ class ProgressService extends ChangeNotifier {
 
   void _checkAndAddCategoryLog(String justCompletedId, String todayStr) {
     for (final cat in _allCategories) {
-      final catIds = DhikrRepository.getByCategory(cat).map((d) => d.id).toSet();
+      final allDhikrs = DhikrRepository.getByCategory(cat);
+      final catIds = allDhikrs.map((d) => d.id).toSet();
       if (!catIds.contains(justCompletedId)) continue;
 
-      // Check if all dhikrs in this category are now completed
-      final allDone = _completedIds.containsAll(catIds);
-      if (!allDone) break;
+      final essentialIds =
+          allDhikrs.where((d) => d.isEssential).map((d) => d.id).toSet();
 
-      // Avoid duplicate entries for the same date+category
-      final alreadyLogged = _dhikrLogs.any((e) => e.date == todayStr && e.category == cat);
-      if (!alreadyLogged) {
-        _dhikrLogs.add(DhikrLogEntry(date: todayStr, category: cat));
+      final fullDone = _completedIds.containsAll(catIds);
+      final shortDone =
+          essentialIds.isNotEmpty && _completedIds.containsAll(essentialIds);
+
+      final shortCategory = cat == DhikrCategory.morning
+          ? DhikrCategory.morningShort
+          : cat == DhikrCategory.evening
+              ? DhikrCategory.eveningShort
+              : null;
+
+      if (fullDone) {
+        // Full category complete -> remove short category log if present
+        if (shortCategory != null) {
+          _dhikrLogs.removeWhere(
+            (e) => e.date == todayStr && e.category == shortCategory,
+          );
+        }
+        final alreadyLoggedFull = _dhikrLogs.any(
+          (e) => e.date == todayStr && e.category == cat,
+        );
+        if (!alreadyLoggedFull) {
+          _dhikrLogs.add(DhikrLogEntry(date: todayStr, category: cat));
+        }
+      } else if (shortDone && shortCategory != null) {
+        // Short mode complete -> log short category if full is not logged
+        final alreadyLoggedFull = _dhikrLogs.any(
+          (e) => e.date == todayStr && e.category == cat,
+        );
+        final alreadyLoggedShort = _dhikrLogs.any(
+          (e) => e.date == todayStr && e.category == shortCategory,
+        );
+        if (!alreadyLoggedFull && !alreadyLoggedShort) {
+          _dhikrLogs.add(
+            DhikrLogEntry(date: todayStr, category: shortCategory),
+          );
+        }
       }
       break;
     }

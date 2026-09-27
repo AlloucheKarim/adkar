@@ -3,6 +3,7 @@ import '../../core/utils.dart';
 import '../../core/design_system.dart';
 import '../../core/theme_service.dart';
 import '../../core/gratitude_service.dart';
+import '../../core/app_image_helper.dart';
 import '../../shared/scaffold_with_background.dart';
 
 class GratitudeHistoryScreen extends StatelessWidget {
@@ -82,6 +83,34 @@ class GratitudeHistoryScreen extends StatelessWidget {
           ],
         );
       },
+    );
+  }
+
+  void _showFullImage(BuildContext context, String imagePath) {
+    showDialog(
+      context: context,
+      builder: (ctx) => Dialog(
+        backgroundColor: Colors.transparent,
+        insetPadding: const EdgeInsets.all(16),
+        child: Stack(
+          alignment: Alignment.topRight,
+          children: [
+            AppImageHelper.buildWidget(
+              imagePath,
+              fit: BoxFit.contain,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            Positioned(
+              top: 8,
+              right: 8,
+              child: IconButton(
+                icon: const Icon(Icons.close, color: Colors.white, size: 28),
+                onPressed: () => Navigator.pop(ctx),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -202,19 +231,55 @@ class GratitudeHistoryScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const SizedBox(height: 12),
-                          SizedBox(
-                            width: double.infinity,
-                            child: Text(
-                              entry.content.preventOrphan(),
-                              textAlign: TextAlign.right,
-                              style: AppTypography.arabic(fontSize: 18).copyWith(
-                                color: isNightMode
-                                    ? const Color(0xFFF5F5DC)
-                                    : AppColors.textPrimary,
+                          if (entry.content.isNotEmpty) ...[
+                            const SizedBox(height: 12),
+                            SizedBox(
+                              width: double.infinity,
+                              child: Text(
+                                entry.content.preventOrphan(),
+                                textAlign: TextAlign.right,
+                                style: AppTypography.arabic(fontSize: 18).copyWith(
+                                  color: isNightMode
+                                      ? const Color(0xFFF5F5DC)
+                                      : AppColors.textPrimary,
+                                ),
                               ),
                             ),
-                          ),
+                          ],
+                          if (entry.imagePaths.isNotEmpty) ...[
+                            const SizedBox(height: 14),
+                            SizedBox(
+                              height: 110,
+                              child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemCount: entry.imagePaths.length,
+                                itemBuilder: (ctx, imgIdx) {
+                                  final imgPath = entry.imagePaths[imgIdx];
+                                  return GestureDetector(
+                                    onTap: () => _showFullImage(context, imgPath),
+                                    child: Container(
+                                      margin: const EdgeInsets.only(left: 10),
+                                      width: 100,
+                                      height: 100,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(16),
+                                        border: Border.all(
+                                          color: const Color(0xFFE6C98A).withValues(alpha: 0.4),
+                                          width: 1.5,
+                                        ),
+                                      ),
+                                      child: AppImageHelper.buildWidget(
+                                        imgPath,
+                                        width: 100,
+                                        height: 100,
+                                        borderRadius: BorderRadius.circular(14),
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                          ],
                         ],
                       ),
                     );

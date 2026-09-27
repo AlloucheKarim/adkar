@@ -431,7 +431,12 @@ class _DhikrCardState extends State<_DhikrCard> {
   void _toggleLanguage() {
     setState(() {
       if (languageMode == LanguageMode.arabic) {
-        languageMode = LanguageMode.phonetic;
+        // Sauter la phonétique si elle est vide
+        if (widget.dhikr.phoneticText.isEmpty) {
+          languageMode = LanguageMode.french;
+        } else {
+          languageMode = LanguageMode.phonetic;
+        }
       } else if (languageMode == LanguageMode.phonetic) {
         languageMode = LanguageMode.french;
       } else if (languageMode == LanguageMode.french) {

@@ -13,8 +13,12 @@ class DhikrLogScreen extends StatelessWidget {
     switch (category) {
       case DhikrCategory.morning:
         return 'أَذْكَار الصَّبَاح';
+      case DhikrCategory.morningShort:
+        return 'أَذْكَار الصَّبَاح (مُخْتَصَرَة)';
       case DhikrCategory.evening:
         return 'أَذْكَار الْمَسَاء';
+      case DhikrCategory.eveningShort:
+        return 'أَذْكَار الْمَسَاء (مُخْتَصَرَة)';
       case DhikrCategory.sleep:
         return 'أَذْكَار قَبْلَ النَّوْم';
       case DhikrCategory.wakingUp:

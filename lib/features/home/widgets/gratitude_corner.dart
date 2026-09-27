@@ -3,6 +3,7 @@ import '../../../core/design_system.dart';
 import '../../../core/gratitude_service.dart';
 import '../../../core/transitions.dart';
 import '../../../core/utils.dart';
+import '../../../core/app_image_helper.dart';
 import '../gratitude_screen.dart';
 
 class GratitudeCorner extends StatelessWidget {
@@ -57,18 +58,50 @@ class GratitudeCorner extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 20),
-              if (todaysEntry != null)
-                Text(
-                  '"${todaysEntry.content.preventOrphan()}"',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.arabic(fontSize: 18).copyWith(
-                    color: isNightMode
-                        ? const Color(0xFFE6C98A)
-                        : const Color(0xFF8D6E63),
-                    fontStyle: FontStyle.italic,
+              if (todaysEntry != null) ...[
+                if (todaysEntry.content.isNotEmpty)
+                  Text(
+                    '"${todaysEntry.content.preventOrphan()}"',
+                    textAlign: TextAlign.center,
+                    style: AppTypography.arabic(fontSize: 18).copyWith(
+                      color: isNightMode
+                          ? const Color(0xFFE6C98A)
+                          : const Color(0xFF8D6E63),
+                      fontStyle: FontStyle.italic,
+                    ),
                   ),
-                )
-              else
+                if (todaysEntry.imagePaths.isNotEmpty) ...[
+                  const SizedBox(height: 12),
+                  SizedBox(
+                    height: 70,
+                    child: ListView.builder(
+                      shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      itemCount: todaysEntry.imagePaths.length,
+                      itemBuilder: (ctx, idx) {
+                        return Container(
+                          margin: const EdgeInsets.symmetric(horizontal: 4),
+                          width: 65,
+                          height: 65,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(14),
+                            border: Border.all(
+                              color: const Color(0xFFE6C98A).withValues(alpha: 0.5),
+                              width: 1.5,
+                            ),
+                          ),
+                          child: AppImageHelper.buildWidget(
+                            todaysEntry.imagePaths[idx],
+                            width: 65,
+                            height: 65,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ] else
                 Text(
                   'مَا هِيَ النِّعْمَةُ الَّتِي تَوَدِّينَ شُكْرَ اللَّهِ عَلَيْهَا الْيَوْمَ؟'
                       .preventOrphan(),

@@ -83,7 +83,7 @@ class DhikrRepository {
       englishText:
           'We have reached the morning and at this very time unto Allah belongs all sovereignty, and all praise is for Allah. None has the right to be worshipped except Allah, alone, without partner, to Him belongs all sovereignty and praise and He is over all things omnipotent. My Lord, I ask You for the good of this day and the good of what follows it and I seek refuge in You from the evil of this day and the evil of what follows it. My Lord, I seek refuge in You from laziness and senility. My Lord, I seek refuge in You from torment in the Fire and torment in the grave',
       frenchText:
-          'Nous sommes au matin et la royauté appartient à Allah. Louange à Allah. Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose. Seigneur ! Je Te demande le bien de ce jour et le bien de ce qui le suit ; et je me réfugie auprès de Toi contre le mal de ce jour et le mal de ce qui le suit. Seigneur ! Je me réfugie auprès de Toi contre la paresse et les maux de la vieillesse. Seigneur ! Je me réfugie auprès de Toi contre le châtiment du Feu et le châtiment de la tombe',
+          "Nous sommes au matin et la royauté appartient à Allah. Louange à Allah. Il n’y a de divinité qu’Allah, l’Unique sans associé. À Lui la royauté et la louange, et Il est Capable de toute chose. Seigneur ! Je Te demande le bien de ce jour et le bien de ce qui le suit ; et je me réfugie auprès de Toi contre le mal de ce jour et le mal de ce qui le suit. Seigneur ! Je me réfugie auprès de Toi contre la paresse et les maux de la vieillesse. Seigneur ! Je me réfugie auprès de Toi contre le châtiment du Feu et le châtiment de la tombe",
       phoneticText: 'Aṣbaḥnā wa-aṣbaḥa al-mulku lillāh, wa-l-ḥamdu lillāh, lā ilāha illā Allāh waḥdahu lā sharīka lah, lahu al-mulku wa-lahu al-ḥamdu, wa-huwa ‘alā kulli shay’in qadīr. Rabbi as’aluka khayra mā fī hādhā al-yawmi wa-khayra mā ba‘dahu, wa-a‘ūdhu bika min sharri mā fī hādhā al-yawmi wa-sharri mā ba‘dahu, rabbi a‘ūdhu bika mina al-kasali wa-sū’i al-kibar, rabbi a‘ūdhu bika min ‘adhābin fī an-nāri wa-‘adhābin fī al-qabr',
       virtue:
           'اعْتِرَافٌ بِمُلْكِ اللَّهِ الْمُطْلَقِ، وَطَلَبُ السَّكِينَةِ وَالْحِمَايَةِ مِنْ عَذَابِ الْقَبْرِ.',
@@ -289,7 +289,8 @@ class DhikrRepository {
           "We have entered the morning upon the natural religion of Islam, the word of sincere devotion, the religion of our Prophet Muhammad (peace and blessings of Allah be upon him), and the faith of our father Ibrahim, a man of pure belief and a Muslim, and he was not of those who worship others besides Allah",
       frenchText:
           "Nous voici au matin, sur la saine nature de l'Islam, sur la parole du dévouement sincère, sur la religion de notre Prophète Muhammad (salut et bénédictions d'Allah sur lui) et sur la confession de notre père Ibrahim, qui était un pur monothéiste, soumis à Allah, et n'était point du nombre des associateurs",
-      phoneticText: "",
+      phoneticText:
+          "Aṣbaḥnā ‘alā fiṭrati al-islām, wa-‘alā kalimati al-ikhlāṣ, wa-‘alā dīni nabiyyinā Muḥammadin ﷺ, wa-‘alā millati abīnā Ibrāhīma ḥanīfan musliman wa-mā kāna mina al-mushrikīn",
       virtue:
           'تَدْجِيدُ الْعَهْدِ مَعَ اللَّهِ عَلَى الْفِطْرَةِ وَالتَّوْحِيدِ وَالِاتِّبَاعِ.',
       sourceText:
@@ -1674,7 +1675,7 @@ class DhikrRepository {
       emotionTag: 'lost',
       arabicText: 'اللَّهُمَّ اهْدِنِي وَسَدِّدْنِي',
       englishText: 'O Allah, guide me and keep me on the right path',
-      frenchText: 'Ô Allah ! Guis-moi et affermis mes pas',
+      frenchText: 'Ô Allah ! Guide-moi et affermis mes pas',
       phoneticText: 'Allāhumma ihdinī wa-saddidnī',
       virtue:
           'طَلَبُ الْهِدَايَةِ وَالسَّدَادِ، وَتَوْفِيقُ اللَّهِ لِلْحَقِّ عِنْدَ الْحَيْرَةِ.',
@@ -1883,6 +1884,16 @@ class DhikrRepository {
   ];
 
   static List<Dhikr> getByCategory(DhikrCategory category) {
+    if (category == DhikrCategory.morningShort) {
+      return adhkars
+          .where((d) => d.category == DhikrCategory.morning && d.isEssential)
+          .toList();
+    }
+    if (category == DhikrCategory.eveningShort) {
+      return adhkars
+          .where((d) => d.category == DhikrCategory.evening && d.isEssential)
+          .toList();
+    }
     return adhkars.where((d) => d.category == category).toList();
   }
 

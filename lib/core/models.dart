@@ -7,6 +7,8 @@ enum DhikrCategory {
   wakingUp,
   leavingHome,
   enteringHome,
+  morningShort,
+  eveningShort,
 }
 
 class Dhikr {

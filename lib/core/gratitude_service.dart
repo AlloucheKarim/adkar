@@ -5,12 +5,28 @@ import 'dart:convert';
 class GratitudeEntry {
   final String date;
   final String content;
+  final List<String> imagePaths;
 
-  GratitudeEntry({required this.date, required this.content});
+  GratitudeEntry({
+    required this.date,
+    required this.content,
+    this.imagePaths = const [],
+  });
 
-  Map<String, dynamic> toJson() => {'date': date, 'content': content};
-  factory GratitudeEntry.fromJson(Map<String, dynamic> json) =>
-      GratitudeEntry(date: json['date'], content: json['content']);
+  Map<String, dynamic> toJson() => {
+        'date': date,
+        'content': content,
+        'imagePaths': imagePaths,
+      };
+
+  factory GratitudeEntry.fromJson(Map<String, dynamic> json) => GratitudeEntry(
+        date: json['date'] as String,
+        content: json['content'] as String,
+        imagePaths: (json['imagePaths'] as List<dynamic>?)
+                ?.map((e) => e as String)
+                .toList() ??
+            const [],
+      );
 }
 
 class GratitudeService extends ChangeNotifier {
@@ -41,16 +57,24 @@ class GratitudeService extends ChangeNotifier {
     }
   }
 
-  void addEntry(String content) async {
+  void addEntry(String content, {List<String> imagePaths = const []}) async {
     final now = DateTime.now();
     final dateStr = '${now.day}/${now.month}/${now.year}';
 
     // Check if we already have an entry for today and update it, or add new
     int index = _entries.indexWhere((e) => e.date == dateStr);
     if (index != -1) {
-      _entries[index] = GratitudeEntry(date: dateStr, content: content);
+      _entries[index] = GratitudeEntry(
+        date: dateStr,
+        content: content,
+        imagePaths: imagePaths,
+      );
     } else {
-      _entries.add(GratitudeEntry(date: dateStr, content: content));
+      _entries.add(GratitudeEntry(
+        date: dateStr,
+        content: content,
+        imagePaths: imagePaths,
+      ));
     }
 
     notifyListeners();
